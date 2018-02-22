@@ -1,0 +1,84 @@
+,Survey_ID,Var_Name,Var_Text
+0,OLSAnimal,Q7_20,Sources of balanced information about use of: Don
+1,OLSAnimal,Q8_1,Receive information about use of animals in research?: Billboards 
+2,OLSAnimal,Q8_2,Receive information about use of animals in research?: General interest magazines
+3,OLSAnimal,Q8_3,Receive information about use of animals in research?: Specialist magazines 
+4,OLSAnimal,Q8_4,Receive information about use of animals in research?: Local newspapers
+5,OLSAnimal,Q8_5,Receive information about use of animals in research?: National newspapers
+6,OLSAnimal,Q8_6,Receive information about use of animals in research?: Websites
+7,OLSAnimal,Q8_7,Receive information about use of animals in research?: Local radio
+8,OLSAnimal,Q8_8,Receive information about use of animals in research?: National radio
+9,OLSAnimal,Q8_9,Receive information about use of animals in research?: School 
+10,OLSAnimal,Q8_10,Receive information about use of animals in research?: Social media
+11,OLSAnimal,Q8_11,Receive information about use of animals in research?: Meetings 
+12,OLSAnimal,Q8_12,Receive information about use of animals in research?: Telephone information line
+13,OLSAnimal,Q8_13,Receive information about use of animals in research?: Television
+14,OLSAnimal,Q8_14,Receive information about use of animals in research?: Do not want more information
+15,OLSAnimal,Q8_15,Receive information about use of animals in research?: Mail 
+16,OLSAnimal,Q8_16,Receive information about use of animals in research?: Email
+17,OLSAnimal,Q8_17,Receive information about use of animals in research?: Other
+18,OLSAnimal,Q8_18,Receive information about use of animals in research?: None of these
+19,OLSAnimal,Q8_19,Receive information about use of animals in research?: Don
+20,OLSAnimal,Q9a,How much do you know about the UK Government
+21,OLSAnimal,Q9b,How much do you know about the UK Government
+22,OLSAnimal,Q9c,How much do you know about the UK Government
+23,OLSAnimal,Q10,Did you or did you not know that there is a UK national scientific centre called NC3Rs?
+24,OLSAnimal,Q11a_1,Are researchers allowed to use animals for: Research to advance our understanding of the human body
+25,OLSAnimal,Q11a_2,Are researchers allowed to use animals for: Trying to develop new treatments for specific diseases
+26,OLSAnimal,Q11a_3,Are researchers allowed to use animals for: Research to advance our  understanding of animal health
+27,OLSAnimal,Q11a_4,Are researchers allowed to use animals for: Testing cosmetics 
+28,OLSAnimal,Q11a_5,Are researchers allowed to use animals for: Developing new methods of medical diagnosis
+29,OLSAnimal,Q11a_6,Are researchers allowed to use animals for: Safety testing of the ingredients of home cleaning products
+30,OLSAnimal,Q11a_7,Are researchers allowed to use animals for: Safety testing of chemicals used in industry or farming
+31,OLSAnimal,Q11a_8,Are researchers allowed to use animals for: None of these
+32,OLSAnimal,Q11a_9,Are researchers allowed to use animals for: Don
+33,OLSAnimal,Q11b_1,Should researchers be allowed to use animals for: Research to advance our understanding of the human body
+34,OLSAnimal,Q11b_2,Should researchers be allowed to use animals for: Trying to develop new treatments for specific diseases
+35,OLSAnimal,Q11b_3,Should researchers be allowed to use animals for: Research to advance our  understanding of animal health
+36,OLSAnimal,Q11b_4,Should researchers be allowed to use animals for: Testing cosmetics 
+37,OLSAnimal,Q11b_5,Should researchers be allowed to use animals for: Developing new methods of medical diagnosis
+38,OLSAnimal,Q11b_6,Should researchers be allowed to use animals for: Safety testing of the ingredients of home cleaning products
+39,OLSAnimal,Q11b_7,Should researchers be allowed to use animals for: Safety testing of chemicals used in industry or farming
+40,OLSAnimal,Q11b_8,Should researchers be allowed to use animals for: None of these
+41,OLSAnimal,Q11b_9,Should researchers be allowed to use animals for: Don
+42,OLSAnimal,Q12a_1,Animals acceptable to use for Medical research: Fish
+43,OLSAnimal,Q12a_2,"Animals acceptable to use for Medical research: Amphibians e.g. frogs, toads, newts"
+44,OLSAnimal,Q12a_3,Animals acceptable to use for Medical research: Birds
+45,OLSAnimal,Q12a_4,Animals acceptable to use for Medical research: Mice
+46,OLSAnimal,Q12a_5,Animals acceptable to use for Medical research: Rats
+47,OLSAnimal,Q12a_6,Animals acceptable to use for Medical research: Cats
+48,OLSAnimal,Q12a_7,Animals acceptable to use for Medical research: Dogs
+49,OLSAnimal,Q12a_8,Animals acceptable to use for Medical research: Pigs
+50,OLSAnimal,Q12a_9,Animals acceptable to use for Medical research: Small  monkeys such as marmosets
+51,OLSAnimal,Q12a_10,Animals acceptable to use for Medical research: Large monkeys such as macaques
+52,OLSAnimal,Q12a_11,Animals acceptable to use for Medical research: Great apes e.g. chimpanzees and gorillas
+53,OLSAnimal,Q12a_12,"Animals acceptable to use for Medical research: Small mammals e.g. rabbits, ferrets"
+54,OLSAnimal,Q12a_13,"Animals acceptable to use for Medical research: Larger mammals e.g. sheep, cows"
+55,OLSAnimal,Q12a_14,Animals acceptable to use for Medical research: Insects
+56,OLSAnimal,Q12a_15,Animals acceptable to use for Medical research: Depends on the reasearch
+57,OLSAnimal,Q12a_16,Animals acceptable to use for Medical research: Any 
+58,OLSAnimal,Q12a_17,Animals acceptable to use for Medical research: Snakes 
+59,OLSAnimal,Q12a_18,Animals acceptable to use for Medical research: Depends on the animal
+60,OLSAnimal,Q12a_19,Animals acceptable to use for Medical research: Humans
+61,OLSAnimal,Q12a_20,Animals acceptable to use for Medical research: Animals from their own species
+62,OLSAnimal,Q12a_21,Animals acceptable to use for Medical research: Other
+63,OLSAnimal,Q12a_22,Animals acceptable to use for Medical research: None of these
+64,OLSAnimal,Q12a_23,Animals acceptable to use for Medical research: Don
+65,OLSAnimal,Q12b_1,Animals acceptable to use for Research into: Fish
+66,OLSAnimal,Q12b_2,"Animals acceptable to use for Research into: Amphibians e.g. frogs, toads, newts"
+67,OLSAnimal,Q12b_3,Animals acceptable to use for Research into: Birds
+68,OLSAnimal,Q12b_4,Animals acceptable to use for Research into: Mice
+69,OLSAnimal,Q12b_5,Animals acceptable to use for Research into: Rats
+70,OLSAnimal,Q12b_6,Animals acceptable to use for Research into: Cats
+71,OLSAnimal,Q12b_7,Animals acceptable to use for Research into: Dogs
+72,OLSAnimal,Q12b_8,Animals acceptable to use for Research into: Pigs
+73,OLSAnimal,Q12b_9,Animals acceptable to use for Research into: Small  monkeys such as marmosets
+74,OLSAnimal,Q12b_10,Animals acceptable to use for Research into: Large monkeys such as macaques
+75,OLSAnimal,Q12b_11,Animals acceptable to use for Research into: Great apes e.g. chimpanzees and gorillas
+76,OLSAnimal,Q12b_12,"Animals acceptable to use for Research into: Small mammals e.g. rabbits, ferrets"
+77,OLSAnimal,Q12b_13,"Animals acceptable to use for Research into: Larger mammals e.g. sheep, cows"
+78,OLSAnimal,Q12b_14,Animals acceptable to use for Research into: Insects
+79,OLSAnimal,Q12b_15,Animals acceptable to use for Research into: Depends on the reasearch
+80,OLSAnimal,Q12b_16,Animals acceptable to use for Research into: Any 
+81,OLSAnimal,Q12b_17,Animals acceptable to use for Research into: Snakes 
+82,OLSAnimal,Q12b_18,Animals acceptable to use for Research into: Depends on the animal

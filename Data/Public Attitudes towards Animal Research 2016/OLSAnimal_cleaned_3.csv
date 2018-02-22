@@ -1,0 +1,84 @@
+,Survey_ID,Var_Name,Var_Text
+0,OLSAnimal,Q12b_19,Animals acceptable to use for Research into: Humans
+1,OLSAnimal,Q12b_20,Animals acceptable to use for Research into: Animals from their own species
+2,OLSAnimal,Q12b_21,Animals acceptable to use for Research into: Other
+3,OLSAnimal,Q12b_22,Animals acceptable to use for Research into: None of these
+4,OLSAnimal,Q12b_23,Animals acceptable to use for Research into: Don
+5,OLSAnimal,Q12c_1,Animals acceptable to use for Environmental: Fish
+6,OLSAnimal,Q12c_2,"Animals acceptable to use for Environmental: Amphibians e.g. frogs, toads, newts"
+7,OLSAnimal,Q12c_3,Animals acceptable to use for Environmental: Birds
+8,OLSAnimal,Q12c_4,Animals acceptable to use for Environmental: Mice
+9,OLSAnimal,Q12c_5,Animals acceptable to use for Environmental: Rats
+10,OLSAnimal,Q12c_6,Animals acceptable to use for Environmental: Cats
+11,OLSAnimal,Q12c_7,Animals acceptable to use for Environmental: Dogs
+12,OLSAnimal,Q12c_8,Animals acceptable to use for Environmental: Pigs
+13,OLSAnimal,Q12c_9,Animals acceptable to use for Environmental: Small  monkeys such as marmosets
+14,OLSAnimal,Q12c_10,Animals acceptable to use for Environmental: Large monkeys such as macaques
+15,OLSAnimal,Q12c_11,Animals acceptable to use for Environmental: Great apes e.g. chimpanzees and gorillas
+16,OLSAnimal,Q12c_12,"Animals acceptable to use for Environmental: Small mammals e.g. rabbits, ferrets"
+17,OLSAnimal,Q12c_13,"Animals acceptable to use for Environmental: Larger mammals e.g. sheep, cows"
+18,OLSAnimal,Q12c_14,Animals acceptable to use for Environmental: Insects
+19,OLSAnimal,Q12c_15,Animals acceptable to use for Environmental: Depends on the reasearch
+20,OLSAnimal,Q12c_16,Animals acceptable to use for Environmental: Any 
+21,OLSAnimal,Q12c_17,Animals acceptable to use for Environmental: Snakes 
+22,OLSAnimal,Q12c_18,Animals acceptable to use for Environmental: Depends on the animal
+23,OLSAnimal,Q12c_19,Animals acceptable to use for Environmental: Humans
+24,OLSAnimal,Q12c_20,Animals acceptable to use for Environmental: Animals from their own species
+25,OLSAnimal,Q12c_21,Animals acceptable to use for Environmental: Other
+26,OLSAnimal,Q12c_22,Animals acceptable to use for Environmental: None of these
+27,OLSAnimal,Q12c_23,Animals acceptable to use for Environmental: Don
+28,OLSAnimal,Q13_1,Your view of organisations that use animals for research: They are secretive
+29,OLSAnimal,Q13_2,Your view of organisations that use animals for research: They are well regulated
+30,OLSAnimal,Q13_3,Your view of organisations that use animals for research: They have poor animal welfare standards
+31,OLSAnimal,Q13_4,Your view of organisations that use animals for research: They carry out work essential for human health
+32,OLSAnimal,Q13_5,Your view of organisations that use animals for research: They stick to  good animal welfare standards
+33,OLSAnimal,Q13_6,Your view of organisations that use animals for research: They are open about their work
+34,OLSAnimal,Q13_7,Your view of organisations that use animals for research: They are dishonest about the results of their  work
+35,OLSAnimal,Q13_8,Your view of organisations that use animals for research: Any positive
+36,OLSAnimal,Q13_9,Your view of organisations that use animals for research: Any negative
+37,OLSAnimal,Q13_10,Your view of organisations that use animals for research: Only positive
+38,OLSAnimal,Q13_11,Your view of organisations that use animals for research: Only negative
+39,OLSAnimal,Q13_12,Your view of organisations that use animals for research: Don
+40,OLSAnimal,Q13_13,Your view of organisations that use animals for research: None of these
+41,OLSAnimal,Q14_1,Past 12 months seen or heard animal research in the UK?: Animal welfare 
+42,OLSAnimal,Q14_2,Past 12 months seen or heard animal research in the UK?: Animals being used for cosmetics research
+43,OLSAnimal,Q14_3,Past 12 months seen or heard animal research in the UK?: Animals being used for research
+44,OLSAnimal,Q14_4,Past 12 months seen or heard animal research in the UK?: Mentions of specific animals
+45,OLSAnimal,Q14_5,Past 12 months seen or heard animal research in the UK?: Charity
+46,OLSAnimal,Q14_6,Past 12 months seen or heard animal research in the UK?: Cancer treatment drug trials 
+47,OLSAnimal,Q14_7,Past 12 months seen or heard animal research in the UK?: Friends 
+48,OLSAnimal,Q14_8,Past 12 months seen or heard animal research in the UK?: Internet 
+49,OLSAnimal,Q14_9,Past 12 months seen or heard animal research in the UK?: Newspaper 
+50,OLSAnimal,Q14_10,Past 12 months seen or heard animal research in the UK?: News 
+51,OLSAnimal,Q14_11,Past 12 months seen or heard animal research in the UK?: On TV
+52,OLSAnimal,Q14_12,Past 12 months seen or heard animal research in the UK?: On social media 
+53,OLSAnimal,Q14_13,Past 12 months seen or heard animal research in the UK?: Protests
+54,OLSAnimal,Q14_14,Past 12 months seen or heard animal research in the UK?: Radio
+55,OLSAnimal,Q14_15,Past 12 months seen or heard animal research in the UK?: TV advert
+56,OLSAnimal,Q14_16,Past 12 months seen or heard animal research in the UK?: TV programme 
+57,OLSAnimal,Q14_17,Past 12 months seen or heard animal research in the UK?: Through work
+58,OLSAnimal,Q14_18,Past 12 months seen or heard animal research in the UK?: Through school 
+59,OLSAnimal,Q14_19,Past 12 months seen or heard animal research in the UK?: No 
+60,OLSAnimal,Q14_20,Past 12 months seen or heard animal research in the UK?: No answer
+61,OLSAnimal,Q14_21,Past 12 months seen or heard animal research in the UK?: Don
+62,OLSAnimal,Q14_22,Past 12 months seen or heard animal research in the UK?: Other
+63,OLSAnimal,AgeB2,Respondent age bracket
+64,OLSAnimal,sgrade,Respondent social grade
+65,OLSAnimal,Soc,Respondent social grade
+66,OLSAnimal,Soc2,Respondent social grade
+67,OLSAnimal,gor,Respondent Government Office Region
+68,OLSAnimal,sex,Respondent gender
+69,OLSAnimal,Eth,Respondent ethnic origin
+70,OLSAnimal,Reg,Respondent GB region
+71,OLSAnimal,gen,Respondent generation
+72,OLSAnimal,tenure,Respondent tenure
+73,OLSAnimal,Empstat,Respondent working status
+74,OLSAnimal,qual,Respondent highest educational level
+75,OLSAnimal,marstat,Respondent marital status
+76,OLSAnimal,access,Respondent internet access
+77,OLSAnimal,Income,Respondent income bracket
+78,OLSAnimal,Broadsheet,Respondent regularly reads a daily Broadsheet paper
+79,OLSAnimal,MidMarket,Respondent regularly reads a daily Mid
+80,OLSAnimal,Tabloid,Respondent regularly reads a daily Tabloid paper
+81,OLSAnimal,NoPpr,Respondent does not regularly read a daily paper
+82,OLSAnimal,weight,Weighting factor
