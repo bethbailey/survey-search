@@ -1,83 +1,83 @@
-,Survey_ID,Var_Name,Var_Text
-0,OLSAnimal,ID,Respondent serial
-1,OLSAnimal,Q1,How well informed do you feel about the use of animals in scientific research in the UK?
-2,OLSAnimal,Q2a,Interested in finding out more about the ongoing work to find alternatives to using animals in research?
-3,OLSAnimal,Q2b,Interested in finding out more about the ongoing work to improve the welfare of animals in scientific research?
-4,OLSAnimal,Q3a,I can accept the use if animals in research as long as it is for medical research purposes and there is no alternative
-5,OLSAnimal,Q3b,There needs to be more work done into alternatives to using animals in scientific research
-6,OLSAnimal,Q3c,I can accept the use of animals in scientific research as long as there is no unnecessary suffering to the animals
-7,OLSAnimal,Q3d,Animals should not be used in any scientific research because of the importance I place on animal welfare
-8,OLSAnimal,Q3e,It does not bother me if animals are used in scientific research
-9,OLSAnimal,Q3f,The use of animals for medical research should only be conducted for life
-10,OLSAnimal,Q3g,The UK government should ban the use of animals for any form of research
-11,OLSAnimal,Q3h,"Acceptable to use animals in research to help our understanding of the human body, where there is no alternative"
-12,OLSAnimal,Q3i,"Acceptable to use animals in research to help our understanding of animal health, where there is no alternative"
-13,OLSAnimal,Q3j,Acceptable to use animals for all types of research where there is no  alternative
-14,OLSAnimal,Q3k,Acceptable to use animals in scientific research to test chemicals that could harm people
-15,OLSAnimal,Q3l,"Acceptable to use animals in scientific research to test chemicals that could harm pets, farm animals or wildlife"
-16,OLSAnimal,Q3m,Acceptable to use animals in scientific research to test chemicals that could harm plants or the environment
-17,OLSAnimal,Q4_1,Which of these is true?: The use of animals for medical research purposes is important to human health
-18,OLSAnimal,Q4_2,Which of these is true?: Scientists could do more to reduce the suffering of animals used in scientific research
-19,OLSAnimal,Q4_3,Which of these is true?: Scientific research using animals is not always carried out to high standards
-20,OLSAnimal,Q4_4,Which of these is true?: Scientific research is carried out on animals only  when there is no alternative
-21,OLSAnimal,Q4_5,Which of these is true?: Researchers are working to find alternatives to using animals in scientific research
-22,OLSAnimal,Q4_6,Which of these is true?: Don
-23,OLSAnimal,Q4_7,Which of these is true?: None of these
-24,OLSAnimal,Q5a,I do not trust the regulatory system around the use of animals in scientific research
-25,OLSAnimal,Q5b,I trust scientists not to cause unnecessary suffering to the animals used in scientific research 
-26,OLSAnimal,Q5c,I feel that unnecessary duplication of scientific research involving animals MIGHT go on
-27,OLSAnimal,Q5d,Scientific research involving animals sometimes goes on without an official licence
-28,OLSAnimal,Q5e,The UK has strict rules on the use of animals in scientific research
-29,OLSAnimal,Q5f,The rules in the UK on scientific research involving animals are well enforced
-30,OLSAnimal,Q5g,I trust the regulators to uncover any misconduct at animal research facilities
-31,OLSAnimal,Q6a_1,Which are acceptable things for an APO to do?: Ask people to put a sticker 
-32,OLSAnimal,Q6a_2,Which are acceptable things for an APO to do?: Destroy 
-33,OLSAnimal,Q6a_3,Which are acceptable things for an APO to do?: Release animals illegally
-34,OLSAnimal,Q6a_4,Which are acceptable things for an APO to do?: Hand out leaflets
-35,OLSAnimal,Q6a_5,Which are acceptable things for an APO to do?: Occupy research facilities illegally
-36,OLSAnimal,Q6a_6,Which are acceptable things for an APO to do?: None
-37,OLSAnimal,Q6a_7,Which are acceptable things for an APO to do?: Don
-38,OLSAnimal,Q6a_8,Which are acceptable things for an APO to do?: Respondent refused
-39,OLSAnimal,Q6a_9,Which are acceptable things for an APO to do?: Respondent said depends on legality
-40,OLSAnimal,Q6b_1,Which is acceptable for an APO to do?: Demonstration outside research laboratories
-41,OLSAnimal,Q6b_2,Which is acceptable for an APO to do?: Demonstration outside homes of people who work in animal research
-42,OLSAnimal,Q6b_3,Which is acceptable for an APO to do?: Demonstration outside companies which transport research animals
-43,OLSAnimal,Q6b_4,Which is acceptable for an APO to do?: Demonstration outside companies which supply services to animal research
-44,OLSAnimal,Q6b_5,Which is acceptable for an APO to do?: None of these
-45,OLSAnimal,Q6b_6,Which is acceptable for an APO to do?: Don
-46,OLSAnimal,Q6b_7,Which is acceptable for an APO to do?: Respondent refused
-47,OLSAnimal,Q6b_8,Which is acceptable for an APO to do?: Respondent said depends on legality
-48,OLSAnimal,Q6c_1,Which is acceptable for an APO to do?: Organise petitions
-49,OLSAnimal,Q6c_2,Which is acceptable for an APO to do?: Send hate mail or abusive messages to those involved in animal research
-50,OLSAnimal,Q6c_3,Which is acceptable for an APO to do?: Set up road blocks illegally
-51,OLSAnimal,Q6c_4,Which is acceptable for an APO to do?: Physical violence against those who carry out scientific research on animals
-52,OLSAnimal,Q6c_5,Which is acceptable for an APO to do?: Carry out serious crime 
-53,OLSAnimal,Q6c_6,Which is acceptable for an APO to do?: Organise an ONLINE campaign against people involved in animal research
-54,OLSAnimal,Q6c_7,Which is acceptable for an APO to do?: Publicise without permission the identity of people carrying out research
-55,OLSAnimal,Q6c_8,Which is acceptable for an APO to do?: Secretly film the activities in animal research facilities
-56,OLSAnimal,Q6c_9,Which is acceptable for an APO to do?: Verbally harass people who carry out research on animals
-57,OLSAnimal,Q6c_10,Which is acceptable for an APO to do?: Write letters to newspapers
-58,OLSAnimal,Q6c_11,Which is acceptable for an APO to do?: Misrepresent or spin information to support their cause
-59,OLSAnimal,Q6c_12,Which is acceptable for an APO to do?: None of these
-60,OLSAnimal,Q6c_13,Which is acceptable for an APO to do?: Don
-61,OLSAnimal,Q6c_14,Which is acceptable for an APO to do?: Respondent refused
-62,OLSAnimal,Q6c_15,Which is acceptable for an APO to do?: Respondent said depends on legality
-63,OLSAnimal,Q7_1,Sources of balanced information about use of: Universities
-64,OLSAnimal,Q7_2,Sources of balanced information about use of: Animal protection organisations
-65,OLSAnimal,Q7_3,Sources of balanced information about use of: Organisations that support the use of animals in research
-66,OLSAnimal,Q7_4,Sources of balanced information about use of: Businesses which carry out the research with animals
-67,OLSAnimal,Q7_5,Sources of balanced information about use of: Businesses which sell products developed from the research
-68,OLSAnimal,Q7_6,Sources of balanced information about use of: Politicians 
-69,OLSAnimal,Q7_7,Sources of balanced information about use of: Government research institutes
-70,OLSAnimal,Q7_8,Sources of balanced information about use of: Non
-71,OLSAnimal,Q7_9,Sources of balanced information about use of: Environmental organisations
-72,OLSAnimal,Q7_10,Sources of balanced information about use of: The NHS
-73,OLSAnimal,Q7_11,Sources of balanced information about use of: People with a knowledge of the subject
-74,OLSAnimal,Q7_12,Sources of balanced information about use of: Farming organisations
-75,OLSAnimal,Q7_13,Sources of balanced information about use of: Medical research charities
-76,OLSAnimal,Q7_14,Sources of balanced information about use of: Patient groups
-77,OLSAnimal,Q7_15,Sources of balanced information about use of: The media 
-78,OLSAnimal,Q7_16,Sources of balanced information about use of: Would check on line 
-79,OLSAnimal,Q7_17,Sources of balanced information about use of: Vets who look after the animals used in research
-80,OLSAnimal,Q7_18,Sources of balanced information about use of: Other
-81,OLSAnimal,Q7_19,Sources of balanced information about use of: None of these
+,Survey_Number,Survey_ID,Survey_Name,Var_Name,Var_Text,Data_Link
+0,1,OLSAnimal,Public Attitudes towards Animal Research 2016,ID,Respondent serial,http://bit.ly/2ELRqy1
+1,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q1,How well informed do you feel about the use of animals in scientific research in the UK?,http://bit.ly/2ELRqy1
+2,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q2a,Interested in finding out more about the ongoing work to find alternatives to using animals in research?,http://bit.ly/2ELRqy1
+3,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q2b,Interested in finding out more about the ongoing work to improve the welfare of animals in scientific research?,http://bit.ly/2ELRqy1
+4,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3a,I can accept the use if animals in research as long as it is for medical research purposes and there is no alternative,http://bit.ly/2ELRqy1
+5,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3b,There needs to be more work done into alternatives to using animals in scientific research,http://bit.ly/2ELRqy1
+6,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3c,I can accept the use of animals in scientific research as long as there is no unnecessary suffering to the animals,http://bit.ly/2ELRqy1
+7,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3d,Animals should not be used in any scientific research because of the importance I place on animal welfare,http://bit.ly/2ELRqy1
+8,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3e,It does not bother me if animals are used in scientific research,http://bit.ly/2ELRqy1
+9,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3f,The use of animals for medical research should only be conducted for life,http://bit.ly/2ELRqy1
+10,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3g,The UK government should ban the use of animals for any form of research,http://bit.ly/2ELRqy1
+11,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3h,"Acceptable to use animals in research to help our understanding of the human body, where there is no alternative",http://bit.ly/2ELRqy1
+12,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3i,"Acceptable to use animals in research to help our understanding of animal health, where there is no alternative",http://bit.ly/2ELRqy1
+13,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3j,Acceptable to use animals for all types of research where there is no  alternative,http://bit.ly/2ELRqy1
+14,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3k,Acceptable to use animals in scientific research to test chemicals that could harm people,http://bit.ly/2ELRqy1
+15,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3l,"Acceptable to use animals in scientific research to test chemicals that could harm pets, farm animals or wildlife",http://bit.ly/2ELRqy1
+16,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q3m,Acceptable to use animals in scientific research to test chemicals that could harm plants or the environment,http://bit.ly/2ELRqy1
+17,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_1,Which of these is true?: The use of animals for medical research purposes is important to human health,http://bit.ly/2ELRqy1
+18,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_2,Which of these is true?: Scientists could do more to reduce the suffering of animals used in scientific research,http://bit.ly/2ELRqy1
+19,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_3,Which of these is true?: Scientific research using animals is not always carried out to high standards,http://bit.ly/2ELRqy1
+20,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_4,Which of these is true?: Scientific research is carried out on animals only  when there is no alternative,http://bit.ly/2ELRqy1
+21,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_5,Which of these is true?: Researchers are working to find alternatives to using animals in scientific research,http://bit.ly/2ELRqy1
+22,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_6,Which of these is true?: Don,http://bit.ly/2ELRqy1
+23,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q4_7,Which of these is true?: None of these,http://bit.ly/2ELRqy1
+24,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5a,I do not trust the regulatory system around the use of animals in scientific research,http://bit.ly/2ELRqy1
+25,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5b,I trust scientists not to cause unnecessary suffering to the animals used in scientific research ,http://bit.ly/2ELRqy1
+26,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5c,I feel that unnecessary duplication of scientific research involving animals MIGHT go on,http://bit.ly/2ELRqy1
+27,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5d,Scientific research involving animals sometimes goes on without an official licence,http://bit.ly/2ELRqy1
+28,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5e,The UK has strict rules on the use of animals in scientific research,http://bit.ly/2ELRqy1
+29,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5f,The rules in the UK on scientific research involving animals are well enforced,http://bit.ly/2ELRqy1
+30,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q5g,I trust the regulators to uncover any misconduct at animal research facilities,http://bit.ly/2ELRqy1
+31,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_1,Which are acceptable things for an APO to do?: Ask people to put a sticker ,http://bit.ly/2ELRqy1
+32,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_2,Which are acceptable things for an APO to do?: Destroy ,http://bit.ly/2ELRqy1
+33,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_3,Which are acceptable things for an APO to do?: Release animals illegally,http://bit.ly/2ELRqy1
+34,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_4,Which are acceptable things for an APO to do?: Hand out leaflets,http://bit.ly/2ELRqy1
+35,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_5,Which are acceptable things for an APO to do?: Occupy research facilities illegally,http://bit.ly/2ELRqy1
+36,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_6,Which are acceptable things for an APO to do?: None,http://bit.ly/2ELRqy1
+37,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_7,Which are acceptable things for an APO to do?: Don,http://bit.ly/2ELRqy1
+38,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_8,Which are acceptable things for an APO to do?: Respondent refused,http://bit.ly/2ELRqy1
+39,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6a_9,Which are acceptable things for an APO to do?: Respondent said depends on legality,http://bit.ly/2ELRqy1
+40,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_1,Which is acceptable for an APO to do?: Demonstration outside research laboratories,http://bit.ly/2ELRqy1
+41,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_2,Which is acceptable for an APO to do?: Demonstration outside homes of people who work in animal research,http://bit.ly/2ELRqy1
+42,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_3,Which is acceptable for an APO to do?: Demonstration outside companies which transport research animals,http://bit.ly/2ELRqy1
+43,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_4,Which is acceptable for an APO to do?: Demonstration outside companies which supply services to animal research,http://bit.ly/2ELRqy1
+44,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_5,Which is acceptable for an APO to do?: None of these,http://bit.ly/2ELRqy1
+45,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_6,Which is acceptable for an APO to do?: Don,http://bit.ly/2ELRqy1
+46,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_7,Which is acceptable for an APO to do?: Respondent refused,http://bit.ly/2ELRqy1
+47,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6b_8,Which is acceptable for an APO to do?: Respondent said depends on legality,http://bit.ly/2ELRqy1
+48,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_1,Which is acceptable for an APO to do?: Organise petitions,http://bit.ly/2ELRqy1
+49,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_2,Which is acceptable for an APO to do?: Send hate mail or abusive messages to those involved in animal research,http://bit.ly/2ELRqy1
+50,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_3,Which is acceptable for an APO to do?: Set up road blocks illegally,http://bit.ly/2ELRqy1
+51,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_4,Which is acceptable for an APO to do?: Physical violence against those who carry out scientific research on animals,http://bit.ly/2ELRqy1
+52,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_5,Which is acceptable for an APO to do?: Carry out serious crime ,http://bit.ly/2ELRqy1
+53,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_6,Which is acceptable for an APO to do?: Organise an ONLINE campaign against people involved in animal research,http://bit.ly/2ELRqy1
+54,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_7,Which is acceptable for an APO to do?: Publicise without permission the identity of people carrying out research,http://bit.ly/2ELRqy1
+55,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_8,Which is acceptable for an APO to do?: Secretly film the activities in animal research facilities,http://bit.ly/2ELRqy1
+56,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_9,Which is acceptable for an APO to do?: Verbally harass people who carry out research on animals,http://bit.ly/2ELRqy1
+57,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_10,Which is acceptable for an APO to do?: Write letters to newspapers,http://bit.ly/2ELRqy1
+58,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_11,Which is acceptable for an APO to do?: Misrepresent or spin information to support their cause,http://bit.ly/2ELRqy1
+59,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_12,Which is acceptable for an APO to do?: None of these,http://bit.ly/2ELRqy1
+60,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_13,Which is acceptable for an APO to do?: Don,http://bit.ly/2ELRqy1
+61,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_14,Which is acceptable for an APO to do?: Respondent refused,http://bit.ly/2ELRqy1
+62,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q6c_15,Which is acceptable for an APO to do?: Respondent said depends on legality,http://bit.ly/2ELRqy1
+63,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_1,Sources of balanced information about use of: Universities,http://bit.ly/2ELRqy1
+64,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_2,Sources of balanced information about use of: Animal protection organisations,http://bit.ly/2ELRqy1
+65,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_3,Sources of balanced information about use of: Organisations that support the use of animals in research,http://bit.ly/2ELRqy1
+66,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_4,Sources of balanced information about use of: Businesses which carry out the research with animals,http://bit.ly/2ELRqy1
+67,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_5,Sources of balanced information about use of: Businesses which sell products developed from the research,http://bit.ly/2ELRqy1
+68,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_6,Sources of balanced information about use of: Politicians ,http://bit.ly/2ELRqy1
+69,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_7,Sources of balanced information about use of: Government research institutes,http://bit.ly/2ELRqy1
+70,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_8,Sources of balanced information about use of: Non,http://bit.ly/2ELRqy1
+71,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_9,Sources of balanced information about use of: Environmental organisations,http://bit.ly/2ELRqy1
+72,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_10,Sources of balanced information about use of: The NHS,http://bit.ly/2ELRqy1
+73,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_11,Sources of balanced information about use of: People with a knowledge of the subject,http://bit.ly/2ELRqy1
+74,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_12,Sources of balanced information about use of: Farming organisations,http://bit.ly/2ELRqy1
+75,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_13,Sources of balanced information about use of: Medical research charities,http://bit.ly/2ELRqy1
+76,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_14,Sources of balanced information about use of: Patient groups,http://bit.ly/2ELRqy1
+77,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_15,Sources of balanced information about use of: The media ,http://bit.ly/2ELRqy1
+78,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_16,Sources of balanced information about use of: Would check on line ,http://bit.ly/2ELRqy1
+79,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_17,Sources of balanced information about use of: Vets who look after the animals used in research,http://bit.ly/2ELRqy1
+80,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_18,Sources of balanced information about use of: Other,http://bit.ly/2ELRqy1
+81,1,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_19,Sources of balanced information about use of: None of these,http://bit.ly/2ELRqy1

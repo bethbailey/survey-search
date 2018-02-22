@@ -1,84 +1,84 @@
-,Survey_ID,Var_Name,Var_Text
-0,OLSAnimal,Q7_20,Sources of balanced information about use of: Don
-1,OLSAnimal,Q8_1,Receive information about use of animals in research?: Billboards 
-2,OLSAnimal,Q8_2,Receive information about use of animals in research?: General interest magazines
-3,OLSAnimal,Q8_3,Receive information about use of animals in research?: Specialist magazines 
-4,OLSAnimal,Q8_4,Receive information about use of animals in research?: Local newspapers
-5,OLSAnimal,Q8_5,Receive information about use of animals in research?: National newspapers
-6,OLSAnimal,Q8_6,Receive information about use of animals in research?: Websites
-7,OLSAnimal,Q8_7,Receive information about use of animals in research?: Local radio
-8,OLSAnimal,Q8_8,Receive information about use of animals in research?: National radio
-9,OLSAnimal,Q8_9,Receive information about use of animals in research?: School 
-10,OLSAnimal,Q8_10,Receive information about use of animals in research?: Social media
-11,OLSAnimal,Q8_11,Receive information about use of animals in research?: Meetings 
-12,OLSAnimal,Q8_12,Receive information about use of animals in research?: Telephone information line
-13,OLSAnimal,Q8_13,Receive information about use of animals in research?: Television
-14,OLSAnimal,Q8_14,Receive information about use of animals in research?: Do not want more information
-15,OLSAnimal,Q8_15,Receive information about use of animals in research?: Mail 
-16,OLSAnimal,Q8_16,Receive information about use of animals in research?: Email
-17,OLSAnimal,Q8_17,Receive information about use of animals in research?: Other
-18,OLSAnimal,Q8_18,Receive information about use of animals in research?: None of these
-19,OLSAnimal,Q8_19,Receive information about use of animals in research?: Don
-20,OLSAnimal,Q9a,How much do you know about the UK Government
-21,OLSAnimal,Q9b,How much do you know about the UK Government
-22,OLSAnimal,Q9c,How much do you know about the UK Government
-23,OLSAnimal,Q10,Did you or did you not know that there is a UK national scientific centre called NC3Rs?
-24,OLSAnimal,Q11a_1,Are researchers allowed to use animals for: Research to advance our understanding of the human body
-25,OLSAnimal,Q11a_2,Are researchers allowed to use animals for: Trying to develop new treatments for specific diseases
-26,OLSAnimal,Q11a_3,Are researchers allowed to use animals for: Research to advance our  understanding of animal health
-27,OLSAnimal,Q11a_4,Are researchers allowed to use animals for: Testing cosmetics 
-28,OLSAnimal,Q11a_5,Are researchers allowed to use animals for: Developing new methods of medical diagnosis
-29,OLSAnimal,Q11a_6,Are researchers allowed to use animals for: Safety testing of the ingredients of home cleaning products
-30,OLSAnimal,Q11a_7,Are researchers allowed to use animals for: Safety testing of chemicals used in industry or farming
-31,OLSAnimal,Q11a_8,Are researchers allowed to use animals for: None of these
-32,OLSAnimal,Q11a_9,Are researchers allowed to use animals for: Don
-33,OLSAnimal,Q11b_1,Should researchers be allowed to use animals for: Research to advance our understanding of the human body
-34,OLSAnimal,Q11b_2,Should researchers be allowed to use animals for: Trying to develop new treatments for specific diseases
-35,OLSAnimal,Q11b_3,Should researchers be allowed to use animals for: Research to advance our  understanding of animal health
-36,OLSAnimal,Q11b_4,Should researchers be allowed to use animals for: Testing cosmetics 
-37,OLSAnimal,Q11b_5,Should researchers be allowed to use animals for: Developing new methods of medical diagnosis
-38,OLSAnimal,Q11b_6,Should researchers be allowed to use animals for: Safety testing of the ingredients of home cleaning products
-39,OLSAnimal,Q11b_7,Should researchers be allowed to use animals for: Safety testing of chemicals used in industry or farming
-40,OLSAnimal,Q11b_8,Should researchers be allowed to use animals for: None of these
-41,OLSAnimal,Q11b_9,Should researchers be allowed to use animals for: Don
-42,OLSAnimal,Q12a_1,Animals acceptable to use for Medical research: Fish
-43,OLSAnimal,Q12a_2,"Animals acceptable to use for Medical research: Amphibians e.g. frogs, toads, newts"
-44,OLSAnimal,Q12a_3,Animals acceptable to use for Medical research: Birds
-45,OLSAnimal,Q12a_4,Animals acceptable to use for Medical research: Mice
-46,OLSAnimal,Q12a_5,Animals acceptable to use for Medical research: Rats
-47,OLSAnimal,Q12a_6,Animals acceptable to use for Medical research: Cats
-48,OLSAnimal,Q12a_7,Animals acceptable to use for Medical research: Dogs
-49,OLSAnimal,Q12a_8,Animals acceptable to use for Medical research: Pigs
-50,OLSAnimal,Q12a_9,Animals acceptable to use for Medical research: Small  monkeys such as marmosets
-51,OLSAnimal,Q12a_10,Animals acceptable to use for Medical research: Large monkeys such as macaques
-52,OLSAnimal,Q12a_11,Animals acceptable to use for Medical research: Great apes e.g. chimpanzees and gorillas
-53,OLSAnimal,Q12a_12,"Animals acceptable to use for Medical research: Small mammals e.g. rabbits, ferrets"
-54,OLSAnimal,Q12a_13,"Animals acceptable to use for Medical research: Larger mammals e.g. sheep, cows"
-55,OLSAnimal,Q12a_14,Animals acceptable to use for Medical research: Insects
-56,OLSAnimal,Q12a_15,Animals acceptable to use for Medical research: Depends on the reasearch
-57,OLSAnimal,Q12a_16,Animals acceptable to use for Medical research: Any 
-58,OLSAnimal,Q12a_17,Animals acceptable to use for Medical research: Snakes 
-59,OLSAnimal,Q12a_18,Animals acceptable to use for Medical research: Depends on the animal
-60,OLSAnimal,Q12a_19,Animals acceptable to use for Medical research: Humans
-61,OLSAnimal,Q12a_20,Animals acceptable to use for Medical research: Animals from their own species
-62,OLSAnimal,Q12a_21,Animals acceptable to use for Medical research: Other
-63,OLSAnimal,Q12a_22,Animals acceptable to use for Medical research: None of these
-64,OLSAnimal,Q12a_23,Animals acceptable to use for Medical research: Don
-65,OLSAnimal,Q12b_1,Animals acceptable to use for Research into: Fish
-66,OLSAnimal,Q12b_2,"Animals acceptable to use for Research into: Amphibians e.g. frogs, toads, newts"
-67,OLSAnimal,Q12b_3,Animals acceptable to use for Research into: Birds
-68,OLSAnimal,Q12b_4,Animals acceptable to use for Research into: Mice
-69,OLSAnimal,Q12b_5,Animals acceptable to use for Research into: Rats
-70,OLSAnimal,Q12b_6,Animals acceptable to use for Research into: Cats
-71,OLSAnimal,Q12b_7,Animals acceptable to use for Research into: Dogs
-72,OLSAnimal,Q12b_8,Animals acceptable to use for Research into: Pigs
-73,OLSAnimal,Q12b_9,Animals acceptable to use for Research into: Small  monkeys such as marmosets
-74,OLSAnimal,Q12b_10,Animals acceptable to use for Research into: Large monkeys such as macaques
-75,OLSAnimal,Q12b_11,Animals acceptable to use for Research into: Great apes e.g. chimpanzees and gorillas
-76,OLSAnimal,Q12b_12,"Animals acceptable to use for Research into: Small mammals e.g. rabbits, ferrets"
-77,OLSAnimal,Q12b_13,"Animals acceptable to use for Research into: Larger mammals e.g. sheep, cows"
-78,OLSAnimal,Q12b_14,Animals acceptable to use for Research into: Insects
-79,OLSAnimal,Q12b_15,Animals acceptable to use for Research into: Depends on the reasearch
-80,OLSAnimal,Q12b_16,Animals acceptable to use for Research into: Any 
-81,OLSAnimal,Q12b_17,Animals acceptable to use for Research into: Snakes 
-82,OLSAnimal,Q12b_18,Animals acceptable to use for Research into: Depends on the animal
+,Survey_Number,Survey_ID,Survey_Name,Var_Name,Var_Text,Data_Link
+0,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q7_20,Sources of balanced information about use of: Don,http://bit.ly/2ELRqy1
+1,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_1,Receive information about use of animals in research?: Billboards ,http://bit.ly/2ELRqy1
+2,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_2,Receive information about use of animals in research?: General interest magazines,http://bit.ly/2ELRqy1
+3,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_3,Receive information about use of animals in research?: Specialist magazines ,http://bit.ly/2ELRqy1
+4,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_4,Receive information about use of animals in research?: Local newspapers,http://bit.ly/2ELRqy1
+5,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_5,Receive information about use of animals in research?: National newspapers,http://bit.ly/2ELRqy1
+6,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_6,Receive information about use of animals in research?: Websites,http://bit.ly/2ELRqy1
+7,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_7,Receive information about use of animals in research?: Local radio,http://bit.ly/2ELRqy1
+8,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_8,Receive information about use of animals in research?: National radio,http://bit.ly/2ELRqy1
+9,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_9,Receive information about use of animals in research?: School ,http://bit.ly/2ELRqy1
+10,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_10,Receive information about use of animals in research?: Social media,http://bit.ly/2ELRqy1
+11,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_11,Receive information about use of animals in research?: Meetings ,http://bit.ly/2ELRqy1
+12,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_12,Receive information about use of animals in research?: Telephone information line,http://bit.ly/2ELRqy1
+13,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_13,Receive information about use of animals in research?: Television,http://bit.ly/2ELRqy1
+14,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_14,Receive information about use of animals in research?: Do not want more information,http://bit.ly/2ELRqy1
+15,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_15,Receive information about use of animals in research?: Mail ,http://bit.ly/2ELRqy1
+16,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_16,Receive information about use of animals in research?: Email,http://bit.ly/2ELRqy1
+17,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_17,Receive information about use of animals in research?: Other,http://bit.ly/2ELRqy1
+18,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_18,Receive information about use of animals in research?: None of these,http://bit.ly/2ELRqy1
+19,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q8_19,Receive information about use of animals in research?: Don,http://bit.ly/2ELRqy1
+20,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q9a,How much do you know about the UK Government,http://bit.ly/2ELRqy1
+21,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q9b,How much do you know about the UK Government,http://bit.ly/2ELRqy1
+22,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q9c,How much do you know about the UK Government,http://bit.ly/2ELRqy1
+23,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q10,Did you or did you not know that there is a UK national scientific centre called NC3Rs?,http://bit.ly/2ELRqy1
+24,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_1,Are researchers allowed to use animals for: Research to advance our understanding of the human body,http://bit.ly/2ELRqy1
+25,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_2,Are researchers allowed to use animals for: Trying to develop new treatments for specific diseases,http://bit.ly/2ELRqy1
+26,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_3,Are researchers allowed to use animals for: Research to advance our  understanding of animal health,http://bit.ly/2ELRqy1
+27,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_4,Are researchers allowed to use animals for: Testing cosmetics ,http://bit.ly/2ELRqy1
+28,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_5,Are researchers allowed to use animals for: Developing new methods of medical diagnosis,http://bit.ly/2ELRqy1
+29,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_6,Are researchers allowed to use animals for: Safety testing of the ingredients of home cleaning products,http://bit.ly/2ELRqy1
+30,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_7,Are researchers allowed to use animals for: Safety testing of chemicals used in industry or farming,http://bit.ly/2ELRqy1
+31,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_8,Are researchers allowed to use animals for: None of these,http://bit.ly/2ELRqy1
+32,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11a_9,Are researchers allowed to use animals for: Don,http://bit.ly/2ELRqy1
+33,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_1,Should researchers be allowed to use animals for: Research to advance our understanding of the human body,http://bit.ly/2ELRqy1
+34,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_2,Should researchers be allowed to use animals for: Trying to develop new treatments for specific diseases,http://bit.ly/2ELRqy1
+35,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_3,Should researchers be allowed to use animals for: Research to advance our  understanding of animal health,http://bit.ly/2ELRqy1
+36,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_4,Should researchers be allowed to use animals for: Testing cosmetics ,http://bit.ly/2ELRqy1
+37,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_5,Should researchers be allowed to use animals for: Developing new methods of medical diagnosis,http://bit.ly/2ELRqy1
+38,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_6,Should researchers be allowed to use animals for: Safety testing of the ingredients of home cleaning products,http://bit.ly/2ELRqy1
+39,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_7,Should researchers be allowed to use animals for: Safety testing of chemicals used in industry or farming,http://bit.ly/2ELRqy1
+40,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_8,Should researchers be allowed to use animals for: None of these,http://bit.ly/2ELRqy1
+41,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q11b_9,Should researchers be allowed to use animals for: Don,http://bit.ly/2ELRqy1
+42,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_1,Animals acceptable to use for Medical research: Fish,http://bit.ly/2ELRqy1
+43,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_2,"Animals acceptable to use for Medical research: Amphibians e.g. frogs, toads, newts",http://bit.ly/2ELRqy1
+44,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_3,Animals acceptable to use for Medical research: Birds,http://bit.ly/2ELRqy1
+45,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_4,Animals acceptable to use for Medical research: Mice,http://bit.ly/2ELRqy1
+46,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_5,Animals acceptable to use for Medical research: Rats,http://bit.ly/2ELRqy1
+47,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_6,Animals acceptable to use for Medical research: Cats,http://bit.ly/2ELRqy1
+48,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_7,Animals acceptable to use for Medical research: Dogs,http://bit.ly/2ELRqy1
+49,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_8,Animals acceptable to use for Medical research: Pigs,http://bit.ly/2ELRqy1
+50,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_9,Animals acceptable to use for Medical research: Small  monkeys such as marmosets,http://bit.ly/2ELRqy1
+51,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_10,Animals acceptable to use for Medical research: Large monkeys such as macaques,http://bit.ly/2ELRqy1
+52,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_11,Animals acceptable to use for Medical research: Great apes e.g. chimpanzees and gorillas,http://bit.ly/2ELRqy1
+53,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_12,"Animals acceptable to use for Medical research: Small mammals e.g. rabbits, ferrets",http://bit.ly/2ELRqy1
+54,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_13,"Animals acceptable to use for Medical research: Larger mammals e.g. sheep, cows",http://bit.ly/2ELRqy1
+55,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_14,Animals acceptable to use for Medical research: Insects,http://bit.ly/2ELRqy1
+56,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_15,Animals acceptable to use for Medical research: Depends on the reasearch,http://bit.ly/2ELRqy1
+57,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_16,Animals acceptable to use for Medical research: Any ,http://bit.ly/2ELRqy1
+58,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_17,Animals acceptable to use for Medical research: Snakes ,http://bit.ly/2ELRqy1
+59,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_18,Animals acceptable to use for Medical research: Depends on the animal,http://bit.ly/2ELRqy1
+60,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_19,Animals acceptable to use for Medical research: Humans,http://bit.ly/2ELRqy1
+61,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_20,Animals acceptable to use for Medical research: Animals from their own species,http://bit.ly/2ELRqy1
+62,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_21,Animals acceptable to use for Medical research: Other,http://bit.ly/2ELRqy1
+63,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_22,Animals acceptable to use for Medical research: None of these,http://bit.ly/2ELRqy1
+64,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12a_23,Animals acceptable to use for Medical research: Don,http://bit.ly/2ELRqy1
+65,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_1,Animals acceptable to use for Research into: Fish,http://bit.ly/2ELRqy1
+66,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_2,"Animals acceptable to use for Research into: Amphibians e.g. frogs, toads, newts",http://bit.ly/2ELRqy1
+67,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_3,Animals acceptable to use for Research into: Birds,http://bit.ly/2ELRqy1
+68,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_4,Animals acceptable to use for Research into: Mice,http://bit.ly/2ELRqy1
+69,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_5,Animals acceptable to use for Research into: Rats,http://bit.ly/2ELRqy1
+70,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_6,Animals acceptable to use for Research into: Cats,http://bit.ly/2ELRqy1
+71,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_7,Animals acceptable to use for Research into: Dogs,http://bit.ly/2ELRqy1
+72,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_8,Animals acceptable to use for Research into: Pigs,http://bit.ly/2ELRqy1
+73,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_9,Animals acceptable to use for Research into: Small  monkeys such as marmosets,http://bit.ly/2ELRqy1
+74,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_10,Animals acceptable to use for Research into: Large monkeys such as macaques,http://bit.ly/2ELRqy1
+75,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_11,Animals acceptable to use for Research into: Great apes e.g. chimpanzees and gorillas,http://bit.ly/2ELRqy1
+76,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_12,"Animals acceptable to use for Research into: Small mammals e.g. rabbits, ferrets",http://bit.ly/2ELRqy1
+77,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_13,"Animals acceptable to use for Research into: Larger mammals e.g. sheep, cows",http://bit.ly/2ELRqy1
+78,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_14,Animals acceptable to use for Research into: Insects,http://bit.ly/2ELRqy1
+79,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_15,Animals acceptable to use for Research into: Depends on the reasearch,http://bit.ly/2ELRqy1
+80,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_16,Animals acceptable to use for Research into: Any ,http://bit.ly/2ELRqy1
+81,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_17,Animals acceptable to use for Research into: Snakes ,http://bit.ly/2ELRqy1
+82,2,OLSAnimal,Public Attitudes towards Animal Research 2016,Q12b_18,Animals acceptable to use for Research into: Depends on the animal,http://bit.ly/2ELRqy1
