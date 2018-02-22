@@ -1,0 +1,83 @@
+,Survey_ID,Var_Name,Var_Text
+0,OLSAnimal,ID,Respondent serial
+1,OLSAnimal,Q1,How well informed do you feel about the use of animals in scientific research in the UK?
+2,OLSAnimal,Q2a,Interested in finding out more about the ongoing work to find alternatives to using animals in research?
+3,OLSAnimal,Q2b,Interested in finding out more about the ongoing work to improve the welfare of animals in scientific research?
+4,OLSAnimal,Q3a,I can accept the use if animals in research as long as it is for medical research purposes and there is no alternative
+5,OLSAnimal,Q3b,There needs to be more work done into alternatives to using animals in scientific research
+6,OLSAnimal,Q3c,I can accept the use of animals in scientific research as long as there is no unnecessary suffering to the animals
+7,OLSAnimal,Q3d,Animals should not be used in any scientific research because of the importance I place on animal welfare
+8,OLSAnimal,Q3e,It does not bother me if animals are used in scientific research
+9,OLSAnimal,Q3f,The use of animals for medical research should only be conducted for life
+10,OLSAnimal,Q3g,The UK government should ban the use of animals for any form of research
+11,OLSAnimal,Q3h,"Acceptable to use animals in research to help our understanding of the human body, where there is no alternative"
+12,OLSAnimal,Q3i,"Acceptable to use animals in research to help our understanding of animal health, where there is no alternative"
+13,OLSAnimal,Q3j,Acceptable to use animals for all types of research where there is no  alternative
+14,OLSAnimal,Q3k,Acceptable to use animals in scientific research to test chemicals that could harm people
+15,OLSAnimal,Q3l,"Acceptable to use animals in scientific research to test chemicals that could harm pets, farm animals or wildlife"
+16,OLSAnimal,Q3m,Acceptable to use animals in scientific research to test chemicals that could harm plants or the environment
+17,OLSAnimal,Q4_1,Which of these is true?: The use of animals for medical research purposes is important to human health
+18,OLSAnimal,Q4_2,Which of these is true?: Scientists could do more to reduce the suffering of animals used in scientific research
+19,OLSAnimal,Q4_3,Which of these is true?: Scientific research using animals is not always carried out to high standards
+20,OLSAnimal,Q4_4,Which of these is true?: Scientific research is carried out on animals only  when there is no alternative
+21,OLSAnimal,Q4_5,Which of these is true?: Researchers are working to find alternatives to using animals in scientific research
+22,OLSAnimal,Q4_6,Which of these is true?: Don
+23,OLSAnimal,Q4_7,Which of these is true?: None of these
+24,OLSAnimal,Q5a,I do not trust the regulatory system around the use of animals in scientific research
+25,OLSAnimal,Q5b,I trust scientists not to cause unnecessary suffering to the animals used in scientific research 
+26,OLSAnimal,Q5c,I feel that unnecessary duplication of scientific research involving animals MIGHT go on
+27,OLSAnimal,Q5d,Scientific research involving animals sometimes goes on without an official licence
+28,OLSAnimal,Q5e,The UK has strict rules on the use of animals in scientific research
+29,OLSAnimal,Q5f,The rules in the UK on scientific research involving animals are well enforced
+30,OLSAnimal,Q5g,I trust the regulators to uncover any misconduct at animal research facilities
+31,OLSAnimal,Q6a_1,Which are acceptable things for an APO to do?: Ask people to put a sticker 
+32,OLSAnimal,Q6a_2,Which are acceptable things for an APO to do?: Destroy 
+33,OLSAnimal,Q6a_3,Which are acceptable things for an APO to do?: Release animals illegally
+34,OLSAnimal,Q6a_4,Which are acceptable things for an APO to do?: Hand out leaflets
+35,OLSAnimal,Q6a_5,Which are acceptable things for an APO to do?: Occupy research facilities illegally
+36,OLSAnimal,Q6a_6,Which are acceptable things for an APO to do?: None
+37,OLSAnimal,Q6a_7,Which are acceptable things for an APO to do?: Don
+38,OLSAnimal,Q6a_8,Which are acceptable things for an APO to do?: Respondent refused
+39,OLSAnimal,Q6a_9,Which are acceptable things for an APO to do?: Respondent said depends on legality
+40,OLSAnimal,Q6b_1,Which is acceptable for an APO to do?: Demonstration outside research laboratories
+41,OLSAnimal,Q6b_2,Which is acceptable for an APO to do?: Demonstration outside homes of people who work in animal research
+42,OLSAnimal,Q6b_3,Which is acceptable for an APO to do?: Demonstration outside companies which transport research animals
+43,OLSAnimal,Q6b_4,Which is acceptable for an APO to do?: Demonstration outside companies which supply services to animal research
+44,OLSAnimal,Q6b_5,Which is acceptable for an APO to do?: None of these
+45,OLSAnimal,Q6b_6,Which is acceptable for an APO to do?: Don
+46,OLSAnimal,Q6b_7,Which is acceptable for an APO to do?: Respondent refused
+47,OLSAnimal,Q6b_8,Which is acceptable for an APO to do?: Respondent said depends on legality
+48,OLSAnimal,Q6c_1,Which is acceptable for an APO to do?: Organise petitions
+49,OLSAnimal,Q6c_2,Which is acceptable for an APO to do?: Send hate mail or abusive messages to those involved in animal research
+50,OLSAnimal,Q6c_3,Which is acceptable for an APO to do?: Set up road blocks illegally
+51,OLSAnimal,Q6c_4,Which is acceptable for an APO to do?: Physical violence against those who carry out scientific research on animals
+52,OLSAnimal,Q6c_5,Which is acceptable for an APO to do?: Carry out serious crime 
+53,OLSAnimal,Q6c_6,Which is acceptable for an APO to do?: Organise an ONLINE campaign against people involved in animal research
+54,OLSAnimal,Q6c_7,Which is acceptable for an APO to do?: Publicise without permission the identity of people carrying out research
+55,OLSAnimal,Q6c_8,Which is acceptable for an APO to do?: Secretly film the activities in animal research facilities
+56,OLSAnimal,Q6c_9,Which is acceptable for an APO to do?: Verbally harass people who carry out research on animals
+57,OLSAnimal,Q6c_10,Which is acceptable for an APO to do?: Write letters to newspapers
+58,OLSAnimal,Q6c_11,Which is acceptable for an APO to do?: Misrepresent or spin information to support their cause
+59,OLSAnimal,Q6c_12,Which is acceptable for an APO to do?: None of these
+60,OLSAnimal,Q6c_13,Which is acceptable for an APO to do?: Don
+61,OLSAnimal,Q6c_14,Which is acceptable for an APO to do?: Respondent refused
+62,OLSAnimal,Q6c_15,Which is acceptable for an APO to do?: Respondent said depends on legality
+63,OLSAnimal,Q7_1,Sources of balanced information about use of: Universities
+64,OLSAnimal,Q7_2,Sources of balanced information about use of: Animal protection organisations
+65,OLSAnimal,Q7_3,Sources of balanced information about use of: Organisations that support the use of animals in research
+66,OLSAnimal,Q7_4,Sources of balanced information about use of: Businesses which carry out the research with animals
+67,OLSAnimal,Q7_5,Sources of balanced information about use of: Businesses which sell products developed from the research
+68,OLSAnimal,Q7_6,Sources of balanced information about use of: Politicians 
+69,OLSAnimal,Q7_7,Sources of balanced information about use of: Government research institutes
+70,OLSAnimal,Q7_8,Sources of balanced information about use of: Non
+71,OLSAnimal,Q7_9,Sources of balanced information about use of: Environmental organisations
+72,OLSAnimal,Q7_10,Sources of balanced information about use of: The NHS
+73,OLSAnimal,Q7_11,Sources of balanced information about use of: People with a knowledge of the subject
+74,OLSAnimal,Q7_12,Sources of balanced information about use of: Farming organisations
+75,OLSAnimal,Q7_13,Sources of balanced information about use of: Medical research charities
+76,OLSAnimal,Q7_14,Sources of balanced information about use of: Patient groups
+77,OLSAnimal,Q7_15,Sources of balanced information about use of: The media 
+78,OLSAnimal,Q7_16,Sources of balanced information about use of: Would check on line 
+79,OLSAnimal,Q7_17,Sources of balanced information about use of: Vets who look after the animals used in research
+80,OLSAnimal,Q7_18,Sources of balanced information about use of: Other
+81,OLSAnimal,Q7_19,Sources of balanced information about use of: None of these
