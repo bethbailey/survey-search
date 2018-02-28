@@ -1,0 +1,16 @@
+<h1>Welcome to the first draft ever of the <i>Pawsitive Survey Search</i> search page (v0.05).</h1>
+
+<img src="https://i.imgur.com/s1b9Bzj.jpg" style = "width: 20%; height: 23%"></img>
+
+<p>You are currently searching the <b><u>questions</u></b> from the <b>"Public Attitudes to Animal Research Survey, 2016"</b> dataset.</p>
+
+<form id="searchform" action="{% url 'search:results_detail' %}" method="get" accept-charset="utf-8">
+	<input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search by keywords" size = 15>
+	<br>
+	<br>
+	<button class="searchbutton" type="submit">
+		<i class="fa fa-search"></i>Go!
+	</button>
+</form>
+
+	
