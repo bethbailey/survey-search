@@ -1,10 +1,8 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Survey Search</title>
+  <title>Imperial Boootstrap Template</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -27,19 +25,18 @@
   <link href="favicon.ico" rel="shortcut icon">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
-  <!-- Bootstrap CSS File-->
-  <link rel="stylesheet" href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}">
-  <!--<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
   
-  <!-- Libraries CSS Files-->
-  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-  <link href="{% static 'lib/animate-css/animate.min.css' %}" rel="stylesheet">-->
-
-  <!-- Main Stylesheet File-->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
 <!-- =======================================================
   Theme Name: Imperial
   Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
@@ -50,7 +47,7 @@
 
 <body>
 
-
+  
 <!--==========================
   Hero Section
 ============================-->
@@ -58,16 +55,14 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="https://i.imgur.com/s1b9Bzj.jpg" alt="Imperial" height="100">
+          <img class="" src="img/logo.png" alt="Imperial">
         </div>
         
         <h1>Welcome to Survey Search</h1>
-        <h2>Somebody may have <span class="rotating">asked what you want to ask </span></h2>
-        {% block search_bar %}
-        {% endblock%}
+        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
         <div class="actions">
-          <a href="#about" class="btn-get-started">Browse surveys</a>
-          <a href="#services" class="btn-services">Add your survey</a>
+          <a href="#about" class="btn-get-started">Find data</a>
+          <a href="#services" class="btn-services">Browse surveys</a>
         </div>
       </div>
     </div>
@@ -80,7 +75,7 @@
     <div class="container">
     
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="https://i.imgur.com/s1b9Bzj.jpg" alt="" title="" /></img></a>
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -485,8 +480,7 @@
       </div>
     </div>
   </section>
-        {% block content %}
-      {% endblock %}
+  
 <!--==========================
   Footer
 ============================--> 
