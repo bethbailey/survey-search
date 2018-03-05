@@ -1,0 +1,32 @@
+{% extends 'base_home.html' %}
+
+{% block homepage %}
+
+
+      <main role="main" class="inner cover" style = "background-color:rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px">
+        <h1 class="cover-heading">Find your survey</h1>
+        <p class="lead">blah blah blah</p>
+        <p class="lead">
+		  <form class="form-inline my-2 my-lg-0" id="searchform" action="{% url 'search:results_detail' %}"
+				method="get" accept-charset="utf-8">
+          <input class="form-control mr-sm-2 searchfield" id=""searchbox
+				 name="q" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 searchbutton" type="submit">Search</button>
+		</form>
+
+		<div style = "height:20px"></div>
+          <a href="#" class="btn btn-lg btn-secondary">Browse</a>
+		  <a href="#" class="btn btn-lg btn-secondary">Upload</a>
+        </p>
+
+
+
+      </main>
+
+
+
+
+
+{% endblock %}
