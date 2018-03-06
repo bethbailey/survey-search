@@ -18,6 +18,7 @@ from search.forms import SurveyUploadForm
 import csv
 import tempfile
 import shutil
+import datetime
 
 class IndexView(generic.ListView):
     template_name = 'search/index.html'
@@ -63,7 +64,7 @@ class SurveyResultsView(generic.ListView):
             result_questions_ls = list(result_questions)
             for item in result_questions_ls:
                 q2 = item.survey_num
-                result_summary_2 = result.filter(survey_num = q2)
+                result_summary_2 = result.filter(survey_key = q2)
                 result_summary_ls = result_summary_ls + list(result_summary_2)
             rv = list(set(result_summary_ls))
             return rv
@@ -100,8 +101,25 @@ def model_form_upload(request):
     if request.method == 'POST':
         form = SurveyUploadForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
-            handle_files('documents/' + request.FILES['survey_questions_document'].name)
+            data = form.cleaned_data
+            details = SurveyDetails()
+            # adding unique index for each survey dataset
+            id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
+            #details.row_num = data['row_num']
+            #details.survey_key = id_obj
+            #details.survey_id = data['survey_id']
+            details.survey_name = data['survey_name']
+            details.num_participants = data['num_participants']
+            details.org_conduct = data['org_conduct']
+            details.num_questions = data['num_questions']
+            details.data_link = data['data_link']
+            details.doc_link = data['doc_link']
+            details.source_link = data['source_link']
+            details.summary = data['summary']
+            details.survey_questions_document = data['survey_questions_document']
+            details.save()
+            #form.save()
+            handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
             print()
             return redirect('upload_success.html')
     else:
@@ -111,20 +129,22 @@ def model_form_upload(request):
     })
 
 
-def handle_files(csv_file):
+def handle_files(csv_file, id_obj):
     with open(csv_file) as f:
         reader = csv.reader(f)
         for row in reader:
             questions = SurveyQuestions()
-            questions.row_num = row[0]
-            questions.survey_num = row[1]
-            questions.survey_id = row[2]
-            questions.survey_name = row[3]
-            questions.var_name = row[4]
-            questions.var_text = row[5]
-            questions.data_link = row[6]
+            #questions.row_num = row[0]
+            #questions.survey_key = id_obj
+            #questions.survey_num = row[1]
+            #questions.survey_id = row[2]
+            #questions.survey_name = row[3]
+            questions.var_name = row[0]
+            questions.var_text = row[1]
+            #questions.data_link = row[6]
             questions.save()
         f.close()
+
 
 def generate_wordcloud():
     surveys = SurveyDetails.objects.all()
