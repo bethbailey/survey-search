@@ -1,2 +1,2 @@
-,Survey_Number,Survey_ID,Survey_Name,Num_Participants,Org_Conduct,Num_Questions,Data_Link,Documentation_Link,Source_Link,Summary
-0,4,PewScience,Pew Research Center 2014 GP Survey on Science,2002,Pew Research,48,http://bit.ly/2FbEzIP,http://bit.ly/2t7EVM6,http://pewrsr.ch/2owjlvS,A 2014 survey that included a number of open-ended questions to gauge what respondents had in mind when thinking about the positive and negative effects of science on society. 
+Survey_Number,Survey_Name,Num_Participants,Org_Conduct,Num_Questions,Data_Link,Documentation_Link,Source_Link,Summary
+4,Pew Research Center 2014 GP Survey on Science,2002,Pew Research,48,http://bit.ly/2FbEzIP,http://bit.ly/2t7EVM6,http://pewrsr.ch/2owjlvS,A 2014 survey that included a number of open-ended questions to gauge what respondents had in mind when thinking about the positive and negative effects of science on society. 
