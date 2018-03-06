@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 import operator
 from functools import reduce
+from itertools import chain
 
 from django.db.models import Q
 from django.http import HttpResponse
@@ -51,13 +52,21 @@ class SurveyResultsView(generic.ListView):
 
     def get_queryset(self):
         result = SurveyDetails.objects.all()
+        result2 = SurveyQuestions.objects.all()
 
         query = self.request.GET.get('q1')
         if query:
             query_list = query.split()
-            result = result.filter(reduce(operator.and_, (Q(summary__icontains=q1) for q1 in query_list)))
-            
-            return result
+            result_summary = result.filter(reduce(operator.and_, (Q(summary__icontains=q1) for q1 in query_list)))
+            result_questions = result2.filter(reduce(operator.and_, (Q(var_text__icontains=q1) for q1 in query_list)))
+            result_summary_ls = list(result_summary)
+            result_questions_ls = list(result_questions)
+            for item in result_questions_ls:
+                q2 = item.survey_num
+                result_summary_2 = result.filter(survey_num = q2)
+                result_summary_ls = result_summary_ls + list(result_summary_2)
+            rv = list(set(result_summary_ls))
+            return rv
         else:
             pass
 
