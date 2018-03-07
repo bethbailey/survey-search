@@ -2,12 +2,11 @@
 
 {% block content %}
 
-<h1>List of surveys</h1>
+<h1>Survey Page</h1>
 
-{% for question in object_list %}
-    <h2>Variable {{ question.var_name }}</a></h2>
-    <p><font color = 'teal'>{{ question.var_text }}</font></p>
-    <p><a href="{% url 'search:question_detail' question.row_num %}">More Details</a></p>
+{% for survey in object_list %}
+    <h2>Survey Name: {{ survey.survey_name }}</a></h2>
+    <p><font color = 'teal'>Survey Summary: {{ survey.summary }}</font></p>
     <br>
     {% empty %}
     <p>No results.</p>

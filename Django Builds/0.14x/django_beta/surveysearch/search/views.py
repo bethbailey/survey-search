@@ -45,7 +45,7 @@ class ResultsView(generic.ListView):
             
             return result
         else:
-        	pass
+        	return []
 
 class SurveyResultsView(generic.ListView):
     template_name = 'search/search_results_survey.html'
@@ -69,11 +69,22 @@ class SurveyResultsView(generic.ListView):
             rv = list(set(result_summary_ls))
             return rv
         else:
-            pass
+            return []
+
+class Browse(generic.ListView):
+    template_name = 'search/browse_surveys.html'
+    paginate_by = 10 
+
+    def get_queryset(self):
+        result = SurveyDetails.objects.all()
+
+        if result:
+            return result
+        else:
+            return []
 
 class DetailView(generic.DetailView):
     template_name = 'search/detail.html'
-    # context_object_name = 'Survey_Details_List'
     model = SurveyQuestions
 
     def get_context_data(self, **kwargs):
@@ -94,9 +105,6 @@ def home(request):
 def upload_success(request):
     return render(request, 'search/upload_success.html')
 
-def browse_surveys(request):
-    return render(request, 'search/browse_surveys.html')
-
 def model_form_upload(request):
     if request.method == 'POST':
         form = SurveyUploadForm(request.POST, request.FILES)
@@ -105,9 +113,7 @@ def model_form_upload(request):
             details = SurveyDetails()
             # adding unique index for each survey dataset
             id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
-            #details.row_num = data['row_num']
             details.survey_key = id_obj
-            #details.survey_id = data['survey_id']
             details.survey_name = data['survey_name']
             details.num_participants = data['num_participants']
             details.org_conduct = data['org_conduct']
@@ -118,7 +124,6 @@ def model_form_upload(request):
             details.summary = data['summary']
             details.survey_questions_document = data['survey_questions_document']
             details.save()
-            #form.save()
             handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
             print()
             return redirect('upload_success.html')
@@ -134,14 +139,9 @@ def handle_files(csv_file, id_obj):
         reader = csv.reader(f)
         for row in reader:
             questions = SurveyQuestions()
-            #questions.row_num = row[0]
             questions.survey_key = id_obj
-            #questions.survey_num = row[1]
-            #questions.survey_id = row[2]
-            #questions.survey_name = row[3]
-            questions.var_name = row[4]
-            questions.var_text = row[5]
-            #questions.data_link = row[6]
+            questions.var_name = row[0]
+            questions.var_text = row[1]
             questions.save()
         f.close()
 

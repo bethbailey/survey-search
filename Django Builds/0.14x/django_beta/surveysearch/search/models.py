@@ -10,9 +10,7 @@ from django.db import models
 
 class SurveyDetails(models.Model):
 
-    #row_num = models.IntegerField(db_column='row_num')
     survey_num = models.IntegerField(db_column='survey_num', primary_key = True)
-    #survey_id = models.CharField(db_column='survey_id', max_length = 200)
     survey_key = models.CharField(db_column = 'survey_key', max_length = 500)
     survey_name = models.CharField(db_column='survey_name', max_length = 1000)
     num_participants = models.IntegerField(db_column='num_participants')
@@ -23,7 +21,6 @@ class SurveyDetails(models.Model):
     source_link = models.CharField(db_column='source_link', max_length = 1000)
     summary = models.CharField(db_column='summary', max_length = 3000)
     survey_questions_document = models.FileField(db_column="document", upload_to="documents/")
-    #test = models.CharField(db_column='test', max_length=1000)
 
     def __str__(self):
         return self.summary
@@ -35,11 +32,9 @@ class SurveyDetails(models.Model):
 class SurveyQuestions(models.Model):
 
     row_num = models.IntegerField(db_column='row_num', primary_key = True)
-    #survey_name = models.CharField(db_column='survey_name', max_length = 1000)
     survey_key = models.CharField(db_column = 'survey_key', max_length = 500)
     var_name = models.CharField(db_column='var_name', max_length = 200)
     var_text = models.CharField(db_column='var_text', max_length = 1000)
-    #data_link = models.CharField(db_column='data_link', max_length = 1000)
 
     def __str__(self):
         return self.var_text

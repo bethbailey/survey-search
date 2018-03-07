@@ -12,5 +12,5 @@ urlpatterns = [
     path('<int:pk>/', views.DetailView.as_view(), name='question_detail'),
     path('upload.html', views.model_form_upload, name='upload'),
     path('upload_success.html', views.upload_success, name='upload_success'),
-    path('browse_surveys.html', views.browse_surveys, name='browse_surveys')
+    path('browse_surveys.html', views.Browse.as_view(), name='browse_surveys')
 ]
