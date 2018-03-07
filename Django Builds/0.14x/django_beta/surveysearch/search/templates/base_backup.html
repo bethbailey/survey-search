@@ -1,0 +1,54 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Survey Search{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/animate-css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+
+  <!--==========================
+  Hero Section
+============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/logo.png" alt="Imperial">
+        </div>
+
+        <h1>Welcome to Imperial studios</h1>
+        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">Get Strated</a>
+          <a href="#services" class="btn-services">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="">Survey Search</a>
+      </div>
+    </nav>
+    <div class="container">
+
+      <ol class="breadcrumb my-4">
+        {% block breadcrumb %}
+            <p>breadcrumb goes here</p>
+        {% endblock %}
+      </ol>
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

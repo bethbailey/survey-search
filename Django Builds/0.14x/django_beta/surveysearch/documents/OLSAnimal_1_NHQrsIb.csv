@@ -1,0 +1,83 @@
+Var_Name,Var_Text
+ID,Respondent serial
+Q1,How well informed do you feel about the use of animals in scientific research in the UK?
+Q2a,Interested in finding out more about the ongoing work to find alternatives to using animals in research?
+Q2b,Interested in finding out more about the ongoing work to improve the welfare of animals in scientific research?
+Q3a,I can accept the use if animals in research as long as it is for medical research purposes and there is no alternative
+Q3b,There needs to be more work done into alternatives to using animals in scientific research
+Q3c,I can accept the use of animals in scientific research as long as there is no unnecessary suffering to the animals
+Q3d,Animals should not be used in any scientific research because of the importance I place on animal welfare
+Q3e,It does not bother me if animals are used in scientific research
+Q3f,The use of animals for medical research should only be conducted for life
+Q3g,The UK government should ban the use of animals for any form of research
+Q3h,"Acceptable to use animals in research to help our understanding of the human body, where there is no alternative"
+Q3i,"Acceptable to use animals in research to help our understanding of animal health, where there is no alternative"
+Q3j,Acceptable to use animals for all types of research where there is no  alternative
+Q3k,Acceptable to use animals in scientific research to test chemicals that could harm people
+Q3l,"Acceptable to use animals in scientific research to test chemicals that could harm pets, farm animals or wildlife"
+Q3m,Acceptable to use animals in scientific research to test chemicals that could harm plants or the environment
+Q4_1,Which of these is true?: The use of animals for medical research purposes is important to human health
+Q4_2,Which of these is true?: Scientists could do more to reduce the suffering of animals used in scientific research
+Q4_3,Which of these is true?: Scientific research using animals is not always carried out to high standards
+Q4_4,Which of these is true?: Scientific research is carried out on animals only  when there is no alternative
+Q4_5,Which of these is true?: Researchers are working to find alternatives to using animals in scientific research
+Q4_6,Which of these is true?: Don
+Q4_7,Which of these is true?: None of these
+Q5a,I do not trust the regulatory system around the use of animals in scientific research
+Q5b,I trust scientists not to cause unnecessary suffering to the animals used in scientific research 
+Q5c,I feel that unnecessary duplication of scientific research involving animals MIGHT go on
+Q5d,Scientific research involving animals sometimes goes on without an official licence
+Q5e,The UK has strict rules on the use of animals in scientific research
+Q5f,The rules in the UK on scientific research involving animals are well enforced
+Q5g,I trust the regulators to uncover any misconduct at animal research facilities
+Q6a_1,Which are acceptable things for an APO to do?: Ask people to put a sticker 
+Q6a_2,Which are acceptable things for an APO to do?: Destroy 
+Q6a_3,Which are acceptable things for an APO to do?: Release animals illegally
+Q6a_4,Which are acceptable things for an APO to do?: Hand out leaflets
+Q6a_5,Which are acceptable things for an APO to do?: Occupy research facilities illegally
+Q6a_6,Which are acceptable things for an APO to do?: None
+Q6a_7,Which are acceptable things for an APO to do?: Don
+Q6a_8,Which are acceptable things for an APO to do?: Respondent refused
+Q6a_9,Which are acceptable things for an APO to do?: Respondent said depends on legality
+Q6b_1,Which is acceptable for an APO to do?: Demonstration outside research laboratories
+Q6b_2,Which is acceptable for an APO to do?: Demonstration outside homes of people who work in animal research
+Q6b_3,Which is acceptable for an APO to do?: Demonstration outside companies which transport research animals
+Q6b_4,Which is acceptable for an APO to do?: Demonstration outside companies which supply services to animal research
+Q6b_5,Which is acceptable for an APO to do?: None of these
+Q6b_6,Which is acceptable for an APO to do?: Don
+Q6b_7,Which is acceptable for an APO to do?: Respondent refused
+Q6b_8,Which is acceptable for an APO to do?: Respondent said depends on legality
+Q6c_1,Which is acceptable for an APO to do?: Organise petitions
+Q6c_2,Which is acceptable for an APO to do?: Send hate mail or abusive messages to those involved in animal research
+Q6c_3,Which is acceptable for an APO to do?: Set up road blocks illegally
+Q6c_4,Which is acceptable for an APO to do?: Physical violence against those who carry out scientific research on animals
+Q6c_5,Which is acceptable for an APO to do?: Carry out serious crime 
+Q6c_6,Which is acceptable for an APO to do?: Organise an ONLINE campaign against people involved in animal research
+Q6c_7,Which is acceptable for an APO to do?: Publicise without permission the identity of people carrying out research
+Q6c_8,Which is acceptable for an APO to do?: Secretly film the activities in animal research facilities
+Q6c_9,Which is acceptable for an APO to do?: Verbally harass people who carry out research on animals
+Q6c_10,Which is acceptable for an APO to do?: Write letters to newspapers
+Q6c_11,Which is acceptable for an APO to do?: Misrepresent or spin information to support their cause
+Q6c_12,Which is acceptable for an APO to do?: None of these
+Q6c_13,Which is acceptable for an APO to do?: Don
+Q6c_14,Which is acceptable for an APO to do?: Respondent refused
+Q6c_15,Which is acceptable for an APO to do?: Respondent said depends on legality
+Q7_1,Sources of balanced information about use of: Universities
+Q7_2,Sources of balanced information about use of: Animal protection organisations
+Q7_3,Sources of balanced information about use of: Organisations that support the use of animals in research
+Q7_4,Sources of balanced information about use of: Businesses which carry out the research with animals
+Q7_5,Sources of balanced information about use of: Businesses which sell products developed from the research
+Q7_6,Sources of balanced information about use of: Politicians 
+Q7_7,Sources of balanced information about use of: Government research institutes
+Q7_8,Sources of balanced information about use of: Non
+Q7_9,Sources of balanced information about use of: Environmental organisations
+Q7_10,Sources of balanced information about use of: The NHS
+Q7_11,Sources of balanced information about use of: People with a knowledge of the subject
+Q7_12,Sources of balanced information about use of: Farming organisations
+Q7_13,Sources of balanced information about use of: Medical research charities
+Q7_14,Sources of balanced information about use of: Patient groups
+Q7_15,Sources of balanced information about use of: The media 
+Q7_16,Sources of balanced information about use of: Would check on line 
+Q7_17,Sources of balanced information about use of: Vets who look after the animals used in research
+Q7_18,Sources of balanced information about use of: Other
+Q7_19,Sources of balanced information about use of: None of these
