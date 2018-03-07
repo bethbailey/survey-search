@@ -1,0 +1,35 @@
+<h1>Question Page</h1>
+
+{% for question in object_list %}
+    <h2>Variable {{ question.var_name }}</a></h2>
+    <p><font color = 'teal'>{{ question.var_text }}</font></p>
+    <p><a href="{% url 'search:question_detail' question.row_num %}">More Details</a></p>
+    <br>
+    {% empty %}
+    <p>No results.</p>
+{% endfor %}
+
+<!--Pagination-->
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <!-- keep query string in url while iterating through pages -->
+                <a href="?page={{ page_obj.previous_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Previous Page</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Next Page</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+<br>
+<br>
+
+<form action="../search">
+    <input type="submit" value="Return to search page" />
+</form>
+
