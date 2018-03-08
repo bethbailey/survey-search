@@ -13,6 +13,9 @@ from .models import SurveyDetails, SurveyQuestions
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 from search.models import SurveyDetails
 from search.forms import SurveyUploadForm
@@ -57,7 +60,7 @@ class ResultsView(generic.ListView):
             query_list = query.split()
             result = result.filter(reduce(operator.and_, (Q(var_text__icontains=q) for q in query_list)))
             
-            return result
+            return get_ranked_questions(result, query)
         else:
         	return []
 
@@ -79,7 +82,8 @@ class SurveyResultsView(generic.ListView):
         query = self.request.GET.get('q1')
         if query:
             query_list = query.split()
-            result_summary = result.filter(reduce(operator.and_, (Q(summary__icontains=q1) for q1 in query_list)))
+            result_summary = result.filter(reduce(operator.and_, (Q(summary__icontains=q1) |\
+                                                                  Q(survey_name__icontains=q1) for q1 in query_list)))
             result_questions = result2.filter(reduce(operator.and_, (Q(var_text__icontains=q1) for q1 in query_list)))
             result_summary_ls = list(result_summary)
             result_questions_ls = list(result_questions)
@@ -88,7 +92,7 @@ class SurveyResultsView(generic.ListView):
                 result_summary_2 = result.filter(survey_key = q2)
                 result_summary_ls = result_summary_ls + list(result_summary_2)
             rv = list(set(result_summary_ls))
-            return rv
+            return get_ranked_surveys(rv, query)
         else:
             return []
 
@@ -129,6 +133,9 @@ def home(request):
 def upload_success(request):
     return render(request, 'search/upload_success.html')
 
+def upload_failure(request):
+    return render(request, 'search/upload_failure.html')
+
 def model_form_upload(request):
     if request.method == 'POST':
         form = SurveyUploadForm(request.POST, request.FILES)
@@ -150,7 +157,7 @@ def model_form_upload(request):
             details.save()
             handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
             generate_wordcloud()
-            print()
+
             return redirect('upload_success.html')
     else:
         form = SurveyUploadForm()
@@ -162,8 +169,9 @@ def model_form_upload(request):
 #http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/
 #https://stackoverflow.com/questions/6473679/transpose-list-of-lists
 def get_rankings(data, query):
+#data needs to be in the format of [[indices],[texts]]
 
-    data[1].append(" ".join(keywords))
+    data[1].append(" ".join(query))
     tfidf_vectorizer = TfidfVectorizer()
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(data[1])  # finds the tfidf score with normalization
@@ -176,12 +184,27 @@ def get_rankings(data, query):
     return arr[:, 0]
 
 
-
-def get_ranked_questions_index(queries_results, keywords):
+def get_ranked_questions(queries_results, query):
     data = [[s[0] for s in queries_results.values_list('row_num')]]
     data.append([s[0] for s in queries_results.values_list('var_text')])
-    return
+    rankings = get_rankings(data, query)
+    results = []
+    for i in rankings:
+        results.append(SurveyQuestions.objects.get(pk=i))
+    return results
 
+def get_ranked_surveys(queries_results, query):
+    data = [[s.survey_num for s in queries_results]]
+    data.append([s.survey_name for s in queries_results])
+    data.append([s.summary for s in queries_results])
+    for i in range(len(data[0])):
+        data[1][i] = data[1][i] + " " + data[2][i]
+    del data[2]
+    rankings = get_rankings(data, query)
+    results = []
+    for i in rankings:
+        results.append(SurveyDetails.objects.get(pk=i))
+    return results
 
 
 def handle_files(csv_file, id_obj):
@@ -198,7 +221,7 @@ def handle_files(csv_file, id_obj):
 
 def grey_color_func(word, font_size, position, orientation, random_state=None,
                     **kwargs):
-    return "hsl(0, 0%%, %d%%)" % random.randint(0, 50)
+    return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
 
 def generate_wordcloud():
@@ -209,7 +232,7 @@ def generate_wordcloud():
     text = surveys + " " + surveys_names
     mask = np.array(Image.open("search/static/img/mask.png"))
 
-    wc = wordcloud.WordCloud(background_color="black", max_words=500, width=2000, height=2000, mode='RGBA',
+    wc = wordcloud.WordCloud(background_color="black", max_words=500, width=2000, height=1500, mode='RGBA',
                              scale=1)
     wc.generate(text)
     default_colors = wc.to_array()

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
@@ -50,7 +50,7 @@ background-size:100%; background-repeat:no-repeat; background-position:top; ">
 <div id="search_tabs" role="navigation">
 <ul class="nav nav-pills nav-justified " style = "border">
     <li class="nav-item ">
-        <a class="nav-link active btn btn-outline-success" data-toggle="tab" href="#panel1" role="tab">Find relevant questions</a>
+        <a class="nav-link btn btn-outline-success" data-toggle="tab" href="#panel1" role="tab">Find relevant questions</a>
     </li>
     <li class="nav-item ">
         <a class="nav-link btn btn-outline-success" data-toggle="tab" href="#panel2" role="tab">Find relevant surveys</a>
@@ -68,11 +68,11 @@ background-size:100%; background-repeat:no-repeat; background-position:top; ">
         <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:results_detail' %}"
               method="get" accept-charset="utf-8">
             <input class="form-control mr-sm-2 searchfield" id="searchbox"
-                   name="q" type="text" placeholder="search" aria-label="Search" style = "width:90%">
+                   name="q" type="text" placeholder="Input your keywords" aria-label="Search" style = "width:90%">
             <button class="btn btn-outline-success  my-2 my-sm-0 searchbutton" type="submit">GO</button>
 
         </form>
-        <p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find if someone's asked the questions that you wanted to ask.</p>
+        <p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find out if someone's asked the questions that you wanted to ask.</p>
     </div>
     <!--/.Panel 1-->
 
@@ -82,7 +82,7 @@ background-size:100%; background-repeat:no-repeat; background-position:top; ">
         <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:survey_results_detail' %}"
               method="get" accept-charset="utf-8">
             <input class="form-control mr-sm-2 searchfield" id="searchbox"
-                   name="q1" type="text" placeholder="search" style = "width:90%" aria-label="Search">
+                   name="q1" type="text" placeholder="Input your keywords" style = "width:90%" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 searchbutton" type="submit">GO</button>
         </form>
 <p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find if someone's done some surveys in your area of interest.</p>
