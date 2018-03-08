@@ -1,0 +1,84 @@
+Var_Name,Var_Text
+Q12b_19,Animals acceptable to use for Research into: Humans
+Q12b_20,Animals acceptable to use for Research into: Animals from their own species
+Q12b_21,Animals acceptable to use for Research into: Other
+Q12b_22,Animals acceptable to use for Research into: None of these
+Q12b_23,Animals acceptable to use for Research into: Don
+Q12c_1,Animals acceptable to use for Environmental: Fish
+Q12c_2,"Animals acceptable to use for Environmental: Amphibians e.g. frogs, toads, newts"
+Q12c_3,Animals acceptable to use for Environmental: Birds
+Q12c_4,Animals acceptable to use for Environmental: Mice
+Q12c_5,Animals acceptable to use for Environmental: Rats
+Q12c_6,Animals acceptable to use for Environmental: Cats
+Q12c_7,Animals acceptable to use for Environmental: Dogs
+Q12c_8,Animals acceptable to use for Environmental: Pigs
+Q12c_9,Animals acceptable to use for Environmental: Small  monkeys such as marmosets
+Q12c_10,Animals acceptable to use for Environmental: Large monkeys such as macaques
+Q12c_11,Animals acceptable to use for Environmental: Great apes e.g. chimpanzees and gorillas
+Q12c_12,"Animals acceptable to use for Environmental: Small mammals e.g. rabbits, ferrets"
+Q12c_13,"Animals acceptable to use for Environmental: Larger mammals e.g. sheep, cows"
+Q12c_14,Animals acceptable to use for Environmental: Insects
+Q12c_15,Animals acceptable to use for Environmental: Depends on the reasearch
+Q12c_16,Animals acceptable to use for Environmental: Any 
+Q12c_17,Animals acceptable to use for Environmental: Snakes 
+Q12c_18,Animals acceptable to use for Environmental: Depends on the animal
+Q12c_19,Animals acceptable to use for Environmental: Humans
+Q12c_20,Animals acceptable to use for Environmental: Animals from their own species
+Q12c_21,Animals acceptable to use for Environmental: Other
+Q12c_22,Animals acceptable to use for Environmental: None of these
+Q12c_23,Animals acceptable to use for Environmental: Don
+Q13_1,Your view of organisations that use animals for research: They are secretive
+Q13_2,Your view of organisations that use animals for research: They are well regulated
+Q13_3,Your view of organisations that use animals for research: They have poor animal welfare standards
+Q13_4,Your view of organisations that use animals for research: They carry out work essential for human health
+Q13_5,Your view of organisations that use animals for research: They stick to  good animal welfare standards
+Q13_6,Your view of organisations that use animals for research: They are open about their work
+Q13_7,Your view of organisations that use animals for research: They are dishonest about the results of their  work
+Q13_8,Your view of organisations that use animals for research: Any positive
+Q13_9,Your view of organisations that use animals for research: Any negative
+Q13_10,Your view of organisations that use animals for research: Only positive
+Q13_11,Your view of organisations that use animals for research: Only negative
+Q13_12,Your view of organisations that use animals for research: Don
+Q13_13,Your view of organisations that use animals for research: None of these
+Q14_1,Past 12 months seen or heard animal research in the UK?: Animal welfare 
+Q14_2,Past 12 months seen or heard animal research in the UK?: Animals being used for cosmetics research
+Q14_3,Past 12 months seen or heard animal research in the UK?: Animals being used for research
+Q14_4,Past 12 months seen or heard animal research in the UK?: Mentions of specific animals
+Q14_5,Past 12 months seen or heard animal research in the UK?: Charity
+Q14_6,Past 12 months seen or heard animal research in the UK?: Cancer treatment drug trials 
+Q14_7,Past 12 months seen or heard animal research in the UK?: Friends 
+Q14_8,Past 12 months seen or heard animal research in the UK?: Internet 
+Q14_9,Past 12 months seen or heard animal research in the UK?: Newspaper 
+Q14_10,Past 12 months seen or heard animal research in the UK?: News 
+Q14_11,Past 12 months seen or heard animal research in the UK?: On TV
+Q14_12,Past 12 months seen or heard animal research in the UK?: On social media 
+Q14_13,Past 12 months seen or heard animal research in the UK?: Protests
+Q14_14,Past 12 months seen or heard animal research in the UK?: Radio
+Q14_15,Past 12 months seen or heard animal research in the UK?: TV advert
+Q14_16,Past 12 months seen or heard animal research in the UK?: TV programme 
+Q14_17,Past 12 months seen or heard animal research in the UK?: Through work
+Q14_18,Past 12 months seen or heard animal research in the UK?: Through school 
+Q14_19,Past 12 months seen or heard animal research in the UK?: No 
+Q14_20,Past 12 months seen or heard animal research in the UK?: No answer
+Q14_21,Past 12 months seen or heard animal research in the UK?: Don
+Q14_22,Past 12 months seen or heard animal research in the UK?: Other
+AgeB2,Respondent age bracket
+sgrade,Respondent social grade
+Soc,Respondent social grade
+Soc2,Respondent social grade
+gor,Respondent Government Office Region
+sex,Respondent gender
+Eth,Respondent ethnic origin
+Reg,Respondent GB region
+gen,Respondent generation
+tenure,Respondent tenure
+Empstat,Respondent working status
+qual,Respondent highest educational level
+marstat,Respondent marital status
+access,Respondent internet access
+Income,Respondent income bracket
+Broadsheet,Respondent regularly reads a daily Broadsheet paper
+MidMarket,Respondent regularly reads a daily Mid
+Tabloid,Respondent regularly reads a daily Tabloid paper
+NoPpr,Respondent does not regularly read a daily paper
+weight,Weighting factor
