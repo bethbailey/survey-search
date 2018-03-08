@@ -7,6 +7,11 @@
 {% for question in object_list %}
     <h2>Variable {{ question.var_name }}</a></h2>
     <p><font color = 'teal'>{{ question.var_text }}</font></p>
+    {% for details in Survey_Details_List %}
+        {% if details.survey_key == question.survey_key %}
+        <p><b>Survey Name</b>: {{ details.survey_name }}</p>
+        {% endif %}
+    {% endfor %}
     <p><a href="{% url 'search:question_detail' question.row_num %}">More Details</a></p>
     <br>
     {% empty %}

@@ -21,8 +21,9 @@
     <link href="{% static 'css/cover.css' %}" rel="stylesheet">
 </head>
 
-<body class="text-center" style = "background-image: url({% static 'img/wordcloud.png' %});
-background-size: cover">
+<body class="text-center" style = "background-color: black; background-image: url({% static 'img/wordcloud.png' %});
+background-size:100%; background-repeat:no-repeat; background-position:top; ">
+
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
@@ -37,50 +38,54 @@ background-size: cover">
     {% block homepage %}
 
 
-    <main role="main" class="inner cover" style = "background-color:rgba(0, 0, 0, 0.7);
+    <main role="main" class="inner cover" style = "background-color:rgba(10, 10, 10, 0.86);
       border-radius: 10px;
-      padding: 20px">
-        <h1 class="cover-heading">Find your survey</h1>
-        <p class="lead">blah blah blah</p>
+      padding: 30px">
+        <h1 class="cover-heading" style = "color:#177ABE">SURVEY SEARCH</h1>
+        <p class="lead" style = "color:rgb(150,150,150); text-align: justify; line-height: 1;">An open source social sciences survey repository, where you can find whether someone's done some surveys related to your research questions, or
+        share your surveys with the rest of the world.</p>
         <p class="lead">
 
 
 <div id="search_tabs" role="navigation">
-<ul class="nav md-pills nav-justified pills-secondary">
-    <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Find relevant questions</a>
+<ul class="nav nav-pills nav-justified " style = "border">
+    <li class="nav-item ">
+        <a class="nav-link active btn btn-outline-success" data-toggle="tab" href="#panel1" role="tab">Find relevant questions</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Find relevant surveys</a>
+    <li class="nav-item ">
+        <a class="nav-link btn btn-outline-success" data-toggle="tab" href="#panel2" role="tab">Find relevant surveys</a>
     </li>
 
 </ul>
 
 
 <!-- Tab panels -->
-<div class="tab-content">
+<div class="tab-content mt-3">
 
     <!--Panel 1-->
     <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-        <form class="form-inline my-2 my-lg-0" id="searchform" action="{% url 'search:results_detail' %}"
+
+        <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:results_detail' %}"
               method="get" accept-charset="utf-8">
             <input class="form-control mr-sm-2 searchfield" id="searchbox"
-                   name="q" type="text" placeholder="search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 searchbutton" type="submit">GO</button>
+                   name="q" type="text" placeholder="search" aria-label="Search" style = "width:90%">
+            <button class="btn btn-outline-success  my-2 my-sm-0 searchbutton" type="submit">GO</button>
+
         </form>
+        <p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find if someone's asked the questions that you wanted to ask.</p>
     </div>
     <!--/.Panel 1-->
 
     <!--Panel 2-->
     <div class="tab-pane fade" id="panel2" role="tabpanel">
 
-        <form class="form-inline my-2 my-lg-0" id="searchform" action="{% url 'search:survey_results_detail' %}"
+        <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:survey_results_detail' %}"
               method="get" accept-charset="utf-8">
             <input class="form-control mr-sm-2 searchfield" id="searchbox"
-                   name="q1" type="text" placeholder="search"  aria-label="Search">
+                   name="q1" type="text" placeholder="search" style = "width:90%" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0 searchbutton" type="submit">GO</button>
         </form>
-
+<p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find if someone's done some surveys in your area of interest.</p>
 
     </div>
     <!--/.Panel 2-->
@@ -93,8 +98,8 @@ background-size: cover">
 
 
         <div style = "height:20px"></div>
-        <a href="{% url 'search:browse_surveys' %}" class="btn btn-lg btn-secondary">Browse</a>
-        <a href="{% url 'search:upload' %}" class="btn btn-lg btn-secondary">Upload</a>
+        <a href="{% url 'search:browse_surveys' %}" class="btn  btn-outline-success btn-block">Browse available surveys</a>
+        <a href="{% url 'search:upload' %}" class="btn  btn-outline-success btn-block">Upload your survey</a>
         </p>
 
 
@@ -104,7 +109,7 @@ background-size: cover">
     {% endblock %}
     <footer class="mastfoot mt-auto">
         <div class="inner">
-            <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://github.com/bethbailey/survey-search">@Pawsitive</a>.</p>
+            <p>Powered by <a href="https://getbootstrap.com/" style = "color:#177ABE">Bootstrap</a>, by <a href="https://github.com/bethbailey/survey-search" style = "color:#177ABE">@Pawsitive</a>.</p>
         </div>
     </footer>
 </div>

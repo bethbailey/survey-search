@@ -3,6 +3,7 @@ from django.shortcuts import render
 import operator
 from functools import reduce
 from itertools import chain
+import random
 
 from django.db.models import Q
 from django.http import HttpResponse
@@ -60,6 +61,13 @@ class ResultsView(generic.ListView):
         else:
         	return []
 
+    def get_context_data(self, **kwargs):
+        context = super(ResultsView, self).get_context_data(**kwargs)
+        context.update({
+            'Survey_Details_List': SurveyDetails.objects.all(),
+        })
+        return context
+
 class SurveyResultsView(generic.ListView):
     template_name = 'search/search_results_survey.html'
     paginate_by = 10 
@@ -108,6 +116,9 @@ class DetailView(generic.DetailView):
         return context
 
 
+class BrowseDetailView(generic.DetailView):
+    template_name = 'search/browse_detail.html'
+    model = SurveyDetails
 from django import forms
 
 
@@ -150,9 +161,7 @@ def model_form_upload(request):
 
 #http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/
 #https://stackoverflow.com/questions/6473679/transpose-list-of-lists
-def get_ranked_questions_index(queries_results, keywords):
-    data = [[s[0] for s in queries_results.values_list('row_num')]]
-    data.append([s[0] for s in queries_results.values_list('var_text')])
+def get_rankings(data, query):
 
     data[1].append(" ".join(keywords))
     tfidf_vectorizer = TfidfVectorizer()
@@ -168,6 +177,13 @@ def get_ranked_questions_index(queries_results, keywords):
 
 
 
+def get_ranked_questions_index(queries_results, keywords):
+    data = [[s[0] for s in queries_results.values_list('row_num')]]
+    data.append([s[0] for s in queries_results.values_list('var_text')])
+    return
+
+
+
 def handle_files(csv_file, id_obj):
     with open(csv_file) as f:
         reader = csv.reader(f)
@@ -180,16 +196,23 @@ def handle_files(csv_file, id_obj):
         f.close()
 
 
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
+    return "hsl(0, 0%%, %d%%)" % random.randint(0, 50)
+
 
 def generate_wordcloud():
 
     questions = " ".join(s[0] for s in list(SurveyQuestions.objects.values_list('var_text')))
     surveys = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('summary')))
-    text = questions + " " + surveys
+    surveys_names = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('survey_name')))
+    text = surveys + " " + surveys_names
     mask = np.array(Image.open("search/static/img/mask.png"))
-    wc = wordcloud.WordCloud(background_color="black", mask = mask, max_words=500, width=1000, height=1000, mode='RGBA',
-                             scale=.5)
+
+    wc = wordcloud.WordCloud(background_color="black", max_words=500, width=2000, height=2000, mode='RGBA',
+                             scale=1)
     wc.generate(text)
+    default_colors = wc.to_array()
 
     plt.figure(figsize=(40, 30))
     plt.axis("off")
@@ -200,7 +223,8 @@ def generate_wordcloud():
     a.set_frame_on(False)
     a.set_xticks([]); a.set_yticks([])
 
-    plt.imshow(wc)
+    plt.imshow(wc.recolor(color_func=grey_color_func, random_state=3),
+           interpolation="bilinear")
 
     plt.savefig("search/static/img/wordcloud.png", format='png', transparent = True,
                 bbox_inches = 'tight', pad_inches = 0)
