@@ -47,6 +47,13 @@ class ResultsView(generic.ListView):
         else:
         	return []
 
+    def get_context_data(self, **kwargs):
+        context = super(ResultsView, self).get_context_data(**kwargs)
+        context.update({
+            'Survey_Details_List': SurveyDetails.objects.all(),
+        })
+        return context
+
 class SurveyResultsView(generic.ListView):
     template_name = 'search/search_results_survey.html'
     paginate_by = 10 
@@ -94,7 +101,11 @@ class DetailView(generic.DetailView):
         })
         return context
 
+class BrowseDetailView(generic.DetailView):
+    template_name = 'search/browse_detail.html'
+    model = SurveyDetails
 
+    
 from django import forms
 
 

@@ -1,0 +1,25 @@
+{% extends 'base_other.html' %}
+
+{% block content%}
+<h1>Detail Page</h1>
+
+<h2>Survey Name:</h2> <font color = 'teal'>{{ surveydetails.survey_name }}</font>
+<h2>Conducting Organization:</h2> <font color = 'teal'>{{ surveydetails.org_conduct }}</font>
+<h2>Survey Summary:</h2> <font color = 'teal'>{{ surveydetails.summary }}</font>
+<h2>Number of Participants:</h2> <font color = 'teal'>{{ surveydetails.num_participants }}</font>
+<h2>Number of Questions:</h2> <font color = 'teal'>{{ surveydetails.num_questions | urlize }}</font>
+<h2>Survey Documentation:</h2> <font color = 'teal'>{{ surveydetails.doc_link | urlize }}</font>
+<h2>Survey Source:</h2> <font color = 'teal'>{{ surveydetails.source_link | urlize }}</font>
+<h2>Survey Link:</h2> <font color = 'teal'>{{ surveydetails.data_link | urlize }}</a></font>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<br>
+<br>
+<br>
+<br>
+<form action="../../search">
+    <input class = "btn btn-lg btn-secondary" type="submit" action = "{% url 'search:index' %}" value="Return to search page" />
+</form>
+
+{% endblock%}
