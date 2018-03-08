@@ -17,3 +17,9 @@ class SurveyUploadForm(forms.ModelForm):
         super(SurveyUploadForm, self).__init__(*args, **kwargs)
         self.fields['summary'].widget.attrs['cols'] = 40
         self.fields['summary'].widget.attrs['rows'] = 10
+        self.fields['survey_name'].label = "Survey Name"
+        self.fields['num_participants'].label = "Number of Participants"
+        self.fields['org_conduct'].label = "Conducting Organization"
+        self.fields['num_questions'].label = "Number of Questions"
+        self.fields['doc_link'].label = "Link to Documentation"
+        self.fields['source_link'].label = "Link to Source"
