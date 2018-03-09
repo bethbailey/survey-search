@@ -1,0 +1,81 @@
+{% extends 'base_other.html' %}
+
+{% block content %}
+
+
+<style>
+#module {
+  width: 500px;
+}
+
+#module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+#module p.collapsing[aria-expanded="false"] {
+    height: 40px !important;
+}
+
+#module a.collapsed:after  {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+    content: '- Show Less';
+}
+
+
+
+</style>
+
+
+<h1>Relevant Surveys</h1>
+
+</br>
+
+
+{% for survey in object_list %}
+
+<a href="{% url 'search:browse_detail' survey.survey_num %}"><h4>{{ survey.survey_name }}</h4></a>
+    Survey Summary: {{ survey.summary }}</br>
+
+
+
+    <font color = 'teal'>Organization: {{ survey.org_conduct }}</font></br>
+    <font color = 'teal'>Number of Participants {{ survey.num_participants }}</font></br>
+    <font color = 'teal'>Number of Questions: {{ survey.num_questions }}</font></br>
+    <font color = 'teal'><a href=" {{ survey.data_link }}">Link to Data</a></font></br>
+    <font color = 'teal'><a href=" {{ survey.doc_link }}">Link to Documentation</a></font></br>
+    <font color = 'teal'><a href=" {{ survey.source_link }}">Link to Source</a></font></br>
+
+</br>
+    {% empty %}
+    <p>No results.</p>
+{% endfor %}
+
+<!--Pagination-->
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <!-- keep query string in url while iterating through pages -->
+                <a href="?page={{ page_obj.previous_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Previous Page</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Next Page</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+<br>
+
+<form action="../search">
+    <button type="submit" class = "btn btn-primary w-25">Return to search page</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base_other.html' %}
+
+{% block content %}
+
+<h1>Upload a survey</h1>
+<p><font color="teal">Please fill in the following form and attach the questions of your survey in .csv format, with the two columns being variable names and survey questions. Download a sample input file here. </font></p>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}</br>
+    <button type="submit" class = "btn btn-primary w-25">Upload</button>
+  </form>
+</br>
+
+<form action="../search">
+    <button type="submit" class = "btn btn-secondary w-25">Return to search page</button>
+</form>
+
+
+{% endblock %}

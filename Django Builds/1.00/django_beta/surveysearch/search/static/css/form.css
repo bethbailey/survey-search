@@ -1,0 +1,25 @@
+#module {
+  width: 500px;
+}
+
+#module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+#module p.collapsing[aria-expanded="false"] {
+    height: 40px !important;
+}
+
+#module a.collapsed:after  {
+    content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+    content: '- Show Less';
+}
+
+.form-group{
+background-color:black
+}

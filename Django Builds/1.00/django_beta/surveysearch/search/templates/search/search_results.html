@@ -1,0 +1,61 @@
+{% extends 'base_other.html' %}
+
+{% block content %}
+
+<h1>Relevant Questions</h1>
+
+</br>
+
+
+{% for question in object_list %}
+
+    <font color = 'teal' style = ""
+>{{ question.var_text }}</font> </br>
+    {% for details in Survey_Details_List %}
+        {% if details.survey_key == question.survey_key %}
+<b>Variable name: </b>{{ question.var_name }}</a></br>
+<b>From survey:</b> <a href="{% url 'search:question_detail' question.row_num %}">{{ details.survey_name }}</a></br>
+
+        {% endif %}
+
+
+
+    {% endfor %}
+    <p></p>
+    <br>
+    {% empty %}
+
+    <p>No results.</p>
+
+
+{% endfor %}
+
+
+
+
+
+<!--Pagination-->
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <!-- keep query string in url while iterating through pages -->
+                <a href="?page={{ page_obj.previous_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Previous Page</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Next Page</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+<br>
+<br>
+
+<form action="../search">
+    <button type="submit" class = "btn btn-primary w-25">Return to search page</button>
+</form>
+
+{% endblock %}
