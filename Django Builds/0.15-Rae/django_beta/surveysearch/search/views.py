@@ -147,7 +147,7 @@ def model_form_upload(request):
             for item in current_objects:
                 if item.survey_name == data['survey_name']:
                     unique_upload = False
-            if unique_upload and request.FILES['survey_questions_document'].name[-3:] == "csv"::
+            if unique_upload and request.FILES['survey_questions_document'].name[-3:] == "csv":
                 # adding unique index for each survey dataset
                 id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
                 details.survey_key = id_obj
