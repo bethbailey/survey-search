@@ -1,4 +1,4 @@
-from django.shortcuts import render 	
+from django.shortcuts import render, render_to_response	
 
 import operator
 from functools import reduce
@@ -144,10 +144,18 @@ def model_form_upload(request):
             details = SurveyDetails()
             current_objects = list(SurveyDetails.objects.all())
             unique_upload = True
+            csv_upload = True
+            # initialize error message dictionaries to return unique error messages
+            error_dict = {"csv": "", "unique": ""}
+            # check for valid csv upload and duplicate survey names
+            if request.FILES['survey_questions_document'].name[-3:] != "csv":
+                csv_upload = False
+                error_dict["csv"] = "Please upload a .csv file."
             for item in current_objects:
                 if item.survey_name == data['survey_name']:
                     unique_upload = False
-            if unique_upload and request.FILES['survey_questions_document'].name[-3:] == "csv":
+                    error_dict["unique"] = "This survey already exists in the database."
+            if unique_upload and csv_upload:
                 # adding unique index for each survey dataset
                 id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
                 details.survey_key = id_obj
@@ -166,7 +174,8 @@ def model_form_upload(request):
 
                 return redirect('upload_success.html')
             else:
-                return redirect('upload_failure.html')
+                # render error messages to failure page
+                return render_to_response('search/upload_failure.html', error_dict)
     else:
         form = SurveyUploadForm()
     return render(request, 'search/upload.html', {
