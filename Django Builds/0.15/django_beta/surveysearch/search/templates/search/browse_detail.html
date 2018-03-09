@@ -11,6 +11,7 @@
 <h2>Survey Documentation:</h2> <font color = 'teal'>{{ surveydetails.doc_link | urlize }}</font>
 <h2>Survey Source:</h2> <font color = 'teal'>{{ surveydetails.source_link | urlize }}</font>
 <h2>Survey Link:</h2> <font color = 'teal'>{{ surveydetails.data_link | urlize }}</a></font>
+<p><a href="{% url 'search:question_detail_list' details.survey_num %}">Survey Questions</a></p>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 

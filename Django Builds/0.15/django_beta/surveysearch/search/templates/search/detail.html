@@ -14,6 +14,7 @@
 <p><font color = 'teal'><a href=" {{ details.data_link }}">Link to Data</a></font></p>
 <p><font color = 'teal'><a href=" {{ details.doc_link }}">Link to Documentation</a></font></p>
 <p><font color = 'teal'><a href=" {{ details.source_link }}">Link to Source</a></font></p>
+<p><a href="{% url 'search:question_detail_list' details.survey_num %}">Survey Questions</a></p>
     {% endif %}
 {% endfor %}
 <p><b>Variable Name:</b> <font color = 'teal'>{{ surveyquestions.var_name }}</font></p>

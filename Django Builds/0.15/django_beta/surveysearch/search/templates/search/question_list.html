@@ -1,0 +1,23 @@
+{% extends 'base_other.html' %}
+
+{% block content%}
+<h1>Survey Question Page</h1>
+
+<h2>Survey Name: {{ surveydetails.survey_name }}</a></h2>
+{% for question in Survey_Questions_List %}
+	{% if question.survey_key == surveydetails.survey_key %}
+		<p><b>Variable Name:</b> <font color = 'teal'>{{ question.var_name }}</font><b> Question Text:</b> <font color = 'teal'>{{ question.var_text }}</font></p>
+    {% endif %}
+{% endfor %}
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<br>
+<br>
+<br>
+<br>
+<form action="../../../search">
+    <input class = "btn btn-lg btn-secondary" type="submit" action = "{% url 'search:index' %}" value="Return to search page" />
+</form>
+
+    {% endblock%}

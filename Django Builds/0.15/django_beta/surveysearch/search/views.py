@@ -119,6 +119,16 @@ class DetailView(generic.DetailView):
         })
         return context
 
+class QuestionDetail(generic.DetailView):
+    template_name = 'search/question_list.html'
+    model = SurveyDetails
+
+    def get_context_data(self, **kwargs):
+        context = super(QuestionDetail, self).get_context_data(**kwargs)
+        context.update({
+            'Survey_Questions_List': SurveyQuestions.objects.all(),
+        })
+        return context
 
 class BrowseDetailView(generic.DetailView):
     template_name = 'search/browse_detail.html'

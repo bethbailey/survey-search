@@ -15,4 +15,5 @@ urlpatterns = [
     path('upload_failure.html', views.upload_failure, name='upload_failure'),
     path('browse_surveys.html', views.Browse.as_view(), name='browse_surveys'),
     path('browse_surveys/<int:pk>/', views.BrowseDetailView.as_view(), name='browse_detail'),
+    path('question_detail/<int:pk>/', views.QuestionDetail.as_view(), name='question_detail_list')
 ]
