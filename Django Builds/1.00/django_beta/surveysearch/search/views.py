@@ -204,8 +204,8 @@ def model_form_upload(request):
 def get_rankings(data, query):
 #data needs to be in the format of [[indices],[texts]]
 
-    data[1].append(" ".join(query))
-    tfidf_vectorizer = TfidfVectorizer()
+    data[1].append(query)
+    tfidf_vectorizer = TfidfVectorizer(norm = "l1")
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(data[1])  # finds the tfidf score with normalization
     cosine_scores = cosine_similarity(tfidf_matrix[-1:], tfidf_matrix)
@@ -215,7 +215,6 @@ def get_rankings(data, query):
     arr = arr[arr[:, 2].argsort()]
     arr = arr[::-1]
     return arr[:, 0]
-
 
 def get_ranked_questions(queries_results, query):
     data = [[s[0] for s in queries_results.values_list('row_num')]]
