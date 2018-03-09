@@ -24,3 +24,4 @@ class SurveyUploadForm(forms.ModelForm):
         self.fields['num_questions'].label = "Number of Questions"
         self.fields['doc_link'].label = "Link to Documentation"
         self.fields['source_link'].label = "Link to Source"
+        self.fields['survey_questions_document'].widget.attrs['accept'] = ".csv"
