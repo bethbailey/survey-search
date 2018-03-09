@@ -6,13 +6,13 @@
 
 {% for survey in object_list %}
     <h2>Survey Name: {{ survey.survey_name }}</a></h2>
-    <p><font color = 'teal'>Summary: {{ survey.summary }}</font></p>
-    <p><font color = 'teal'>Organization: {{ survey.org_conduct }}</font></p>
-    <p><font color = 'teal'>Number of Participants {{ survey.num_participants }}</font></p>
-    <p><font color = 'teal'>Number of Questions: {{ survey.num_questions }}</font></p>
-    <p><font color = 'teal'><a href=" {{ survey.data_link }}">Link to Data</a></font></p>
-    <p><font color = 'teal'><a href=" {{ survey.doc_link }}">Link to Documentation</a></font></p>
-    <p><font color = 'teal'><a href=" {{ survey.source_link }}">Link to Source</a></font></p>
+    <p><b>Summary: </b><font color = 'teal'>{{ survey.summary }}</font></p>
+    <p><b>Organization: </b><font color = 'teal'>{{ survey.org_conduct }}</font></p>
+    <p><b>Number of Participants </b><font color = 'teal'>{{ survey.num_participants }}</font></p>
+    <p><b>Number of Questions: </b><font color = 'teal'>{{ survey.num_questions }}</font></p>
+    <p><a href=" {{ survey.data_link }}">Link to Data</a></font></p>
+    <p><a href=" {{ survey.doc_link }}">Link to Documentation</a></font></p>
+    <p><a href=" {{ survey.source_link }}">Link to Source</a></font></p>
     <br>
     {% empty %}
     <p>No results.</p>

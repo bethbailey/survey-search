@@ -5,18 +5,19 @@
 
 {% for details in Survey_Details_List %}
 	{% if details.survey_key == surveyquestions.survey_key %}
-<h2>Survey Name:</h2> <font color = 'teal'>{{ details.survey_name }}</font>
-<h2>Conducting Organization:</h2> <font color = 'teal'>{{ details.org_conduct }}</font>
-<h2>Survey Summary:</h2> <font color = 'teal'>{{ details.summary }}</font>
-<h2>Number of Participants:</h2> <font color = 'teal'>{{ details.num_participants }}</font>
-<h2>Number of Questions:</h2> <font color = 'teal'>{{ details.num_questions | urlize }}</font>
-<h2>Survey Documentation:</h2> <font color = 'teal'>{{ details.doc_link | urlize }}</font>
-<h2>Survey Source:</h2> <font color = 'teal'>{{ details.source_link | urlize }}</font>
-<h2>Survey Link:</h2> <font color = 'teal'>{{ details.data_link | urlize }}</a></font>
+
+<h2>Survey Name: {{ details.survey_name }}</a></h2>
+<p><b>Conducting Organization:</b> <font color = 'teal'>{{ details.org_conduct }}</font></p>
+<p><b>Survey Summary:</b> <font color = 'teal'>{{ details.summary }}</font></p>
+<p><b>Number of Participants:</b>  <font color = 'teal'>{{ details.num_participants }}</font></p>
+<p><b>Number of Questions:</b>  <font color = 'teal'>{{ details.num_questions | urlize }}</font></p>
+<p><font color = 'teal'><a href=" {{ details.data_link }}">Link to Data</a></font></p>
+<p><font color = 'teal'><a href=" {{ details.doc_link }}">Link to Documentation</a></font></p>
+<p><font color = 'teal'><a href=" {{ details.source_link }}">Link to Source</a></font></p>
     {% endif %}
 {% endfor %}
-<h2>Variable Name:</h2> <font color = 'teal'>{{ surveyquestions.var_name }}</font>
-<h2>Question Text:</h2> <font color = 'teal'><b>{{ surveyquestions.var_text }}</b></font>
+<p><b>Variable Name:</b> <font color = 'teal'>{{ surveyquestions.var_name }}</font></p>
+<p><b>Question Text:</b> <font color = 'teal'>{{ surveyquestions.var_text }}</font></p>
 
 
 
