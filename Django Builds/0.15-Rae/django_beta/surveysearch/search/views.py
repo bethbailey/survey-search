@@ -142,23 +142,31 @@ def model_form_upload(request):
         if form.is_valid():
             data = form.cleaned_data
             details = SurveyDetails()
-            # adding unique index for each survey dataset
-            id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
-            details.survey_key = id_obj
-            details.survey_name = data['survey_name']
-            details.num_participants = data['num_participants']
-            details.org_conduct = data['org_conduct']
-            details.num_questions = data['num_questions']
-            details.data_link = data['data_link']
-            details.doc_link = data['doc_link']
-            details.source_link = data['source_link']
-            details.summary = data['summary']
-            details.survey_questions_document = data['survey_questions_document']
-            details.save()
-            handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
-            generate_wordcloud()
+            current_objects = list(SurveyDetails.objects.all())
+            unique_upload = True
+            for item in current_objects:
+                if item.survey_name == data['survey_name']:
+                    unique_upload = False
+            if unique_upload and request.FILES['survey_questions_document'].name[-3:] == "csv"::
+                # adding unique index for each survey dataset
+                id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
+                details.survey_key = id_obj
+                details.survey_name = data['survey_name']
+                details.num_participants = data['num_participants']
+                details.org_conduct = data['org_conduct']
+                details.num_questions = data['num_questions']
+                details.data_link = data['data_link']
+                details.doc_link = data['doc_link']
+                details.source_link = data['source_link']
+                details.summary = data['summary']
+                details.survey_questions_document = data['survey_questions_document']
+                details.save()
+                handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
+                generate_wordcloud()
 
-            return redirect('upload_success.html')
+                return redirect('upload_success.html')
+            else:
+                return redirect('upload_failure.html')
     else:
         form = SurveyUploadForm()
     return render(request, 'search/upload.html', {
@@ -211,11 +219,12 @@ def handle_files(csv_file, id_obj):
     with open(csv_file) as f:
         reader = csv.reader(f)
         for row in reader:
-            questions = SurveyQuestions()
-            questions.survey_key = id_obj
-            questions.var_name = row[0]
-            questions.var_text = row[1]
-            questions.save()
+            if str(row[0]).lower() != "var_name" and str(row[1]).lower() != "var_text":
+                questions = SurveyQuestions()
+                questions.survey_key = id_obj
+                questions.var_name = row[0]
+                questions.var_text = row[1]
+                questions.save()
         f.close()
 
 
