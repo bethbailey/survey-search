@@ -2,6 +2,10 @@
 
 {% block content %}
 <h2>Oops, something went wrong!</h2>
+<br>
+<p><b>Errors:</b></p>
+<p>{{ csv }}</p>
+<p>{{ unique }}</p>
 
 <form action="../search/upload.html">
     <button type="submit" class = "btn btn-primary">Try again</button>
