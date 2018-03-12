@@ -30,13 +30,13 @@ class SurveyUploadForm(forms.ModelForm):
         self.fields['num_participants'].label = "Number of Participants"
         self.fields['org_conduct'].label = "Conducting Organization"
         self.fields['num_questions'].label = "Number of Questions"
-        self.fields['data_link'].label = 
+        self.fields['data_link'].label = \
             "Link to Data (Enter 'NA' if link is not available)"
-        self.fields['doc_link'].label = 
+        self.fields['doc_link'].label = \
             "Link to Documentation (Enter 'NA' if link is not available)"
-        self.fields['source_link'].label = 
+        self.fields['source_link'].label = \
             "Link to Source (Enter 'NA' if link is not available)"
-        self.fields['survey_questions_document'].widget.attrs['accept'] = 
+        self.fields['survey_questions_document'].widget.attrs['accept'] = \
             ".csv"
         self.fields['summary'].widget.attrs.update({'class': 'form-control'})
         self.fields['survey_name'].widget.attrs.update({'class': \
