@@ -18,7 +18,7 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 +---- documents  
 +---- manage.py  
 +---- search  
- |            +---- \__init__.py  
+ |\ \ \ \             +---- \__init__.py  
  |        +---- \__pycache__  
  |        +---- admin.py  
  |        +---- apps.py  
