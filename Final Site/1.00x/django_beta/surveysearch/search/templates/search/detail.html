@@ -34,9 +34,17 @@
 
   <tr>
     <th scope="row">Links:</th>
-    <td colspan="2"> <a href = "{ details.doc_link | urlize }" >Survey Documentation</a></br>
+    <td colspan="2"> 
+
+      {% if details.doc_link != 'NA' %}
+      <a href = "{ details.doc_link | urlize }" >Survey Documentation</a></br>
+      {% endif %}
+      {% if details.source_link != 'NA' %}
       <a href = " { details.source_link | urlize }">Survey Source</a></br>
+      {% endif %}
+      {% if details.data_link != 'NA' %}
       <a href = "{ details.data_link | urlize }" > Survey Link</a></br>
+      {% endif %}
       <a href="{% url 'search:question_detail_list' details.survey_num %}">See all variables and questions</a>
     </td>
   </tr>
