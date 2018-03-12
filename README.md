@@ -66,6 +66,7 @@ Test the upload portion of the site using either a handmade file or, if you are 
 #### Libraries to Install for Django:
 - wordcloud (sudo pip install wordcloud)
 - sklearn (sudo pip install sklearn)
+- Pillow and Matplotlib should already be installed on the VMs.
 
 ## Coding Breakdown
 
