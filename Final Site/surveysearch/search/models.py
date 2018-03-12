@@ -9,8 +9,13 @@ from django.db import models
 
 # Code Ownership for both models: Original
 class SurveyDetails(models.Model):
-
+    '''
+    Defines a SurveyDetails model for the table in the database that contains
+    meta details for the surveys. Primary Key is defined as survey_num, which 
+    autoincrements.
+    '''
     survey_num = models.IntegerField(db_column='survey_num', primary_key = True)
+    # common key
     survey_key = models.CharField(db_column = 'survey_key', max_length = 500)
     survey_name = models.CharField(db_column='survey_name', max_length = 1000)
     num_participants = models.IntegerField(db_column='num_participants')
@@ -30,8 +35,14 @@ class SurveyDetails(models.Model):
 
 
 class SurveyQuestions(models.Model):
-
+    '''
+    Defines a SurveyQuestions model for the table in the database that contains
+    survey questions. Primary Key is defined as row_num, which autoincrements.
+    The common key across the models is survey_key, which is generated during
+    the uploading of a survey.
+    '''
     row_num = models.IntegerField(db_column='row_num', primary_key = True)
+    # common key
     survey_key = models.CharField(db_column = 'survey_key', max_length = 500)
     var_name = models.CharField(db_column='var_name', max_length = 200)
     var_text = models.CharField(db_column='var_text', max_length = 1000)
