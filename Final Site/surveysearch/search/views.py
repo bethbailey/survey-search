@@ -1,39 +1,45 @@
-from django.shortcuts import render, render_to_response	
-
+# python libraries
 import operator
-from functools import reduce
-from itertools import chain
 import random
-
-from django.db.models import Q
-from django.http import HttpResponse
-from django.views import generic
-
-from .models import SurveyDetails, SurveyQuestions
-from django.shortcuts import render, redirect
-from django.conf import settings
-from django.core.files.storage import FileSystemStorage
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-from search.forms import SurveyUploadForm
 import csv
 import tempfile
 import shutil
 import datetime
-
 import numpy as np
-import matplotlib
+from functools import reduce
+
+# django libraries
+from django.shortcuts import render, render_to_response
+from django.db.models import Q
+from django.http import HttpResponse
+from django.views import generic
+from django.shortcuts import render, redirect
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
+from django import forms
+
+# from other parts of our django app
+from .forms import SurveyUploadForm
+from .models import SurveyDetails, SurveyQuestions
+
+# for ranking algorithm
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# for generating wordcloud
+#import matplotlib
 import matplotlib.pyplot as plt
-from PIL import Image
 import wordcloud
+from PIL import Image
 
-
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 
 
 class IndexView(generic.ListView):
+    '''
+
+    '''
     template_name = 'search/index.html'
     context_object_name = 'head_values'
 
@@ -44,11 +50,18 @@ class IndexView(generic.ListView):
         return SurveyQuestions.objects.all()
  
 class ResultsView(generic.ListView):
+    '''
+
+    '''
     template_name = 'search/search_results.html'
     context_object_name = 'Survey_Questions_List'
     paginate_by = 10 
 
     def get_queryset(self):
+        '''
+
+
+        '''
         result = SurveyQuestions.objects.all()
 
         query = self.request.GET.get('q')
@@ -70,6 +83,9 @@ class ResultsView(generic.ListView):
         return context
 
 class SurveyResultsView(generic.ListView):
+    '''
+
+    '''
     template_name = 'search/search_results_survey.html'
     paginate_by = 10 
 
@@ -98,6 +114,9 @@ class SurveyResultsView(generic.ListView):
             return []
 
 class Browse(generic.ListView):
+    '''
+
+    '''
     template_name = 'search/browse_surveys.html'
     paginate_by = 10 
 
@@ -110,6 +129,9 @@ class Browse(generic.ListView):
             return []
 
 class DetailView(generic.DetailView):
+    '''
+
+    '''
     template_name = 'search/detail.html'
     model = SurveyQuestions
 
@@ -121,6 +143,9 @@ class DetailView(generic.DetailView):
         return context
 
 class QuestionDetail(generic.DetailView):
+    '''
+
+    '''
     template_name = 'search/question_list.html'
     model = SurveyDetails
 
@@ -132,10 +157,11 @@ class QuestionDetail(generic.DetailView):
         return context
 
 class BrowseDetailView(generic.DetailView):
+    '''
+
+    '''
     template_name = 'search/browse_detail.html'
     model = SurveyDetails
-
-from django import forms
 
 
 def home(request):
@@ -143,9 +169,15 @@ def home(request):
     return render(request, 'search/index.html')
 
 def upload_success(request):
+    '''
+    Show a confirmation of successful user upload
+    '''
     return render(request, 'search/upload_success.html')
 
 def upload_failure(request):
+    '''
+    Show a confirmation of failed user upload with error messages
+    '''
     return render(request, 'search/upload_failure.html')
 
 def model_form_upload(request):
@@ -195,14 +227,26 @@ def model_form_upload(request):
     })
 
 
-#http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/
-#https://stackoverflow.com/questions/6473679/transpose-list-of-lists
 def get_rankings(data, query):
-#data needs to be in the format of [[indices],[texts]]
+    '''
+    Given list of indices, texts correspond to those indices, and a query string,
+    return the indices ranked according to the tf-idf of the texts and cosine similarities scores
+    between the query string and the texts
+    Inputs:
+        data: a list of list in the format of [[indices],[texts]]
+        query: a string containing the query keywords separated by space, for example:
+                "science religion research"
+    Returns:
+        ranked indices of the texts
+
+    Code ownership: Origional
+
+    Reference for the algorithm:
+    http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/
+    '''
 
     data[1].append(query)
     tfidf_vectorizer = TfidfVectorizer(norm = "l1")
-
     tfidf_matrix = tfidf_vectorizer.fit_transform(data[1])  # finds the tfidf score with normalization
     cosine_scores = cosine_similarity(tfidf_matrix[-1:], tfidf_matrix)
     del data[1][-1]
@@ -254,31 +298,38 @@ def grey_color_func(word, font_size, position, orientation, random_state=None,
 
 
 def generate_wordcloud():
+    '''
+    Generate a word cloud from the words in the name and summary of all the surveys
+    in the database, called every time a survey is uploaded to the database.
 
-    questions = " ".join(s[0] for s in list(SurveyQuestions.objects.values_list('var_text')))
+    Code Ownership: Original structure with reference to documentation and online sources
+    for implementing individual tasks
+    '''
+
+    # find words to include in wordcloud
     surveys = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('summary')))
     surveys_names = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('survey_name')))
     text = surveys + " " + surveys_names
-    mask = np.array(Image.open("search/static/img/mask.png"))
 
-    wc = wordcloud.WordCloud(background_color="black", max_words=500, width=2000, height=1500, mode='RGBA',
-                             scale=1)
+    # generate wordcloud and save to an image file
+    wc = wordcloud.WordCloud(background_color="black",
+                             max_words=500, width=2000, height=1500,
+                             mode='RGBA', scale=1)
     wc.generate(text)
-    default_colors = wc.to_array()
-
-    plt.figure(figsize=(40, 30))
     plt.axis("off")
+
+    # reference: https://stackoverflow.com/questions/14908576/how-to-remove-frame-from-matplotlib-pyplot-figure-vs-matplotlib-figure-frame
     for spine in plt.gca().spines.values():
         spine.set_visible(False)
 
+    plt.figure(figsize =(40, 30))
     a=plt.gca()
     a.set_frame_on(False)
     a.set_xticks([]); a.set_yticks([])
 
+    # reference: https://github.com/amueller/word_cloud/tree/master/examples
     plt.imshow(wc.recolor(color_func=grey_color_func, random_state=3),
            interpolation="bilinear")
-
     plt.savefig("search/static/img/wordcloud.png", format='png', transparent = True,
                 bbox_inches = 'tight', pad_inches = 0)
-
     plt.close()
