@@ -33,7 +33,7 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 -  |-surveysearch
     * This folder contains the Django site settings and back-end configuration.
     * |  |-__pycache__
-- search_beta.sqlite3
+- | search_beta.sqlite3
     * SQL database for our models.
 
 ## Instructions
