@@ -43,9 +43,10 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
 
 #### Libraries to Install for Data Cleaning:
-- PyPDF2
-- docx
-- docx2txt
+- PyPDF2 (sudo pip install PyPDF2)
+- docx (sudo pip install docx)
+- docx2txt (sudo pip install docx2txt)
+- The regular expression library (re) should be installed on ths VMs already.
 
 ### Running the Django Site
 
