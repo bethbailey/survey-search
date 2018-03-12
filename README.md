@@ -182,6 +182,9 @@ Bethany and Ruixue completed the upload form. Together, all three team members f
 #### Search
 Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
 
+#### Browse
+Bethany completed browse.
+
 #### WordCloud
 
 Ruixue completed the wordcloud. 
