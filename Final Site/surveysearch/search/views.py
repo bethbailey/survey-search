@@ -73,7 +73,8 @@ class ResultsView(generic.ListView):
             # account for multiple keywords
             query_list = query.split()
             # case insensitive search of question text column
-            result = result.filter(reduce(operator.and_, (Q(var_text__icontains=q) for q in query_list)))
+            result = result.filter(reduce(operator.and_, \
+                (Q(var_text__icontains=q) for q in query_list)))
             if result:
                 # invoke ranking
                 return get_ranked_questions(result, query)
@@ -84,8 +85,8 @@ class ResultsView(generic.ListView):
 
     def get_context_data(self, **kwargs):
         '''
-        Adds the survey details as a context object in order to access the survey
-        name.
+        Adds the survey details as a context object in order to access the 
+        survey name.
         '''
         context = super(ResultsView, self).get_context_data(**kwargs)
         context.update({
@@ -95,7 +96,10 @@ class ResultsView(generic.ListView):
 
 class SurveyResultsView(generic.ListView):
     '''
-
+    Class that defines the view for the survey search results. This class
+    queries the question text in the SurveyQuestions model and the summary
+    and survey_name in the SurveyDetails model to find surveys that contain
+    the keywords.
     '''
     template_name = 'search/search_results_survey.html'
     paginate_by = 10 
@@ -106,16 +110,26 @@ class SurveyResultsView(generic.ListView):
 
         query = self.request.GET.get('q1')
         if query:
+            # Account for multiple keywords
             query_list = query.split()
-            result_summary = result.filter(reduce(operator.and_, (Q(summary__icontains=q1) |\
-                                                                  Q(survey_name__icontains=q1) for q1 in query_list)))
-            result_questions = result2.filter(reduce(operator.and_, (Q(var_text__icontains=q1) for q1 in query_list)))
+            # Find results in the SurveyDetails model.
+            result_summary = result.filter(reduce(operator.and_, \
+                (Q(summary__icontains=q1) | Q(survey_name__icontains=q1)\
+                 for q1 in query_list)))
+            # Find results in the SurveyQuestions model.
+            result_questions = result2.filter(reduce(operator.and_, \
+                (Q(var_text__icontains=q1) for q1 in query_list)))
+            # Convert results to lists in order to iterate over them.
             result_summary_ls = list(result_summary)
             result_questions_ls = list(result_questions)
+            # Iterate over the questions returned to find the survey
+            # details associated with that question.
             for item in result_questions_ls:
                 q2 = item.survey_key
+                # Filter out those keys.
                 result_summary_2 = result.filter(survey_key = q2)
                 result_summary_ls = result_summary_ls + list(result_summary_2)
+            # Remove repeated surveys and convert back to a list.
             rv = list(set(result_summary_ls))
             if rv:
                 return get_ranked_surveys(rv, query)
@@ -211,7 +225,8 @@ def model_form_upload(request):
             current_objects = list(SurveyDetails.objects.all())
             unique_upload = True
             csv_upload = True
-            # initialize error message dictionaries to return unique error messages
+            # initialize error message dictionaries to return unique error 
+            # messages
             error_dict = {"csv": "", "unique": ""}
             # check for valid csv upload and duplicate survey names
             if request.FILES['survey_questions_document'].name[-3:] != "csv":
@@ -220,10 +235,12 @@ def model_form_upload(request):
             for item in current_objects:
                 if item.survey_name == data['survey_name']:
                     unique_upload = False
-                    error_dict["unique"] = "This survey already exists in the database."
+                    error_dict["unique"] = \
+                        "This survey already exists in the database."
             if unique_upload and csv_upload:
                 # adding unique index for each survey dataset
-                id_obj = repr(datetime.datetime.utcnow())[17:] + " " + str(data['survey_name'])[0:3]
+                id_obj = repr(datetime.datetime.utcnow())[17:] + " " + \
+                    str(data['survey_name'])[0:3]
                 details.survey_key = id_obj
                 details.survey_name = data['survey_name']
                 details.num_participants = data['num_participants']
@@ -233,15 +250,18 @@ def model_form_upload(request):
                 details.doc_link = data['doc_link']
                 details.source_link = data['source_link']
                 details.summary = data['summary']
-                details.survey_questions_document = data['survey_questions_document']
+                details.survey_questions_document = \
+                    data['survey_questions_document']
                 details.save()
-                handle_files('documents/' + request.FILES['survey_questions_document'].name, id_obj)
+                handle_files('documents/' + \
+                    request.FILES['survey_questions_document'].name, id_obj)
                 generate_wordcloud()
 
                 return redirect('upload_success.html')
             else:
                 # render error messages to failure page
-                return render_to_response('search/upload_failure.html', error_dict)
+                return render_to_response('search/upload_failure.html', \
+                    error_dict)
     else:
         form = SurveyUploadForm()
     return render(request, 'search/upload.html', {
@@ -251,25 +271,27 @@ def model_form_upload(request):
 
 def get_rankings(data, query):
     '''
-    Given list of indices, texts correspond to those indices, and a query string,
-    return the indices ranked according to the tf-idf of the texts and cosine similarities scores
-    between the query string and the texts
+    Given list of indices, texts correspond to those indices, and a query 
+    string, return the indices ranked according to the tf-idf of the texts 
+    and cosine similarities scores between the query string and the texts
     Inputs:
         data: a list of list in the format of [[indices],[texts]]
-        query: a string containing the query keywords separated by space, for example:
-                "science religion research"
+        query: a string containing the query keywords separated by space, 
+            for example: "science religion research"
     Returns:
         ranked indices of the texts
 
     Code ownership: Origional
 
     Reference for the algorithm:
-    http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine-part-3-ranking-tf-idf/
+    http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine
+        -part-3-ranking-tf-idf/
     '''
 
     data[1].append(query)
     tfidf_vectorizer = TfidfVectorizer(norm = "l1")
-    tfidf_matrix = tfidf_vectorizer.fit_transform(data[1])  # finds the tfidf score with normalization
+    tfidf_matrix = tfidf_vectorizer.fit_transform(data[1])  # finds the tfidf 
+        # score with normalization
     cosine_scores = cosine_similarity(tfidf_matrix[-1:], tfidf_matrix)
     del data[1][-1]
     data.append(list(cosine_scores[0]))
@@ -305,7 +327,8 @@ def handle_files(csv_file, id_obj):
     with open(csv_file) as f:
         reader = csv.reader(f)
         for row in reader:
-            if str(row[0]).lower() != "var_name" and str(row[1]).lower() != "var_text":
+            if str(row[0]).lower() != "var_name" and str(row[1]).lower() \
+                != "var_text":
                 questions = SurveyQuestions()
                 questions.survey_key = id_obj
                 questions.var_name = row[0]
@@ -321,16 +344,19 @@ def grey_color_func(word, font_size, position, orientation, random_state=None,
 
 def generate_wordcloud():
     '''
-    Generate a word cloud from the words in the name and summary of all the surveys
-    in the database, called every time a survey is uploaded to the database.
+    Generate a word cloud from the words in the name and summary of all the 
+    surveys in the database, called every time a survey is uploaded to the 
+    database.
 
-    Code Ownership: Original structure with reference to documentation and online sources
-    for implementing individual tasks
+    Code Ownership: Original structure with reference to documentation and 
+    online sources for implementing individual tasks
     '''
 
     # find words to include in wordcloud
-    surveys = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('summary')))
-    surveys_names = " ".join(s[0] for s in list(SurveyDetails.objects.values_list('survey_name')))
+    surveys = " ".join(s[0] for s in list(SurveyDetails.objects.values_list\
+        ('summary')))
+    surveys_names = " ".join(s[0] for s in \
+        list(SurveyDetails.objects.\values_list('survey_name')))
     text = surveys + " " + surveys_names
 
     # generate wordcloud and save to an image file
@@ -340,7 +366,8 @@ def generate_wordcloud():
     wc.generate(text)
     plt.axis("off")
 
-    # reference: https://stackoverflow.com/questions/14908576/how-to-remove-frame-from-matplotlib-pyplot-figure-vs-matplotlib-figure-frame
+    # reference: https://stackoverflow.com/questions/14908576/how-to-remove
+    # -frame-from-matplotlib-pyplot-figure-vs-matplotlib-figure-frame
     for spine in plt.gca().spines.values():
         spine.set_visible(False)
 
@@ -352,6 +379,6 @@ def generate_wordcloud():
     # reference: https://github.com/amueller/word_cloud/tree/master/examples
     plt.imshow(wc.recolor(color_func=grey_color_func, random_state=3),
            interpolation="bilinear")
-    plt.savefig("search/static/img/wordcloud.png", format='png', transparent = True,
-                bbox_inches = 'tight', pad_inches = 0)
+    plt.savefig("search/static/img/wordcloud.png", format='png', \
+        transparent = True, bbox_inches = 'tight', pad_inches = 0)
     plt.close()
