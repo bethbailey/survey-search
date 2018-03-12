@@ -18,8 +18,8 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 +---- documents  
 +---- manage.py  
 +---- search  
- |        +---- __init__.py  
- |        +---- __pycache__  
+ |            +---- \__init__.py  
+ |        +---- \__pycache__  
  |        +---- admin.py  
  |        +---- apps.py  
  |        +---- forms.py  
@@ -31,8 +31,8 @@ The Django portion is structured as follows (the final site is in Final Site/sur
  |        +---- views.py  
  +---- search_beta.sqlite3  
  +---- surveysearch  
- |        +---- __init__.py  
- |        +---- __pycache__  
+ |        +---- \__init__.py  
+ |        +---- \__pycache__  
  |        +---- settings.py  
  |        +---- urls.py  
  |        +---- wsgi.py  
