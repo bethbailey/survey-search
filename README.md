@@ -15,23 +15,23 @@ Our code is structured in two main bits: (1) data cleaning and (2) Django site. 
 The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
 
 -  |-search
-  - * This is our main and only app. It is the root folder. *
+  * This is our main and only app. It is the root folder. 
   -  |  |-migrations
     -  |  |  |-__pycache__
   -  |  |-__pycache__
   -  |  |-static
-    - * This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).
+    * This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).
     -  |  |  |-css
     -  |  |  |-js
     -  |  |  |-img
   -  |  |-templates
-    - * This folder contains the html templates for our site * 
+    * This folder contains the html templates for our site.
     -  |  |  |-search
     -  |  |  |  |-img
 -  |-documents
-  - * This is the folder where the user uploaded files are stored and processed. *
+  * This is the folder where the user uploaded files are stored and processed.
 -  |-surveysearch
-  - * This folder contains the Django site settings and back-end configuration. *
+  * This folder contains the Django site settings and back-end configuration.
   -  |  |-__pycache__
 
 
