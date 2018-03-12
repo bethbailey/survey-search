@@ -37,41 +37,41 @@ The Django portion is structured as follows (the final site is in Final Site/sur
     * SQL database for our models.
 
 
-├── documents
-│   ├── 2016CCSLeadershipSurvey.csv
-│   ├── GSS_cleaned_2012.csv
-│   ├── GSS_cleaned_2014.csv
-│   ├── GSS_cleaned_2016.csv
-│   ├── OLSAnimal_1.csv
-│   ├── OLSAnimal_2.csv
-│   ├── OLSAnimal_3.csv
-│   ├── PewScience_cleaned.csv
-│   ├── Support_for_homosexuality_cleaned.csv
-│   ├── student.csv
-│   ├── student_FHzdiee.csv
-│   └── student_j0dc7qp.csv
-├── manage.py
-├── search
-│   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-36.pyc
-│   │   ├── admin.cpython-36.pyc
-│   │   ├── apps.cpython-36.pyc
-│   │   ├── forms.cpython-36.pyc
-│   │   ├── models.cpython-36.pyc
-│   │   ├── urls.cpython-36.pyc
-│   │   └── views.cpython-36.pyc
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── 0001_initial.cpython-36.pyc
-│   │       └── __init__.cpython-36.pyc
-│   ├── models.py
-│   ├── static
+├── documents  
+│   ├── 2016CCSLeadershipSurvey.csv  
+│   ├── GSS_cleaned_2012.csv  
+│   ├── GSS_cleaned_2014.csv  
+│   ├── GSS_cleaned_2016.csv  
+│   ├── OLSAnimal_1.csv  
+│   ├── OLSAnimal_2.csv   
+│   ├── OLSAnimal_3.csv  
+│   ├── PewScience_cleaned.csv  
+│   ├── Support_for_homosexuality_cleaned.csv  
+│   ├── student.csv   
+│   ├── student_FHzdiee.csv 
+│   └── student_j0dc7qp.csv  
+├── manage.py  
+├── search  
+│   ├── __init__.py  
+│   ├── __pycache__  
+│   │   ├── __init__.cpython-36.pyc  
+│   │   ├── admin.cpython-36.pyc  
+│   │   ├── apps.cpython-36.pyc  
+│   │   ├── forms.cpython-36.pyc  
+│   │   ├── models.cpython-36.pyc  
+│   │   ├── urls.cpython-36.pyc  
+│   │   └── views.cpython-36.pyc   
+│   ├── admin.py  
+│   ├── apps.py  
+│   ├── forms.py  
+│   ├── migrations  
+│   │   ├── 0001_initial.py    
+│   │   ├── __init__.py  
+│   │   └── __pycache__    
+│   │       ├── 0001_initial.cpython-36.pyc    
+│   │       └── __init__.cpython-36.pyc  
+│   ├── models.py  
+│   ├── static  
 │   │   ├── css
 │   │   │   ├── album.css
 │   │   │   ├── bootstrap-grid.css
@@ -181,9 +181,6 @@ Bethany and Ruixue completed the upload form. Together, all three team members f
 
 #### Search
 Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
-
-#### Browse
-Bethany completed browse.
 
 #### WordCloud
 
