@@ -14,17 +14,17 @@ Our code is structured in two main bits: (1) data cleaning and (2) Django site. 
 
 The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
 
--  |-search
-    * This is our main and only app. It is the root folder. It contains the files admin.py (Django admin file), views.py (the brunt of our Django python code), apps.py (our app), forms.py (the upload form), models.py (our survey and question models), urls.py (our urls file), and views.py (our views).
-   |  |-migrations
-   |  |  |-__pycache__
-   |  |-__pycache__
-   |  |-static
-    * This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).
-   |  |  |-css
-   |  |  |-js
-   |  |  |-img
-    * |  |-templates
+-  |-search    
+    * This is our main and only app. It is the root folder. It contains the files admin.py (Django admin file), views.py (the brunt of our Django python code), apps.py (our app), forms.py (the upload form), models.py (our survey and question models), urls.py (our urls file), and views.py (our views).    
+   |  |-migrations    
+   |  |  |-__pycache__   
+   |  |-__pycache__   
+   |  |-static   
+    * This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).    
+   |  |  |-css    
+   |  |  |-js    
+   |  |  |-img    
+    * |  |-templates    
         * This folder contains the html templates for our site.
         * |  |  |-search
             * |  |  |  |-img
