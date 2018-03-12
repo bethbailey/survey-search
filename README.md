@@ -51,7 +51,7 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook,
 
 To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
 
-### **Use Case 1: Testing Question Search:**
+### *Use Case 1: Testing Question Search:*
 Go to homepage -> click "Find relevant questions" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant questions from all the surveys in the database. You can then view the survey that contains a particular question by clicking on the title. While viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 ### Use Case 2: Testing Survey Search
