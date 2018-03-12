@@ -6,27 +6,33 @@ Team: Bethany Bailey (Data Cleaning Queen), Ruixue Li (Interior Designer), Leoso
 
 ## Overall Code Structure
 
+### Data Cleaning
+
 Our code is structured in two main bits: (1) data cleaning and (2) Django site. The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
 
-The Django portion is structured as follows (the final portion is in Final\ Site/surveysearch):
+### Django
+
+The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
 
   |-search
+  		* This is our main and only app. It is the root folder. *
   |  |-migrations
   |  |  |-__pycache__
   |  |-__pycache__
   |  |-static
+  		* This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).
   |  |  |-css
   |  |  |-js
   |  |  |-img
   |  |-templates
+  		* This folder contains the html templates for our site * 
   |  |  |-search
   |  |  |  |-img
   |-documents
+  		* This is the folder where the user uploaded files are stored and processed. *
   |-surveysearch
   |  |-__pycache__
-  |-.idea
-  |  |-libraries
-
+  		* This folder contains the Django site settings and back-end configuration. *
 
 ## Instructions
 
@@ -34,17 +40,23 @@ The Django portion is structured as follows (the final portion is in Final\ Site
 
 To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
 
-Libraries to Install:
+#### Libraries to Install for Data Cleaning:
 - PyPDF2
 - docx
 - docx2txt
 
 ### Running the Django Site
 
-#### Testing Upload
+To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
+
+### Testing Search
+
+### Testing Browse
+
+### Testing Upload
 Please test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches (try searching "final" or "semester" before and after the upload).
 
-Libraries to Install:
+#### Libraries to Install for Django:
 - pillow
 - wordcloud
 
@@ -56,7 +68,7 @@ The surveys were collected by all three members. The data that was in SPSS was c
 ### Django Site
 
 #### Forms
-Bethany and Ruixue completed the upload form.
+Bethany and Ruixue completed the upload form. Together, all three team members figured out how to handle file processing in Django.
 
 #### Search
 Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
