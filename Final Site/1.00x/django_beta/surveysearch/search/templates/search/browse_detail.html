@@ -34,9 +34,15 @@
     <td colspan="2">
 
       <a href="{% url 'search:question_detail_list' surveydetails.survey_num %}">See all variables and questions</a></br>
+      {% if surveydetails.doc_link != 'NA' %}
       <a href = "{{ surveydetails.doc_link }}" >Survey Documentation</a></br>
+      {% endif %}
+      {% if surveydetails.source_link != 'NA' %}
       <a href = " {{ surveydetails.source_link }}">Survey Source</a></br>
+      {% endif %}
+      {% if surveydetails.data_link != 'NA' %}
       <a href = "{{ surveydetails.data_link }}" > Data Link</a></br>
+      {% endif %}
     </td>
   </tr>
   </tbody>
