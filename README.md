@@ -8,7 +8,24 @@ Team: Bethany Bailey (Data Cleaning Queen), Ruixue Li (Interior Designer), Leoso
 
 Our code is structured in two main bits: (1) data cleaning and (2) Django site. The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
 
-The Django portion is structured as follows:
+The Django portion is structured as follows (the final portion is in Final\ Site/surveysearch):
+
+  |-search
+  |  |-migrations
+  |  |  |-__pycache__
+  |  |-__pycache__
+  |  |-static
+  |  |  |-css
+  |  |  |-js
+  |  |  |-img
+  |  |-templates
+  |  |  |-search
+  |  |  |  |-img
+  |-documents
+  |-surveysearch
+  |  |-__pycache__
+  |-.idea
+  |  |-libraries
 
 
 ## Instructions
@@ -25,7 +42,7 @@ Libraries to Install:
 ### Running the Django Site
 
 #### Testing Upload
-Please test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches (try searching "project" before and after the upload).
+Please test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches (try searching "final" or "semester" before and after the upload).
 
 Libraries to Install:
 - pillow
