@@ -40,15 +40,21 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 
 ### Data Cleaning
 
-To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
-
 #### Libraries to Install for Data Cleaning:
 - PyPDF2 (sudo pip install PyPDF2)
 - docx (sudo pip install docx)
+- exceptions (to go with docx - sudo pip install docx)
 - docx2txt (sudo pip install docx2txt)
 - The regular expression library (re) should be installed on ths VMs already.
 
+To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
+
 ### Running the Django Site
+
+#### Libraries to Install for Django:
+- wordcloud (sudo pip install wordcloud)
+- sklearn (sudo pip install sklearn)
+- Pillow and Matplotlib should already be installed on the VMs.
 
 To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
 
@@ -63,11 +69,6 @@ Go to homepage -> click "Browse" button and you'll be redirected to a page listi
 
 #### *Use Case 4: Testing Upload*
 Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload).
-
-#### Libraries to Install for Django:
-- wordcloud (sudo pip install wordcloud)
-- sklearn (sudo pip install sklearn)
-- Pillow and Matplotlib should already be installed on the VMs.
 
 ## Coding Breakdown
 
