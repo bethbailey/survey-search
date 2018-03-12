@@ -17,9 +17,12 @@ urlpatterns = [
     path('upload.html', views.model_form_upload, name='upload'),
     path('upload_success.html', views.upload_success, name='upload_success'),
     path('upload_failure.html', views.upload_failure, name='upload_failure'),
-    path('browse_surveys.html', views.Browse.as_view(), name='browse_surveys'),
+    path('browse_surveys.html', views.Browse.as_view(), \
+        name='browse_surveys'),
     # index objects based on primary key
-    path('browse_surveys/<int:pk>/', views.BrowseDetailView.as_view(), name='browse_detail'),
+    path('browse_surveys/<int:pk>/', views.BrowseDetailView.as_view(), \
+        name='browse_detail'),
     # index objects based on primary key
-    path('question_detail/<int:pk>/', views.QuestionDetail.as_view(), name='question_detail_list')
+    path('question_detail/<int:pk>/', views.QuestionDetail.as_view(), \
+        name='question_detail_list')
 ]
