@@ -1,0 +1,62 @@
+{% extends 'base_other.html' %}
+
+{% block content%}
+<h1>Survey Details</h1>
+</br>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th class="w-25">Survey Name:</th>
+      <th>{{ surveydetails.survey_name }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Conducting Organization:</th>
+      <td>{{ surveydetails.org_conduct }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Survey Summary:</th>
+      <td>{{ surveydetails.summary }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Number of Participants:</th>
+      <td>{{ surveydetails.num_participants }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Number of Questions:</th>
+      <td colspan="2">{{ surveydetails.num_questions | urlize }}</td>
+
+    </tr>
+
+
+      <tr>
+      <th scope="row">Links:</th>
+        <td colspan="2">
+
+          <a href="{% url 'search:question_detail_list' surveydetails.survey_num %}">See all variables and questions</a></br>
+          <a href = "{{ surveydetails.doc_link }}" >Survey Documentation</a></br>
+              <a href = " {{ surveydetails.source_link }}">Survey Source</a></br>
+            <a href = "{{ surveydetails.data_link }}" > Data Link</a></br>
+</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<br>
+<form action="{% url 'search:index' %}">
+    <input class = "btn btn-lg btn-secondary w-25" type="submit" action = "{% url 'search:index' %}" value="Return to search page" />
+</form>
+
+{% endblock%}

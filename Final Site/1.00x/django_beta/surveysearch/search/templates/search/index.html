@@ -1,0 +1,122 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <title>Survey Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+</head>
+
+<body class="text-center" style = "background-color: black; background-image: url({% static 'img/wordcloud.png' %});
+background-size:100%; background-repeat:no-repeat; background-position:top; ">
+
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+
+        </nav>
+
+    </header>
+
+
+    {% block homepage %}
+
+
+    <main role="main" class="inner cover" style = "background-color:rgba(10, 10, 10, 0.86);
+      border-radius: 10px;
+      padding: 30px">
+        <h1 class="cover-heading" style = "color:#177ABE">SURVEY SEARCH</h1>
+        <p class="lead" style = "color:rgb(150,150,150); text-align: justify; line-height: 1;">An open source survey repository, where you can find surveys related to your research questions or
+        share your surveys with the rest of the world.</p>
+        <p class="lead">
+
+
+<div id="search_tabs" role="navigation">
+<ul class="nav nav-pills nav-justified " style = "border">
+    <li class="nav-item ">
+        <a class="nav-link btn btn-outline-success" data-toggle="tab" href="#panel1" role="tab">Find relevant questions</a>
+    </li>
+    <li class="nav-item ">
+        <a class="nav-link btn btn-outline-success" data-toggle="tab" href="#panel2" role="tab">Find relevant surveys</a>
+    </li>
+
+</ul>
+
+
+<!-- Tab panels -->
+<div class="tab-content mt-3">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+
+        <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:results_detail' %}"
+              method="get" accept-charset="utf-8">
+            <input class="form-control mr-sm-2 searchfield" id="searchbox"
+                   name="q" type="text" placeholder="Input your keywords" aria-label="Search" style = "width:90%">
+            <button class="btn btn-outline-success  my-2 my-sm-0 searchbutton" type="submit">GO</button>
+
+        </form>
+        <p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find out if someone has asked questions of your interest.</p>
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel2" role="tabpanel">
+
+        <form class="form-inline my-2 my-lg-0 w-100 mb-2" id="searchform" action="{% url 'search:survey_results_detail' %}"
+              method="get" accept-charset="utf-8">
+            <input class="form-control mr-sm-2 searchfield" id="searchbox"
+                   name="q1" type="text" placeholder="Input your keywords" style = "width:90%" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 searchbutton" type="submit">GO</button>
+        </form>
+<p class="mt-3" style="color:rgb(150,150,150); text-align: justify; line-height: 1;">Find existing surveys in your area of interest.</p>
+
+    </div>
+    <!--/.Panel 2-->
+
+
+
+
+        <div style = "height:20px"></div>
+        <a href="{% url 'search:browse_surveys' %}" class="btn  btn-outline-success btn-block">Browse available surveys</a>
+        <a href="{% url 'search:upload' %}" class="btn  btn-outline-success btn-block">Upload your survey</a>
+        </p>
+
+
+
+
+    </main>
+    {% endblock %}
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Powered by <a href="https://getbootstrap.com/" style = "color:#177ABE">Bootstrap</a>, by <a href="https://github.com/bethbailey/survey-search" style = "color:#177ABE">@Pawsitive</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

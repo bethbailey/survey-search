@@ -1,0 +1,21 @@
+{% extends 'base_other.html' %}
+
+{% block content %}
+<h2>Oops, something went wrong!</h2>
+<br>
+<p><b>Errors:</b></p>
+<p>{{ csv }}</p>
+<p>{{ unique }}</p>
+
+<form action="../search/upload.html">
+    <button type="submit" class = "btn btn-primary w-25">Try again</button>
+</form>
+<br>
+<form action="../search">
+    <button type="submit" class = "btn btn-secondary w-25">Return to search page</button>
+</form>
+
+<br>
+
+
+{% endblock %}
