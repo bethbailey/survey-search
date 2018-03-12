@@ -16,10 +16,12 @@ Libraries to Install:
 
 ### Running the Django Site
 
+#### Testing Upload
+Please test the upload portion of the site using either a handmade file or, if you are so inclined, use the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches (try searching "project" before and after the upload).
+
 Libraries to Install:
 - pillow
 - wordcloud
-
 
 ## Coding Breakdown
 
