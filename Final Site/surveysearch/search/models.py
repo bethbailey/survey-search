@@ -1,20 +1,15 @@
-# This is an auto-generated Django model module.
-# You'll have to do the following manually to clean this up:
-#   * Rearrange models' order
-#   * Make sure each model has one field with primary_key=True
-#   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
-#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
-# Feel free to rename the models, but don't rename db_table values or field names.
+
 from django.db import models
 
 # Code Ownership for both models: Original
 class SurveyDetails(models.Model):
     '''
-    Defines a SurveyDetails model for the table in the database that contains
-    meta details for the surveys. Primary Key is defined as survey_num, which 
-    autoincrements.
+    Defines a SurveyDetails model for the table in the database that 
+    contains meta details for the surveys. Primary Key is defined as 
+    survey_num, which autoincrements.
     '''
-    survey_num = models.IntegerField(db_column='survey_num', primary_key = True)
+    survey_num = models.IntegerField(db_column='survey_num', primary_key = \
+        True)
     # common key
     survey_key = models.CharField(db_column = 'survey_key', max_length = 500)
     survey_name = models.CharField(db_column='survey_name', max_length = 1000)
@@ -25,7 +20,8 @@ class SurveyDetails(models.Model):
     doc_link = models.CharField(db_column='doc_link', max_length = 1000)
     source_link = models.CharField(db_column='source_link', max_length = 1000)
     summary = models.CharField(db_column='summary', max_length = 3000)
-    survey_questions_document = models.FileField(db_column="document", upload_to="documents/")
+    survey_questions_document = models.FileField(db_column="document", \
+        upload_to="documents/")
 
     def __str__(self):
         return self.summary
@@ -36,10 +32,10 @@ class SurveyDetails(models.Model):
 
 class SurveyQuestions(models.Model):
     '''
-    Defines a SurveyQuestions model for the table in the database that contains
-    survey questions. Primary Key is defined as row_num, which autoincrements.
-    The common key across the models is survey_key, which is generated during
-    the uploading of a survey.
+    Defines a SurveyQuestions model for the table in the database that 
+    contains survey questions. Primary Key is defined as row_num, which 
+    autoincrements. The common key across the models is survey_key, which 
+    is generated during the uploading of a survey.
     '''
     row_num = models.IntegerField(db_column='row_num', primary_key = True)
     # common key

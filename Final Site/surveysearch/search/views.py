@@ -38,6 +38,7 @@ from PIL import Image
 
 class IndexView(generic.ListView):
     '''
+    Class that defines the view for the index. Provides a generic view.
 
     '''
     template_name = 'search/index.html'
@@ -51,24 +52,30 @@ class IndexView(generic.ListView):
  
 class ResultsView(generic.ListView):
     '''
+    Class that defines the view for the question search results.
 
     '''
     template_name = 'search/search_results.html'
     context_object_name = 'Survey_Questions_List'
+    # include pagination
     paginate_by = 10 
 
     def get_queryset(self):
         '''
-
-
+        Given a user query string, processes the query and searches the 
+        database for questions that include the strings specified, and 
+        returns the objects, along with the corresponding survey names.
         '''
         result = SurveyQuestions.objects.all()
 
         query = self.request.GET.get('q')
         if query:
+        	# account for multiple keywords
             query_list = query.split()
+            # case insensitive search of question text column
             result = result.filter(reduce(operator.and_, (Q(var_text__icontains=q) for q in query_list)))
             if result:
+            	# invoke ranking
                 return get_ranked_questions(result, query)
             else:
                 return []
@@ -76,6 +83,10 @@ class ResultsView(generic.ListView):
         	return []
 
     def get_context_data(self, **kwargs):
+    	'''
+    	Adds the survey details as a context object in order to access the survey
+    	name.
+    	'''
         context = super(ResultsView, self).get_context_data(**kwargs)
         context.update({
             'Survey_Details_List': SurveyDetails.objects.all(),
@@ -130,12 +141,17 @@ class Browse(generic.ListView):
 
 class DetailView(generic.DetailView):
     '''
+    Class that defines the view for Survey details for each question.
 
     '''
     template_name = 'search/detail.html'
     model = SurveyQuestions
 
     def get_context_data(self, **kwargs):
+    	'''
+    	Adds the survey details as a context object in order to access the 
+    	details objects.
+    	'''
         context = super(DetailView, self).get_context_data(**kwargs)
         context.update({
             'Survey_Details_List': SurveyDetails.objects.all(),
@@ -144,12 +160,17 @@ class DetailView(generic.DetailView):
 
 class QuestionDetail(generic.DetailView):
     '''
-
+    Class that defines the view for Survey details for each question from the
+    question list.
     '''
     template_name = 'search/question_list.html'
     model = SurveyDetails
 
     def get_context_data(self, **kwargs):
+    	'''
+    	Adds the survey questions as a context object in order to access the 
+    	questions objects.
+    	'''
         context = super(QuestionDetail, self).get_context_data(**kwargs)
         context.update({
             'Survey_Questions_List': SurveyQuestions.objects.all(),
@@ -158,7 +179,8 @@ class QuestionDetail(generic.DetailView):
 
 class BrowseDetailView(generic.DetailView):
     '''
-
+    Class that defines the view for Survey details for each survey from the
+    browse surveys list.
     '''
     template_name = 'search/browse_detail.html'
     model = SurveyDetails
