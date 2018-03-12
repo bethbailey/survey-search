@@ -51,16 +51,16 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook,
 
 To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
 
-### *Use Case 1: Testing Question Search:*
+#### *Use Case 1: Testing Question Search*
 Go to homepage -> click "Find relevant questions" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant questions from all the surveys in the database. You can then view the survey that contains a particular question by clicking on the title. While viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
-### Use Case 2: Testing Survey Search
+#### *Use Case 2: Testing Survey Search*
 Go to homepage -> click "Find relevant surveys" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant surveys in the database. You can then view the details of any survey by clicking on the title. Again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
-### Use Case 3: Browse Surveys
+#### *Use Case 3: Browse Surveys*
 Go to homepage -> click "Browse" button and you'll be redirected to a page listing all the surveys in the database. You can then view the details of any survey by clicking on the title. Once again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
-### Use Case 4: Testing Upload
+#### *Use Case 4: Testing Upload*
 Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload).
 
 #### Libraries to Install for Django:
