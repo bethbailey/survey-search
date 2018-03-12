@@ -15,7 +15,7 @@ Our code is structured in two main bits: (1) data cleaning and (2) Django site. 
 The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
 
 -  |-search
-    * This is our main and only app. It is the root folder. 
+    * This is our main and only app. It is the root folder. It contains the files admin.py (Django admin file), views.py (the brunt of our Django python code), apps.py (our app), forms.py (the upload form), models.py (our survey and question models), urls.py (our urls file), and views.py (our views).
     * |  |-migrations
         * |  |  |-__pycache__
     *  |  |-__pycache__
@@ -64,9 +64,8 @@ Go to homepage -> click "Browse" button and you'll be redirected to a page listi
 Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload).
 
 #### Libraries to Install for Django:
-- pillow
-- wordcloud
-- sklearn
+- wordcloud (sudo pip install wordcloud)
+- sklearn (sudo pip install sklearn)
 
 ## Coding Breakdown
 
