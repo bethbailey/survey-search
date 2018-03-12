@@ -7,7 +7,7 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
+# Code Ownership for both models: Original
 class SurveyDetails(models.Model):
 
     survey_num = models.IntegerField(db_column='survey_num', primary_key = True)
