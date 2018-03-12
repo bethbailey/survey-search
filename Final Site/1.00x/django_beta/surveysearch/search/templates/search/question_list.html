@@ -1,0 +1,25 @@
+{% extends 'base_other.html' %}
+
+{% block content%}
+<h1>Variables and Questions</h1>
+
+<h3><font color="teal"><a href = "{% url 'search:browse_detail' surveydetails.survey_num %}">{{ surveydetails.survey_name }}</a></font></h3>
+</br>
+{% for question in Survey_Questions_List %}
+	{% if question.survey_key == surveydetails.survey_key %}
+<p><b>Variable Name:</b> <font color = 'teal'>{{ question.var_name }}</font></br><b> Question Text:</b> <font color = 'teal'>{{ question.var_text }}</font></p>
+    {% endif %}
+{% endfor %}
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<br>
+<form action="../../search">
+    <input class = "w-25 btn btn-lg btn-primary" type="submit" action = "{% url 'search:index' %}" value="Return to survey" />
+</form>
+</br>
+<form action="../../../search">
+    <input class = "w-25 btn btn-lg btn-secondary" type="submit" action = "{% url 'search:index' %}" value="Return to homepage" />
+</form>
+
+    {% endblock%}

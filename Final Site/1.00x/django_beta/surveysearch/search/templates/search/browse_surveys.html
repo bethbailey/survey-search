@@ -1,0 +1,40 @@
+{% extends 'base_other.html' %}
+
+{% block content %}
+
+<h1>Surveys Available</h1>
+</br>
+
+{% for survey in object_list %}
+    <a href="{% url 'search:browse_detail' survey.survey_num %}"><h4>{{ survey.survey_name }}</h4></a>
+    <p><font > {{ survey.summary }}</font></p>
+
+<br>
+    {% empty %}
+    <p>There are no surveys in the database yet.</p>
+{% endfor %}
+
+<!--Pagination-->
+{% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <!-- keep query string in url while iterating through pages -->
+                <a href="?page={{ page_obj.previous_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Previous Page</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}{% for key, value in request.GET.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">Next Page</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+
+
+<form action="../search">
+    <button type="submit" class = "btn btn-primary w-25">Return to search page</button>
+</form>
+
+{% endblock %}

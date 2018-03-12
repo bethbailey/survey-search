@@ -1,0 +1,73 @@
+{% extends 'base_other.html' %}
+
+{% block content%}
+<h1>Survey Details</h1>
+</br>
+{% for details in Survey_Details_List %}
+	{% if details.survey_key == surveyquestions.survey_key %}
+
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th class="w-25">Survey Name:</th>
+      <th>{{ details.survey_name }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Conducting Organization:</th>
+      <td>{{ details.org_conduct }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Survey Summary:</th>
+      <td>{{ details.summary }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Number of Participants:</th>
+      <td>{{ details.num_participants }}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Number of Questions:</th>
+      <td colspan="2">{{ details.num_questions | urlize }}</td>
+
+    </tr>
+
+
+      <tr>
+      <th scope="row">Links:</th>
+        <td colspan="2"> <a href = "{ details.doc_link | urlize }" >Survey Documentation</a></br>
+              <a href = " { details.source_link | urlize }">Survey Source</a></br>
+            <a href = "{ details.data_link | urlize }" > Survey Link</a></br>
+          <a href="{% url 'search:question_detail_list' details.survey_num %}">See all variables and questions</a>
+</td>
+
+    </tr>
+
+      <tr>
+      <th scope="row">Contains:</th>
+      <td colspan="2">Variable Name: <font color = 'teal'>{{ surveyquestions.var_name }}</font></br>
+Question: <font color = 'teal'>{{ surveyquestions.var_text }}</b></font>
+</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+    {% endif %}
+{% endfor %}
+
+
+
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<br>
+<form action="{% url 'search:index' %}">
+    <input class = "btn btn-lg btn-secondary w-25" type="submit" action = "{% url 'search:index' %}" value="Return to search page" />
+</form>
+    {% endblock%}
