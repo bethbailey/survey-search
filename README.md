@@ -1,7 +1,15 @@
 # survey-search
 Survey search project for CS 30122
 
-Team: Bethany Bailey, Ruixue Li, Leoson Hoay
+Team: Bethany Bailey (Data Cleaning Queen), Ruixue Li (Interior Designer), Leoson Hoay (Django Janitor)
+
+
+## Overall Code Structure
+
+Our code is structured in two main bits: (1) data cleaning and (2) Django site. The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
+
+The Django portion is structured as follows:
+
 
 ## Instructions
 
