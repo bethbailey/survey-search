@@ -1,0 +1,49 @@
+Var_Name,Var_Text
+Q1,"All in all, are you satisfied or dissatisfied with the way things are going in this country today?"
+Q2,"We’d like you to compare the United States to other industrialized countries in a few different areas. (First,) what about... [INSERT ITEM; READ AND RANDOMIZE]? [READ FOR FIRST ITEM, THEN AS NECESSARY: Do you think the U.S. is the BEST IN THE WORLD, above average, average or below average in [ITEM] compared to other industrialized countries?] a. Its scientific achievements b. Its military c. Its economy e. Science, technology, engineering and math education for grades K to 12"
+Q3,"How much do you ENJOY keeping up with news about science – a lot, some, not much, or not at all?"
+Q4,"Overall, has science made life easier or more difficult for most people?"
+Q5,Has science had a mostly positive or mostly negative effect on the quality of [INSERT ITEM; RANDOMIZE] in the U.S.? What about [NEXT ITEM]? [IF NECESSARY: Has science had a mostly positive or mostly negative effect on the quality of [ITEM] in the U.S.?] a. Food b. Health care c. The environment
+Q6,"Which of these statements best describes your views, even if neither is exactly right? 1 One, Public opinion should play an important role to guide policy decisions about scientific issues, OR 2 Two, Public opinion should NOT play an important role to guide policy decisions about scientific issues because these issues are too complex for the average person to understand 3 Neither/Both [VOL. DO NOT READ] 9 Don’t know/Refused (VOL.)"
+Q7,"In your opinion, generally do you think... [READ AND RANDOMIZE] 1 Science and religion are often in conflict [OR] 2 Science and religion are mostly compatible 9 [VOL. DO NOT READ] Don’t know/Refused"
+Q8,"Now thinking about your own religious beliefs, does science sometimes conflict with your own religious beliefs, or doesn’t it?"
+Q8,"IF Q8=1 AND FORM 1, ASK: 1 Answer given 9 Don’t know/Refused"
+Q9F1,"Can you tell me some ways in which science conflicts with your own religious beliefs? [OPEN END; ACCEPT UP TO THREE RESPONSES; PROBE ONCE IF “DON’T KNOW,” AND PROBE FOR CLARITY, BUT DO NOT PROBE FOR ADDITIONAL RESPONSES] 1 Answer given 9 Don’t know/Refused"
+Q9f1_code1,FIRST MENTION: Can you tell some ways in which science conflicts with your own religious beliefs?
+Q9f1_code2,Q9f1_code2 SECOND MENTION: Can you tell some ways in which science conflicts with your own religious beliefs?
+Q9f1_code3,Q9f1_code3 THIRD MENTION: Can you tell some ways in which science conflicts with your own religious beliefs?
+Q12,"In your opinion, do government investments in [INSERT ITEM; RANDOMIZE] usually pay off in the long run, or are they not worth it? a. Basic scientific research b. Engineering and technology"
+Q13,"Which of these comes closer to your view? [READ AND RANDOMIZE RESPONSE OPTIONS] 1 Government investment in research is ESSENTIAL for scientific progress [OR] 2 Private investment will ensure that enough scientific progress is made, even without government investment 9 [VOL. DO NOT READ] Don’t know/Refused"
+Q20F1,[RANDOMIZE QUESTIONS 16-18 IN BLOCKS WITH QUESTIONS Q20F1 to Q23 IN BLOCKS]
+Q16,Which comes closer to your view? [READ AND RANDOMIZE] 1 Humans and other living things have evolved over time [OR] 2 Humans and other living things have existed in their present form since the beginning of time 9 [VOL. DO NOT READ] Don’t know/Refused
+Q16,"IF EVOLVED (1 in Q16), ASK: 1 Humans and other living things have evolved due to natural processes such as natural selection, OR 2 A supreme being guided the evolution of living things for the purpose of creating humans and other life in the form it exists today 9 [VOL. DO NOT READ] Don’t know/Refused"
+Q17,"And do you think that...[READ OPTIONS AND RANDOMIZE]? 1 Humans and other living things have evolved due to natural processes such as natural selection, OR 2 A supreme being guided the evolution of living things for the purpose of creating humans and other life in the form it exists today 9 [VOL. DO NOT READ] Don’t know/Refused"
+Q18,"From what you’ve heard or read, do scientists generally agree that humans evolved over time, or do they not generally agree about this?"
+Q20F1,Which of these three statements about the earth’s temperature comes closest to your view? 1 The earth is getting warmer mostly because of natural patterns in the earth’s environment 2 The earth is getting warmer mostly because of human activity such as burning fossil fuels [OR] 3 [READ LAST] There is no solid evidence that the earth is getting warmer 9 [VOL. DO NOT READ] Don’t know/Refused
+Q21AF2,"From what you’ve read and heard, is there solid evidence that the average temperature on earth has been getting warmer over the past few decades, or not?"
+Q21BF2,Do you believe that the earth is getting warmer [READ AND RANDOMIZE]? 1 Mostly because of human activity such as burning fossil fuels [OR] 2 Mostly because of natural patterns in the earth’s environment 9 [VOL. DO NOT READ] Don’t know/Refused
+Q21CF2,Do you think that we just don’t know enough yet about whether the Earth is getting warmer or do you think it’s just not happening?
+Q23,"From what you’ve heard or read, do scientists generally agree that the earth is getting warmer because of human activity, or do they not generally agree about this?"
+Q24,"All in all, do you favor or oppose [INSERT ITEM; RANDOMIZE]? Do you favor or oppose [NEXT ITEM]? a. The use of animals in scientific research b. Building more nuclear power plants to generate electricity c. The increased use of fracking, a drilling method that uses high-pressure water and chemicals to extract oil and natural gas from underground rock formations d. The increased use of genetically engineered plants to create a liquid fuel replacement for gasoline e. Allowing more offshore oil and gas drilling in U.S. waters"
+Q25,"Thinking about childhood diseases, such as measles, mumps, rubella and polio... [READ AND RANDOMIZE] 1 Should parents be able to decide NOT to vaccinate their children [OR] 2 Should all children be required to be vaccinated 9 Don’t know/Refused (VOL.)"
+Q27,"Thinking about the use of biological engineering to create artificial organs for humans needing a transplant operation, would you say this is making appropriate use of medical advances OR is it taking medical advances too far?"
+Q28,"Which of these statements comes closest to your point of view, even if neither is exactly right? [READ IN ORDER] 1 One, The growing world population will NOT be a major problem because we will find a way to stretch our natural resources OR 2 Two, The growing population WILL be a major problem because there won’t be enough food and resources to go around? 9 Don't know/Refused (VOL.) c. "
+Q29,"Do you think the SPACE STATION has been a good investment for this country, or don’t you think so?"
+Q30,"The cost of sending human astronauts to space is considerably greater than the cost of using robotic machines for space exploration. As you think about the future of the U.S. space program, do you think it is essential or not essential to include the use of human astronauts in space?"
+Q32,"From what you’ve heard or read, would you say that [READ AND RANDOMIZE 1-2] 1 Scientists generally believe that the universe was created in a single, violent event, often called “the Big Bang” OR 2 Scientists are divided in their views about how the universe was created 3 Both/Neither (VOL.) 9 Don’t know/Refused (VOL.)"
+Q33,[RANDOMIZE ORDER OF Q33 AND Q34] 1 Appropriate use of medical advances 2 Taking medical advances too far
+Q33,Would you say that changing a baby's genetic characteristics to make the baby more intelligent is making appropriate use of medical advances OR is it taking medical advances too far?
+Q34,Would you say that changing a baby's genetic characteristics to reduce the risk of serious diseases is making appropriate use of medical advances OR is it taking medical advances too far?
+Q35,Do you think it is generally safe or unsafe to eat foods grown with pesticides?
+Q37,"When you are food shopping, how often, if ever, do you LOOK TO SEE if the products are genetically modified? [READ] 1 Always 2 Sometimes 3 Not too often, OR 4 Never 5 Someone else in HH does the food shopping (VOL.)"
+Q38,Do you think it is generally safe or unsafe to eat genetically modified foods?
+Q39,"From what you’ve heard or read, would you say scientists have a clear understanding of the health effects of genetically modified crops OR are scientists NOT clear about this?"
+Q40,"Which of these statements best describes your views, even if neither is exactly right? 1 Churches and other houses of worship should express their views about policy decisions on scientific issues 2 Churches and other houses of worship should keep out of policy decisions on scientific issues 3 Neither/Both [VOL. DO NOT READ] 9 Don't know/Refused (VOL.)"
+Q41,Just your impression: Do you think of scientists as...[RANDOMIZE ORDER OF:] a politically liberal group/a politically conservative group [THEN] or as neither in particular? 1 A politically liberal group 2 A politically conservative group 3 Neither in particular 9 Don't know/Refused (VOL.)
+KNOSCT14,[RANDOMIZE KNOSCT14 THROUGH KNOSCT19]
+KNOSCT14, 	Which of these is a major concern about the overuse of antibiotics? [READ AND 
+KNOSCT15,	Is the following statement true or false? Lasers work by focusing sound waves. [IF NECESSARY: Is this statement true or false?] 
+KNOSCT16,	Does nanotechnology deal with things that are extremely [READ AND RANDOMIZE] 
+KNOSCT17,	Which is an example of a chemical reaction? [READ AND RANDOMIZE] 
+KNOSCT18,	What is the main function of red blood cells? Is it... [READ AND RANDOMIZE]
+KNOSCT19,	What gas do most scientists believe causes temperatures in the atmosphere to rise? Is it [READ AND RANDOMIZE]
