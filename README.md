@@ -41,10 +41,9 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 ### Data Cleaning
 
 #### Libraries to Install for Data Cleaning:
-- PyPDF2 (sudo pip install PyPDF2)
-- docx (sudo pip install docx)
-- exceptions (to go with docx - sudo pip install docx)
-- docx2txt (sudo pip install docx2txt)
+- PyPDF2 (sudo pip3 install PyPDF2)
+- docx (sudo pip3 install python-docx)
+- docx2txt (sudo pip3 install docx2txt)
 - The regular expression library (re) should be installed on ths VMs already.
 
 To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
@@ -52,8 +51,8 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook,
 ### Running the Django Site
 
 #### Libraries to Install for Django:
-- wordcloud (sudo pip install wordcloud)
-- sklearn (sudo pip install sklearn)
+- wordcloud (sudo pip3 install wordcloud)
+- sklearn (sudo pip3 install sklearn)
 - Pillow and Matplotlib should already be installed on the VMs.
 
 To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
