@@ -23,7 +23,7 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 │   ├── __pycache__
 │   ├── admin.py
 │   ├── apps.py 
-│   ├── forms.py *file \ for displaying a form for user to upload survey files 
+│   ├── forms.py *define a form class to display a form so that users can upload survey files 
 │   ├── migrations
 │   ├── models.py  *django models
 │   ├── static  *static files, including Bootstrap and customized css/javascript, image files, generated wordcloud image
