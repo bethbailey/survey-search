@@ -46,7 +46,7 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 - docx2txt (sudo pip3 install docx2txt)
 - The regular expression library (re) should be installed on ths VMs already.
 
-To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
+To rerun the data cleaning, go into each data folder, open the jupyter notebook (run "jupyter notebook" from the command line and go to the jupyter notebook document), and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
 
 ### Running the Django Site
 
