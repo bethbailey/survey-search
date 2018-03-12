@@ -2,8 +2,12 @@ from django import forms
 
 from search.models import SurveyDetails
 
-
 class SurveyUploadForm(forms.ModelForm):
+    '''
+    The class for using a form to handl the user upload
+    Code Ownership: Modified from this tutorisl:
+    https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
+    '''
 
     summary = forms.CharField(widget=forms.Textarea)
 
@@ -13,8 +17,10 @@ class SurveyUploadForm(forms.ModelForm):
         'org_conduct', 'num_participants', 'num_questions', 'data_link', 'doc_link', 'source_link', \
         'summary', 'survey_questions_document')
 
-
     def __init__(self, *args, **kwargs):
+        '''
+        Controls of the labels and appearance of the fields in the form are included
+        '''
         super(SurveyUploadForm, self).__init__(*args, **kwargs)
         self.fields['summary'].widget.attrs['cols'] = 40
         self.fields['summary'].widget.attrs['rows'] = 10
