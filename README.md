@@ -13,49 +13,29 @@ Our code is structured in two main bits: (1) data cleaning and (2) Django site. 
 ### Django
 
 The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
-'''
--  |-search    
-    * This is our main and only app. It is the root folder. It contains the files admin.py (Django admin file), views.py (the brunt of our Django python code), apps.py (our app), forms.py (the upload form), models.py (our survey and question models), urls.py (our urls file), and views.py (our views).    
-   |  |-migrations    
-   |  |  |-__pycache__   
-   |  |-__pycache__   
-   |  |-static   
-    * This folder contains bootstrap files (css, javascript) and images displayed on the website (including generated wordcloud image file).    
-   |  |  |-css    
-   |  |  |-js    
-   |  |  |-img    
-    * |  |-templates    
-        * This folder contains the html templates for our site.
-        * |  |  |-search
-            * |  |  |  |-img
-- |-documents
-    * This is the folder where the user uploaded files are stored and processed.
--  |-surveysearch
-    * This folder contains the Django site settings and back-end configuration.
-    * |  |-__pycache__
-- | search_beta.sqlite3
-    * SQL database for our models.
 
 
-│   ├── __pycache__
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── migrations
-│   ├── models.py
-│   ├── static
-│   ├── templates
-│   ├── urls.py
-│   └── views.py
-├── search_beta.sqlite3
-└── surveysearch
-    ├── __init__.py
-    ├── __pycache__
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-
-'''
++---- documents
++---- manage.py
++---- search
+ |        +---- __init__.py
+ |        +---- __pycache__
+ |        +---- admin.py
+ |        +---- apps.py
+ |        +---- forms.py
+ |        +---- migrations
+ |        +---- models.py
+ |        +---- static
+ |        +---- templates
+ |        +---- urls.py
+ |        +---- views.py
+ +---- search_beta.sqlite3
+ +---- surveysearch
+ |        +---- __init__.py
+ |        +---- __pycache__
+ |        +---- settings.py
+ |        +---- urls.py
+ |        +---- wsgi.py
 
 ## Instructions
 
