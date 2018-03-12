@@ -70,23 +70,23 @@ class ResultsView(generic.ListView):
 
         query = self.request.GET.get('q')
         if query:
-        	# account for multiple keywords
+            # account for multiple keywords
             query_list = query.split()
             # case insensitive search of question text column
             result = result.filter(reduce(operator.and_, (Q(var_text__icontains=q) for q in query_list)))
             if result:
-            	# invoke ranking
+                # invoke ranking
                 return get_ranked_questions(result, query)
             else:
                 return []
         else:
-        	return []
+            return []
 
     def get_context_data(self, **kwargs):
-    	'''
-    	Adds the survey details as a context object in order to access the survey
-    	name.
-    	'''
+        '''
+        Adds the survey details as a context object in order to access the survey
+        name.
+        '''
         context = super(ResultsView, self).get_context_data(**kwargs)
         context.update({
             'Survey_Details_List': SurveyDetails.objects.all(),
@@ -148,10 +148,10 @@ class DetailView(generic.DetailView):
     model = SurveyQuestions
 
     def get_context_data(self, **kwargs):
-    	'''
-    	Adds the survey details as a context object in order to access the 
-    	details objects.
-    	'''
+        '''
+        Adds the survey details as a context object in order to access the 
+        details objects.
+        '''
         context = super(DetailView, self).get_context_data(**kwargs)
         context.update({
             'Survey_Details_List': SurveyDetails.objects.all(),
@@ -167,10 +167,10 @@ class QuestionDetail(generic.DetailView):
     model = SurveyDetails
 
     def get_context_data(self, **kwargs):
-    	'''
-    	Adds the survey questions as a context object in order to access the 
-    	questions objects.
-    	'''
+        '''
+        Adds the survey questions as a context object in order to access the 
+        questions objects.
+        '''
         context = super(QuestionDetail, self).get_context_data(**kwargs)
         context.update({
             'Survey_Questions_List': SurveyQuestions.objects.all(),
