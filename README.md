@@ -15,10 +15,31 @@ Our code is structured in two main bits: (1) data cleaning and (2) Django site. 
 The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
 
 
+```bash
+├── app
+│   ├── css
+│   │   ├── **/*.css
+│   ├── favicon.ico
+│   ├── images
+│   ├── index.html
+│   ├── js
+│   │   ├── **/*.js
+│   └── partials/template
+├── dist (or build)
+├── node_modules
+├── bower_components (if using bower)
+├── test
+├── Gruntfile.js/gulpfile.js
+├── README.md
+├── package.json
+├── bower.json (if using bower)
+└── .gitignore
+```
+
 +---- documents  
 +---- manage.py  
 +---- search  
- |\ \ \ \             +---- \__init__.py  
+ |        +---- __init__.py  
  |        +---- \__pycache__  
  |        +---- admin.py  
  |        +---- apps.py  
