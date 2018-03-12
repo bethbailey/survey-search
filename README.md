@@ -7,8 +7,18 @@ Team: Bethany Bailey, Ruixue Li, Leoson Hoay
 
 ### Data Cleaning
 
+To rerun the data cleaning, go into each data folder, open the jupyter notebook, and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
+
+Libraries to Install:
+- PyPDF2
+- docx
+- docx2txt
 
 ### Running the Django Site
+
+Libraries to Install:
+- pillow
+- wordcloud
 
 
 ## Coding Breakdown
