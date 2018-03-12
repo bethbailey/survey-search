@@ -16,47 +16,28 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 
 
 ```bash
-├── app
-│   ├── css
-│   │   ├── **/*.css
-│   ├── favicon.ico
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
-└── .gitignore
+├── documents
+├── manage.py
+├── search
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── migrations
+│   ├── models.py
+│   ├── static
+│   ├── templates
+│   ├── urls.py
+│   └── views.py
+├── search_beta.sqlite3
+├── surveysearch
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── settings.py
+│   ├── urls.py
+│   └── views.py
 ```
-
-+---- documents  
-+---- manage.py  
-+---- search  
- |        +---- __init__.py  
- |        +---- \__pycache__  
- |        +---- admin.py  
- |        +---- apps.py  
- |        +---- forms.py  
- |        +---- migrations  
- |        +---- models.py  
- |        +---- static  
- |        +---- templates  
- |        +---- urls.py  
- |        +---- views.py  
- +---- search_beta.sqlite3  
- +---- surveysearch  
- |        +---- \__init__.py  
- |        +---- \__pycache__  
- |        +---- settings.py  
- |        +---- urls.py  
- |        +---- wsgi.py  
 
 ## Instructions
 
