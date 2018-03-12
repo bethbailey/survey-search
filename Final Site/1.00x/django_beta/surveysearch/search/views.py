@@ -17,7 +17,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from search.models import SurveyDetails
 from search.forms import SurveyUploadForm
 import csv
 import tempfile
@@ -25,11 +24,8 @@ import shutil
 import datetime
 
 import numpy as np
-
-from search.models import SurveyDetails
-from search.forms import SurveyUploadForm
-import matplotlib.pyplot as plt
 import matplotlib
+import matplotlib.pyplot as plt
 from PIL import Image
 import wordcloud
 
