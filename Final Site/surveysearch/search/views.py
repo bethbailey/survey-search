@@ -355,7 +355,7 @@ def generate_wordcloud():
     surveys = " ".join(s[0] for s in list(SurveyDetails.objects.values_list\
         ('summary')))
     surveys_names = " ".join(s[0] for s in \
-        list(SurveyDetails.objects.\values_list('survey_name')))
+        list(SurveyDetails.objects.values_list('survey_name')))
     text = surveys + " " + surveys_names
 
     # generate wordcloud and save to an image file
