@@ -131,6 +131,7 @@ class SurveyResultsView(generic.ListView):
                 result_summary_ls = result_summary_ls + list(result_summary_2)
             # Remove repeated surveys and convert back to a list.
             rv = list(set(result_summary_ls))
+            # If there is no rv or no query, return an empty list.
             if rv:
                 return get_ranked_surveys(rv, query)
             else:
@@ -140,7 +141,9 @@ class SurveyResultsView(generic.ListView):
 
 class Browse(generic.ListView):
     '''
-
+    Class that defines view to display all the survey results. This class
+    gets all the surveys in the SurveyDetails model and returns all the 
+    objects.
     '''
     template_name = 'search/browse_surveys.html'
     paginate_by = 10 
@@ -268,7 +271,6 @@ def model_form_upload(request):
         'form': form
     })
 
-
 def get_rankings(data, query):
     '''
     Given list of indices, texts correspond to those indices, and a query 
@@ -322,7 +324,6 @@ def get_ranked_surveys(queries_results, query):
         results.append(SurveyDetails.objects.get(pk=i))
     return results
 
-
 def handle_files(csv_file, id_obj):
     with open(csv_file) as f:
         reader = csv.reader(f)
@@ -336,11 +337,9 @@ def handle_files(csv_file, id_obj):
                 questions.save()
         f.close()
 
-
 def grey_color_func(word, font_size, position, orientation, random_state=None,
                     **kwargs):
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
-
 
 def generate_wordcloud():
     '''
