@@ -36,6 +36,105 @@ The Django portion is structured as follows (the final site is in Final Site/sur
 - | search_beta.sqlite3
     * SQL database for our models.
 
+
+├── documents  
+│   ├── 2016CCSLeadershipSurvey.csv  
+│   ├── GSS_cleaned_2012.csv  
+│   ├── GSS_cleaned_2014.csv  
+│   ├── GSS_cleaned_2016.csv  
+│   ├── OLSAnimal_1.csv  
+│   ├── OLSAnimal_2.csv   
+│   ├── OLSAnimal_3.csv  
+│   ├── PewScience_cleaned.csv  
+│   ├── Support_for_homosexuality_cleaned.csv  
+│   ├── student.csv   
+│   ├── student_FHzdiee.csv 
+│   └── student_j0dc7qp.csv  
+├── manage.py  
+├── search  
+│   ├── __init__.py  
+│   ├── __pycache__  
+│   │   ├── __init__.cpython-36.pyc  
+│   │   ├── admin.cpython-36.pyc  
+│   │   ├── apps.cpython-36.pyc  
+│   │   ├── forms.cpython-36.pyc  
+│   │   ├── models.cpython-36.pyc  
+│   │   ├── urls.cpython-36.pyc  
+│   │   └── views.cpython-36.pyc   
+│   ├── admin.py  
+│   ├── apps.py  
+│   ├── forms.py  
+│   ├── migrations  
+│   │   ├── 0001_initial.py    
+│   │   ├── __init__.py  
+│   │   └── __pycache__    
+│   │       ├── 0001_initial.cpython-36.pyc    
+│   │       └── __init__.cpython-36.pyc  
+│   ├── models.py  
+│   ├── static  
+│   │   ├── css
+│   │   │   ├── album.css
+│   │   │   ├── bootstrap-grid.css
+│   │   │   ├── bootstrap-grid.css.map
+│   │   │   ├── bootstrap-grid.min.css
+│   │   │   ├── bootstrap-grid.min.css.map
+│   │   │   ├── bootstrap-reboot.css
+│   │   │   ├── bootstrap-reboot.css.map
+│   │   │   ├── bootstrap-reboot.min.css
+│   │   │   ├── bootstrap-reboot.min.css.map
+│   │   │   ├── bootstrap.css
+│   │   │   ├── bootstrap.css.map
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── bootstrap.min.css.map
+│   │   │   ├── cover.css
+│   │   │   ├── form.css
+│   │   │   └── starter-template.css
+│   │   ├── img
+│   │   │   ├── favicon.ico
+│   │   │   ├── mask.png
+│   │   │   └── wordcloud.png
+│   │   └── js
+│   │       ├── bootstrap.bundle.js
+│   │       ├── bootstrap.bundle.js.map
+│   │       ├── bootstrap.bundle.min.js
+│   │       ├── bootstrap.bundle.min.js.map
+│   │       ├── bootstrap.js
+│   │       ├── bootstrap.js.map
+│   │       ├── bootstrap.min.js
+│   │       └── bootstrap.min.js.map
+│   ├── templates
+│   │   ├── base_other.html
+│   │   └── search
+│   │       ├── browse_detail.html
+│   │       ├── browse_surveys.html
+│   │       ├── detail.html
+│   │       ├── img
+│   │       │   └── CatComputer.jpg
+│   │       ├── index.html
+│   │       ├── question_list.html
+│   │       ├── search_results.html
+│   │       ├── search_results_survey.html
+│   │       ├── upload.html
+│   │       ├── upload_failure.html
+│   │       └── upload_success.html
+│   ├── urls.py
+│   └── views.py
+├── search_beta.sqlite3
+└── surveysearch
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-36.pyc
+    │   ├── settings.cpython-36.pyc
+    │   ├── urls.cpython-36.pyc
+    │   └── wsgi.cpython-36.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+
+
+
+
 ## Instructions
 
 ### Data Cleaning
@@ -82,9 +181,6 @@ Bethany and Ruixue completed the upload form. Together, all three team members f
 
 #### Search
 Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
-
-#### Browse
-Bethany completed browse.
 
 #### WordCloud
 
