@@ -76,7 +76,7 @@ class ResultsView(generic.ListView):
             result = result.filter(reduce(operator.and_, \
                 (Q(var_text__icontains=q) for q in query_list)))
             if result:
-                # invoke ranking
+                # if there are query results, invoke ranking
                 return get_ranked_questions(result, query)
             else:
                 return []
@@ -159,7 +159,6 @@ class Browse(generic.ListView):
 class DetailView(generic.DetailView):
     '''
     Class that defines the view for Survey details for each question.
-
     '''
     template_name = 'search/detail.html'
     model = SurveyQuestions
@@ -204,6 +203,9 @@ class BrowseDetailView(generic.DetailView):
 
 
 def home(request):
+    '''
+    View for the homepage
+    '''
     surveys = SurveyDetails.objects.all()
     return render(request, 'search/index.html')
 
@@ -220,6 +222,10 @@ def upload_failure(request):
     return render(request, 'search/upload_failure.html')
 
 def model_form_upload(request):
+    '''
+    The view for displaying the page for users to upload surveys
+    Code ownership: original
+    '''
     if request.method == 'POST':
         form = SurveyUploadForm(request.POST, request.FILES)
         if form.is_valid():
@@ -303,6 +309,10 @@ def get_rankings(data, query):
     return arr[:, 0]
 
 def get_ranked_questions(queries_results, query):
+    '''
+    Rank questions by their relevancy to the query string
+    Code Ownership: Original
+    '''
     data = [[s[0] for s in queries_results.values_list('row_num')]]
     data.append([s[0] for s in queries_results.values_list('var_text')])
     rankings = get_rankings(data, query)
@@ -312,6 +322,10 @@ def get_ranked_questions(queries_results, query):
     return results
 
 def get_ranked_surveys(queries_results, query):
+    '''
+    Rank surveys by their relevancy to the query string
+    Code Ownership: Original
+    '''
     data = [[s.survey_num for s in queries_results]]
     data.append([s.survey_name for s in queries_results])
     data.append([s.summary for s in queries_results])
@@ -325,6 +339,11 @@ def get_ranked_surveys(queries_results, query):
     return results
 
 def handle_files(csv_file, id_obj):
+    '''
+    Handles the file containing survey questions that user uploads:
+    read the file and add questions to database
+    Code Ownership: Modified
+    '''
     with open(csv_file) as f:
         reader = csv.reader(f)
         for row in reader:
@@ -337,8 +356,11 @@ def handle_files(csv_file, id_obj):
                 questions.save()
         f.close()
 
-def grey_color_func(word, font_size, position, orientation, random_state=None,
-                    **kwargs):
+def grey_color_func():
+    '''
+    Generate random grey colors for plotting wordcloud
+    Code Ownership: Modified
+    '''
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
 
 def generate_wordcloud():
