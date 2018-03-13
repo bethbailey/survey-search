@@ -1,22 +1,39 @@
 # survey-search
-Survey search project for CS 30122
 
-Team: Bethany Bailey (Data Cleaning Queen), Ruixue Li (Interior Designer), Leoson Hoay (Django Janitor)
+CS 30122 Final Project
+Title: Survey Search
+Team: Pawsitive
+Members: Bethany Bailey (The Data Cleaner Cat)
+         Ruixue Li (The Interior Designer Cat)
+         Leoson Hoay (The Django Janitor Cat)
+
+
+## Project description
+
+Goal: Create an easy-to-use open-source social science survey data repository.
+Unique selling points: 
+1. Search multiple surveys from different sources on one site.
+2. Search surveys on a granular level (for individual questions) as well as for entire surveys
+3. Researchers can upload and share their own survey data
 
 
 ## Overall Code Structure
 
+The code of this project consist of two part:
+* (1) code for data cleaning 
+* (2) code for building the Django site
+Both parts are documented below.
+
 ### Data Cleaning
 
-Our code is structured in two main bits: (1) data cleaning and (2) Django site. The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
+The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
 
-### Django
+### Django Site
 
-The Django portion is structured as follows (the final site is in Final Site/surveysearch folder on github):
-
+The Django portion is structured as follows (the site is available in Final Site/surveysearch folder on github):
 
 ```bash
-├── documents *where user uploaded documents are stored
+├── documents *where user uploaded survey question files are stored
 ├── manage.py 
 ├── search
 │   ├── __init__.py
@@ -39,9 +56,9 @@ The Django portion is structured as follows (the final site is in Final Site/sur
     └── views.py
 ```
 
-## Instructions
+## Instructions for Running the Project
 
-### Data Cleaning
+### Running the Data Cleaning code
 
 #### Libraries to Install for Data Cleaning:
 - PyPDF2 (sudo pip3 install PyPDF2)
@@ -53,13 +70,14 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook 
 
 ### Running the Django Site
 
-#### Libraries to Install for Django:
+#### Libraries to Install:
 - wordcloud (sudo pip3 install wordcloud)
 - sklearn (sudo pip3 install sklearn)
 - Pillow and Matplotlib should already be installed on the VMs.
 
-To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage.
+To run our site, please go into the Final Site/surveysearch folder and run "python3 manage.py runserver --nothreading --insecure". We have added "--nothreading" in order to ensure compatibility with matplotlib. Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage. "--insecure" is for running a local development server with "DEBUG" set to "False".
 
+### Use Cases
 #### *Use Case 1: Testing Question Search*
 Go to homepage -> click "Find relevant questions" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant questions from all the surveys in the database. You can then view the survey that contains a particular question by clicking on the title. While viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
@@ -70,13 +88,13 @@ Go to homepage -> click "Find relevant surveys" button -> input keyword(s) separ
 Go to homepage -> click "Browse" button and you'll be redirected to a page listing all the surveys in the database. You can then view the details of any survey by clicking on the title. Once again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 #### *Use Case 4: Testing Upload*
-Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page, and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload). 
-After you upload a new survey, the wordcloud on the homepage should update to reflect the the new data. If it does not automatically regenerate, clear the cache using Ctrl-Shift-R in the VM (or any Linux machine) or Cmd-Shift-R on Mac.
+Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. Once you have uploaded this survey, you should be able to see it on the "Browse" page (which you can go to from the homepage or from the navigation bar), and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload). 
+After you upload a new survey, the wordcloud on the homepage background should update to reflect the the newly added data. If the image does not automatically regenerate, clear the cache and refresh the webpage using Ctrl-Shift-R in the VM (or any Linux machine) or Cmd-Shift-R on Mac.
 
-## Coding Breakdown
+## Coding Contribution Breakdown
 
 ### Data Collection
-The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and then Bethany completed all of the data cleaning and extraction.
+The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and then Bethany completed all of the data cleaning and extraction. Ruixue contributed and formatted a survey from her undergradate research project as the sample file you can use for testing.
 
 ### Django Site
 
@@ -87,14 +105,12 @@ Bethany and Ruixue completed the upload form. Together, all three team members f
 Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
 
 #### WordCloud
-
 Ruixue completed the wordcloud. 
 
 #### Templates/Formatting and HTML
-All three team members participated in the page formatting and template creation. Ruixue applied styling to all pages with bootstrap and formatted the homepage (index.html).
+All three team members participated in the view and template creation. Ruixue applied and standardized styling of all pages with Bootstrap and formatted the homepage (index.html).
 
 ## Documentation of Code Ownership  
-
 Please see comments starting with "Code Ownership : " in files. The descriptions of code ownership are as the example provided by Professor Rogers, outlined below.
 
 - "Direct copy" : Generated by installed package or online source (Django or other) and few edits made
