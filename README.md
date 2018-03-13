@@ -19,14 +19,14 @@ Unique selling points:
 
 ## Overall Code Structure
 
-The code of this project consist of two part:
+The code of this project consists of two parts:
 * (1) code for data cleaning 
 * (2) code for building the Django site
 Both parts are documented below.
 
 ### Data Cleaning
 
-The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
+The data cleaning was completed in jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links).
 
 ### Django Site
 
@@ -66,7 +66,7 @@ The Django portion is structured as follows (the site is available in Final Site
 - docx2txt (sudo pip3 install docx2txt)
 - The regular expression library (re) should be installed on ths VMs already.
 
-To rerun the data cleaning, go into each data folder, open the jupyter notebook (run "jupyter notebook" from the command line and go to the jupyter notebook document), and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
+To rerun the data cleaning, go into each data folder, open the jupyter notebook (run "jupyter notebook" from the command line and go to the .ipynb document), and rerun the script. The data that was used to find the questions/variable names and descriptions is in each individual folder. All of these data sources were downloaded directly from online sources. 
 
 ### Running the Django Site
 
@@ -108,12 +108,12 @@ After you upload a new survey, the wordcloud on the homepage background should u
 ## Coding Contribution Breakdown
 
 ### Data Collection
-The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and then Bethany completed all of the data cleaning and extraction. Ruixue contributed and formatted a survey from her undergradate research project as the sample file you can use for testing.
+The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and then Bethany completed all of the data conversion, cleaning, extraction. Leo created the databases, and Bethany input the data into the databases. Ruixue formatted a survey from her undergradate research project as the sample file you can use for testing.
 
 ### Django Site
 
 #### Forms
-Bethany created the upload form, and Ruixue handled the file and its integration to other parts of the site. Together, all three team members worked on file validating and processing.
+Bethany created the upload form, and Ruixue and Leoson handled the file and its integration to other parts of the site. Together, all three team members worked on file validating and processing.
 
 #### Search
 Leoson completed the search by question function, and Bethany completed the search by survey function. Ruixue completed the ranking algorithm.
@@ -122,7 +122,7 @@ Leoson completed the search by question function, and Bethany completed the sear
 Ruixue completed the wordcloud. 
 
 #### Templates/Formatting and HTML
-All three team members participated in the view and template creation. All templates are written by the team with the help of html/css and Bootstrap documentation. Ruixue applied and standardized styling of all pages with Bootstrap and designed the homepage (index.html).
+All three team members participated in the and template creation. All templates were written by the team with the help of html/css and Bootstrap documentation. Ruixue applied and standardized styling of all pages with Bootstrap and designed the homepage (index.html).
 
 ## Documentation of Code Ownership  
 Please see comments starting with "Code Ownership : " in files. The descriptions of code ownership are as the example provided by Professor Rogers, outlined below.
