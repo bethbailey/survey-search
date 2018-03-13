@@ -40,13 +40,13 @@ and it displays the detailed information of that survey -->
     <td colspan="2"> 
 
       {% if details.doc_link != 'NA' %}
-      <a href = "{ details.doc_link | urlize }" >Survey Documentation</a></br>
+      <a href = "{{ details.doc_link }}" >Survey Documentation</a></br>
       {% endif %}
       {% if details.source_link != 'NA' %}
-      <a href = " { details.source_link | urlize }">Survey Source</a></br>
+      <a href = "{{ details.source_link }}">Survey Source</a></br>
       {% endif %}
       {% if details.data_link != 'NA' %}
-      <a href = "{ details.data_link | urlize }" > Survey Link</a></br>
+      <a href = "{{ details.data_link }}" > Survey Link</a></br>
       {% endif %}
       <a href="{% url 'search:question_detail_list' details.survey_num %}">See all variables and questions</a>
     </td>
