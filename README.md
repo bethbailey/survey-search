@@ -108,7 +108,7 @@ After you upload a new survey, the wordcloud on the homepage background should u
 ## Coding Contribution Breakdown
 
 ### Data Collection
-The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and then Bethany completed all of the data conversion, cleaning, extraction. Leo created the databases, and Bethany input the data into the databases. Ruixue formatted a survey from her undergradate research project as the sample file you can use for testing.
+The surveys were collected by all three members. The data that was in SPSS was converted to CSV by Leoson, and Bethany completed all of the data conversion, cleaning, and extraction. Leo created the databases, and Bethany input the data into the databases. Ruixue formatted a survey from her undergradate research project as the sample file you can use for testing.
 
 ### Django Site
 
