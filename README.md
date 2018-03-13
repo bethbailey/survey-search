@@ -103,6 +103,7 @@ Go to homepage -> click "Browse" button and you'll be redirected to a page listi
 
 #### *Use Case 4: Testing Upload*
 Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. However, if you try to use a non-number type for the number of participants or number of questions, the upload button will not work and will return you to that portion of the page. Additionally, you can test the checks we built in the system as follows:
+
          1. To ensure that the document is a csv in the correct format, we built in a check to see whether the file the user is trying to upload is in csv format. Try to input a different type of document (e.g. pdf).
          2. In order to prevent individuals from putting in the same survey twice, we check the survey name. Try providing the same survey name (e.g. "General Social Survey 2016").
 
