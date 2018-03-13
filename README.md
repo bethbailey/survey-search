@@ -22,6 +22,7 @@ Unique selling points:
 The code of this project consists of two parts:
 * (1) code for data cleaning 
 * (2) code for building the Django site
+
 Both parts are documented below.
 
 ### Data Cleaning
