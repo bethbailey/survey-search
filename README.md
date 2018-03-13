@@ -75,7 +75,11 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook 
 - sklearn (sudo pip3 install sklearn)
 - Pillow and Matplotlib should already be installed on the VMs.
 
-To run our site, please clone the repository, go into the Final Site/surveysearch folder and run   
+To run our site, please clone the repository, go into the 
+```
+Final Site/surveysearch
+```
+folder and run   
 ```
 python3 manage.py runserver --insecure --nothreading
 ```
