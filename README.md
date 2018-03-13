@@ -26,7 +26,7 @@ Both parts are documented below.
 
 ### Data Cleaning
 
-The data cleaning was completed in jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links).
+The data cleaning was completed in jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links). We split one survey (the OLS Animal survey) into three datasets because we wanted to see if the the subdivisions would come up similarly in rankings. 
 
 ### Django Site
 
