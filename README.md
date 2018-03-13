@@ -75,9 +75,17 @@ To rerun the data cleaning, go into each data folder, open the jupyter notebook 
 - sklearn (sudo pip3 install sklearn)
 - Pillow and Matplotlib should already be installed on the VMs.
 
-To run our site, please clone the repository, go into the Final Site/surveysearch folder and run "python3 manage.py runserver --insecure".  "--insecure" is for running a local development server with "DEBUG" set to "False".  
+To run our site, please clone the repository, go into the Final Site/surveysearch folder and run   
+```
+python3 manage.py runserver --insecure --nothreading
+```
+"--insecure" is for running a local development server with "DEBUG" set to "False", and "--nothreading" is required for competibility for with matplotlib.
 
-Once you have run this, go to http://127.0.0.1:8000/search/ in your browser to access the homepage and browse the website from there. We've provided the following use cases to facilitate your testing. 
+Once you have run this, go to 
+```
+http://127.0.0.1:8000/search/ 
+```
+in your browser to access the homepage and browse the website from there. We've provided the following use cases to facilitate your testing. 
 
 ### Use Cases
 #### *Use Case 1: Testing Question Search*
