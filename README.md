@@ -99,16 +99,16 @@ The surveys were collected by all three members. The data that was in SPSS was c
 ### Django Site
 
 #### Forms
-Bethany and Ruixue completed the upload form. Together, all three team members figured out how to handle file processing in Django.
+Bethany created the upload form, and Ruixue handled the file and its integration to other parts of the site. Together, all three team members worked on file validating and processing.
 
 #### Search
-Leoson completed the search by question, and Bethany completed the search by survey. Ruixue completed the ranking algorithm.
+Leoson completed the search by question function, and Bethany completed the search by survey function. Ruixue completed the ranking algorithm.
 
 #### WordCloud
 Ruixue completed the wordcloud. 
 
 #### Templates/Formatting and HTML
-All three team members participated in the view and template creation. Ruixue applied and standardized styling of all pages with Bootstrap and formatted the homepage (index.html).
+All three team members participated in the view and template creation. All templates are written by the team with the help of html/css and Bootstrap documentation. Ruixue applied and standardized styling of all pages with Bootstrap and designed the homepage (index.html).
 
 ## Documentation of Code Ownership  
 Please see comments starting with "Code Ownership : " in files. The descriptions of code ownership are as the example provided by Professor Rogers, outlined below.
