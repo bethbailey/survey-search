@@ -39,7 +39,7 @@ from PIL import Image
 class IndexView(generic.ListView):
     '''
     Class that defines the view for the index. Provides a generic view.
-
+    Code Ownership: Modified
     '''
     template_name = 'search/index.html'
     context_object_name = 'head_values'
@@ -53,7 +53,7 @@ class IndexView(generic.ListView):
 class ResultsView(generic.ListView):
     '''
     Class that defines the view for the question search results.
-
+    Code Ownership: Original
     '''
     template_name = 'search/search_results.html'
     context_object_name = 'Survey_Questions_List'
@@ -100,6 +100,7 @@ class SurveyResultsView(generic.ListView):
     queries the question text in the SurveyQuestions model and the summary
     and survey_name in the SurveyDetails model to find surveys that contain
     the keywords.
+    Code Ownership: Original
     '''
     template_name = 'search/search_results_survey.html'
     paginate_by = 10 
@@ -144,6 +145,7 @@ class Browse(generic.ListView):
     Class that defines view to display all the survey results. This class
     gets all the surveys in the SurveyDetails model and returns all the 
     objects.
+    Code Ownership: Original
     '''
     template_name = 'search/browse_surveys.html'
     paginate_by = 10 
@@ -159,6 +161,7 @@ class Browse(generic.ListView):
 class DetailView(generic.DetailView):
     '''
     Class that defines the view for Survey details for each question.
+    Code Ownership: Original
     '''
     template_name = 'search/detail.html'
     model = SurveyQuestions
@@ -178,6 +181,7 @@ class QuestionDetail(generic.DetailView):
     '''
     Class that defines the view for Survey details for each question from the
     question list.
+    Code Ownership: Original
     '''
     template_name = 'search/question_list.html'
     model = SurveyDetails
@@ -197,6 +201,7 @@ class BrowseDetailView(generic.DetailView):
     '''
     Class that defines the view for Survey details for each survey from the
     browse surveys list.
+    Code Ownership: Original
     '''
     template_name = 'search/browse_detail.html'
     model = SurveyDetails
@@ -289,7 +294,7 @@ def get_rankings(data, query):
     Returns:
         ranked indices of the texts
 
-    Code ownership: Origional
+    Code ownership: Original
 
     Reference for the algorithm:
     http://www.ardendertat.com/2011/07/17/how-to-implement-a-search-engine
