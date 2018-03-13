@@ -102,13 +102,10 @@ Go to homepage -> click "Find relevant surveys" button -> input keyword(s) separ
 Go to homepage -> click "Browse" button and you'll be redirected to a page listing all the surveys in the database. You can then view the details of any survey by clicking on the title. Once again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 #### *Use Case 4: Testing Upload*
-Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. However, if you try to use a non-number type for the number of participants or number of questions, the upload button will not work and will return you to that portion of the page. Additionally, you can test the checks we built in the system as follows:
+Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. However, if you try to use a non-number type for the number of participants or number of questions, the upload button will not work and will return you to that portion of the page. Additionally, you can test the checks we built in the system as follows: 
 
-         1. To ensure that the document is a csv in the correct format, we built in a check to see 
-         whether the file the user is trying to upload is in csv format. Try to input a different 
-         type of document (e.g. pdf).
-         2. In order to prevent individuals from putting in the same survey twice, we check the 
-         survey name. Try providing the same survey name (e.g. "General Social Survey 2016").
+- To ensure that the document is a csv in the correct format, we built in a check to see whether the file the user is trying to upload is in csv format. Try to input a different type of document (e.g. pdf).
+- In order to prevent individuals from putting in the same survey twice, we check the survey name. Try providing the same survey name (e.g. "General Social Survey 2016").
 
 Once you have uploaded this survey, you should be able to see it on the "Browse" page (which you can go to from the homepage or from the navigation bar), and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload). 
 After you upload a new survey, the wordcloud on the homepage background should update to reflect the the newly added data. If the image does not automatically regenerate, clear the cache and refresh the webpage using Ctrl-Shift-R in the VM (or any Linux machine) or Cmd-Shift-R on Mac.
