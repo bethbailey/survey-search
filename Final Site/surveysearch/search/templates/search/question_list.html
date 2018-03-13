@@ -10,15 +10,15 @@
 </br>
 {% for question in Survey_Questions_List %}
 {% if question.survey_key == surveydetails.survey_key %}
-<p><b>Variable Name:</b> <font color = 'teal'>{{ question.var_name }}</font></br><b> Question Text:</b> <font color = 'teal'>{{ question.var_text }}</font></p>
+<p><b>Variable Name:</b> <font color = 'teal'>{{ question.var_name }}</font></br><b> Question:</b> <font color = 'teal'>{{ question.var_text }}</font></p>
 {% endif %}
 {% endfor %}
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <br>
-<form action="../../search">
-    <input class = "w-25 btn btn-lg btn-primary" type="submit" action = "{% url 'search:index' %}" value="Return to survey" />
+<form action="{% url 'search:browse_detail' surveydetails.survey_num %}">
+    <input class = "w-25 btn btn-lg btn-primary" type="submit" action = "{% url 'search:browse_detail' surveydetails.survey_num %}" value="Return to survey" />
 </form>
 </br>
 <form action="../../../search">
