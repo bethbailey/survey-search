@@ -2,10 +2,12 @@
 
 CS 30122 Final Project  
 Title: Survey Search  
-Team: Pawsitive  
-Members: Bethany Bailey (The Data Cleaner Cat)  
-         Ruixue Li (The Interior Designer Cat)  
-         Leoson Hoay (The Django Janitor Cat)  
+Team: Pawsitive
+
+Members: 
+Bethany Bailey (The Data Cleaner Cat)  
+Ruixue Li (The Interior Designer Cat)  
+Leoson Hoay (The Django Janitor Cat)  
 
 
 ## Project description
@@ -94,13 +96,19 @@ in your browser to access the homepage and browse the website from there. We've 
 
 ### Use Cases
 #### *Use Case 1: Testing Question Search*
-Go to homepage -> click "Find relevant questions" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant questions from all the surveys in the database. You can then view the survey that contains a particular question by clicking on the title. While viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
+Go to homepage -> click "Find relevant questions" button -> input keyword(s) separated by space -> click search button 
+
+You will be redirected to a result page listing all the relevant questions from all the surveys in the database. You can then view the survey that contains a particular question by clicking on the title. While viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 #### *Use Case 2: Testing Survey Search*
-Go to homepage -> click "Find relevant surveys" button -> input keyword(s) separated by space -> click search button and you'll be redirected to a result page listing all the relevant surveys in the database. You can then view the details of any survey by clicking on the title. Again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
+Go to homepage -> click "Find relevant surveys" button -> input keyword(s) separated by space -> click search button 
+
+You will be redirected to a result page listing all the relevant surveys in the database. You can then view the details of any survey by clicking on the title. Again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 #### *Use Case 3: Browse Surveys*
-Go to homepage -> click "Browse" button and you'll be redirected to a page listing all the surveys in the database. You can then view the details of any survey by clicking on the title. Once again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
+Go to homepage -> click "Browse" button 
+
+You will be redirected to a page listing all the surveys in the database. You can then view the details of any survey by clicking on the title. Once again, while viewing a survey, you can browse all the questions in that survey through the "See all variables and questions" link at the last cell of the form. 
 
 #### *Use Case 4: Testing Upload*
 Test the upload portion of the site using either a handmade file or, if you are so inclined, the sample upload on our github in Sample Upload/student.csv. You can use any values for the upload parameters. However, if you try to use a non-number type for the number of participants or number of questions, the upload button will not work and will return you to that portion of the page. Additionally, you can test the checks we built in the system as follows: 
