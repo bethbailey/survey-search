@@ -4,7 +4,7 @@ CS 30122 Final Project
 Title: Survey Search  
 Team: Pawsitive
 
-<br>Members: <br> 
+Members: <br> 
 Bethany Bailey (The Data Cleaner Cat)  
 Ruixue Li (The Interior Designer Cat)  
 Leoson Hoay (The Django Janitor Cat)  
