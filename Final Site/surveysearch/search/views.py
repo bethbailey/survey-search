@@ -356,12 +356,14 @@ def handle_files(csv_file, id_obj):
                 questions.save()
         f.close()
 
-def grey_color_func():
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
     '''
     Generate random grey colors for plotting wordcloud
-    Code Ownership: Modified
+    Code Ownership: Direct Copy
     '''
     return "hsl(0, 0%%, %d%%)" % random.randint(0, 30)
+
 
 def generate_wordcloud():
     '''
