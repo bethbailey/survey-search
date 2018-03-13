@@ -229,7 +229,7 @@ def upload_failure(request):
 def model_form_upload(request):
     '''
     The view for displaying the page for users to upload surveys
-    Code ownership: original
+    Code ownership: Original
     '''
     if request.method == 'POST':
         form = SurveyUploadForm(request.POST, request.FILES)
