@@ -19,14 +19,14 @@ Unique selling points:
 
 ## Overall Code Structure
 
-The code of this project consist of two part:
+The code of this project consists of two parts:
 * (1) code for data cleaning 
 * (2) code for building the Django site
 Both parts are documented below.
 
 ### Data Cleaning
 
-The data cleaning was all done in jupyter notebooks, and took survey documentation from the web in four different formats - pdf, csv, rtf, and docx - and extracted the variables and put them into csvs with the variable names and text. During this process, the actual survey data was converted to csv and stored in the data folder for each survey as well as the Survey Detail folder (which is what we provide to the Django site for links).
+The data cleaning was completed in jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links).
 
 ### Django Site
 
