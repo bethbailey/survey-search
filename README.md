@@ -27,7 +27,7 @@ Both parts are documented below.
 
 ### Data Cleaning
 
-The data cleaning was completed in jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links). We split one survey (the OLS Animal survey) into three datasets because we wanted to see if the the subdivisions would come up similarly in rankings. 
+The data cleaning was completed in Jupyter notebooks, and took survey documentation from the web in four different formats (pdf, csv, rtf, and docx), extracted the variable names and descriptions, and wrote the information to csvs. During this process, the actual survey data was converted to csv and stored in each survey's data folder as well as the Survey Detail folder (which is what we provide to the Django site for links). We split one survey (the OLS Animal survey) into three datasets because we wanted to see if the the subdivisions would come up similarly in rankings. 
 
 ### Django Site
 
@@ -107,6 +107,7 @@ Test the upload portion of the site using either a handmade file or, if you are 
 
 - To ensure that the document is a csv in the correct format, we built in a check to see whether the file the user is trying to upload is in csv format. To test this, try to upload a different type of document (e.g. pdf).
 - In order to prevent individuals from putting in the same survey twice, we check the survey name. To test this, try providing the same survey name (e.g. "General Social Survey 2016").
+- The form also asks to user to enter 'NA' in the links fields if a particular link is not available. This is used as a check in the pages displaying survey details on whether a particular external link exists. 
 
 Once you have uploaded this survey, you should be able to see it on the "Browse" page (which you can go to from the homepage or from the navigation bar), and it will show up in keyword searches for questions and surveys (try searching "final" or "semester" before and after the upload). 
 After you upload a new survey, the wordcloud on the homepage background should update to reflect the the newly added data. If the image does not automatically regenerate, clear the cache and refresh the webpage using Ctrl-Shift-R in the VM (or any Linux machine) or Cmd-Shift-R on Mac.
