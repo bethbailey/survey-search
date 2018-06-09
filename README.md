@@ -5,9 +5,9 @@ Title: Survey Search
 Team: Pawsitive
 
 Members: <br> 
-Bethany Bailey (The Data Cleaner Cat)  
-Ruixue Li (The Interior Designer Cat)  
-Leoson Hoay (The Django Janitor Cat)  
+[Bethany Bailey](https://github.com/bethbailey) (The Data Cleaner Cat)  
+[Ruixue Li](https://github.com/ruixue-li) (The Interior Designer Cat)  
+[Leoson Hoay](https://github.com/LeosonH) (The Django Janitor Cat)  
 
 
 ## Project description
