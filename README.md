@@ -86,7 +86,7 @@ folder and run
 ```
 python3 manage.py runserver --insecure --nothreading
 ```
-"--insecure" is for running a local development server with "DEBUG" set to "False", and "--nothreading" is required for competibility for with matplotlib.
+"--insecure" is for running a local development server with "DEBUG" set to "False", and "--nothreading" is required for compatibility for with matplotlib.
 
 Once you have run this, go to 
 ```
